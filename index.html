@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Archive</title>
+    <meta name="description" content="Automated news aggregation archive — DevOps, Economy, Security, F1, MotoGP and more">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --bg: #0d1117; --bg2: #161b22; --bg3: #1c2128; --border: #30363d;
+            --text: #e6edf3; --text2: #8b949e; --text3: #484f58;
+            --accent: #58a6ff; --green: #3fb950; --orange: #d29922; --red: #f85149;
+            --code-bg: #151b23; --inline-bg: #21262d;
+            --card-hover: #1f6feb08;
+        }
+        [data-theme="light"] {
+            --bg: #ffffff; --bg2: #f6f8fa; --bg3: #eef1f5; --border: #d0d7de;
+            --text: #1f2328; --text2: #656d76; --text3: #afb8c1;
+            --accent: #0969da; --green: #1a7f37; --orange: #9a6700; --red: #cf222e;
+            --code-bg: #f6f8fa; --inline-bg: #eef1f5;
+            --card-hover: #ddf4ff44;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; font-size: 15px; transition: background 0.2s, color 0.2s; }
+        .layout { display: flex; min-height: 100vh; }
+        .sidebar { width: 260px; background: var(--bg2); border-right: 1px solid var(--border); position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 100; transition: background 0.2s; }
+        .sidebar-header { padding: 16px 20px; border-bottom: 1px solid var(--border); }
+        .sidebar-header h2 { font-size: 16px; font-weight: 800; background: linear-gradient(135deg,var(--accent),var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .sidebar-header small { display: block; font-size: 11px; color: var(--text2); margin-top: 2px; }
+        .sidebar-nav { padding: 8px 0; }
+        .sidebar-cat { border-bottom: 1px solid var(--border); }
+        .sidebar-cat-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); transition: background 0.15s; }
+        .sidebar-cat-header:hover { background: var(--bg3); }
+        .sidebar-cat-header .count { font-size: 11px; color: var(--text3); font-weight: 400; }
+        .sidebar-cat-header .arrow { font-size: 10px; color: var(--text3); transition: transform 0.2s; }
+        .sidebar-cat-header .arrow.open { transform: rotate(90deg); }
+        .sidebar-cat-list { display: none; }
+        .sidebar-cat-list.open { display: block; }
+        .sidebar-cat-list a { display: block; padding: 4px 20px 4px 32px; color: var(--text2); text-decoration: none; font-size: 12.5px; border-left: 2px solid transparent; transition: all 0.15s; }
+        .sidebar-cat-list a:hover { color: var(--text); background: var(--bg3); }
+        .sidebar-cat-list a.active { color: var(--accent); border-left-color: var(--accent); background: var(--card-hover); font-weight: 600; }
+        .sidebar::-webkit-scrollbar { width: 6px; }
+        .sidebar::-webkit-scrollbar-track { background: transparent; }
+        .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+        .sidebar-toggle { display: none; position: fixed; top: 10px; left: 10px; z-index: 200; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 18px; color: var(--text); line-height: 1; }
+        .sidebar-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 99; }
+        .content { flex: 1; margin-left: 260px; padding: 32px 48px 48px; max-width: 860px; }
+        @media (max-width: 900px) {
+            .sidebar { transform: translateX(-100%); }
+            .sidebar.open { transform: translateX(0); }
+            .sidebar-overlay.open { display: block; }
+            .sidebar-toggle { display: block; }
+            .content { margin-left: 0; padding: 24px 20px; max-width: 100%; }
+        }
+        .theme-toggle { position: fixed; top: 10px; right: 12px; z-index: 300; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; cursor: pointer; font-size: 16px; transition: all 0.2s; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .theme-toggle:hover { background: var(--bg3); }
+        .home-header { text-align: center; padding: 0 0 32px; }
+        .home-header h1 { font-size: 32px; font-weight: 800; background: linear-gradient(135deg,var(--accent),var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .home-header p { color: var(--text2); font-size: 14px; margin-top: 4px; }
+        .categories-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+        .cat-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 16px; cursor: pointer; transition: all 0.15s; }
+        .cat-card:hover { border-color: var(--accent); background: var(--bg3); transform: translateY(-2px); }
+        .cat-card .emoji { font-size: 24px; margin-bottom: 6px; display: block; }
+        .cat-card h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+        .cat-card .desc { font-size: 12px; color: var(--text2); line-height: 1.4; }
+        .cat-card .meta { font-size: 11px; color: var(--text3); margin-top: 8px; }
+        .article-list { max-width: 640px; margin: 0 auto; }
+        .article-list h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+        .article-list .back { display: inline-block; color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; margin-bottom: 16px; cursor: pointer; }
+        .article-list .back:hover { text-decoration: underline; }
+        .article-item { display: block; padding: 12px 16px; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 8px; text-decoration: none; color: var(--text); transition: all 0.15s; }
+        .article-item:hover { border-color: var(--accent); background: var(--bg3); }
+        .article-item .date { font-size: 12px; color: var(--text3); font-weight: 500; }
+        .article-item .title { font-size: 14px; font-weight: 600; margin-top: 2px; }
+        .loading { display: flex; align-items: center; justify-content: center; padding: 80px 0; }
+        .spinner { width: 32px; height: 32px; border: 3px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin 0.7s linear infinite; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .error-state { text-align: center; padding: 48px 0; color: var(--text2); }
+        .error-state .emoji { font-size: 40px; margin-bottom: 12px; }
+        .markdown-body h1 { font-size: 28px; font-weight: 800; margin: 0 0 12px; line-height: 1.3; }
+        .markdown-body h2 { font-size: 22px; font-weight: 700; margin: 32px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+        .markdown-body h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
+        .markdown-body h4 { font-size: 15px; font-weight: 600; margin: 16px 0 6px; }
+        .markdown-body p { margin: 0 0 12px; }
+        .markdown-body a { color: var(--accent); text-decoration: none; }
+        .markdown-body a:hover { text-decoration: underline; }
+        .markdown-body ul, .markdown-body ol { margin: 8px 0 16px; padding-left: 24px; }
+        .markdown-body li { margin: 3px 0; }
+        .markdown-body hr { border: none; border-top: 1px solid var(--border); margin: 24px 0; }
+        .markdown-body strong { font-weight: 600; }
+        .markdown-body blockquote { margin: 12px 0; padding: 8px 16px; border-left: 3px solid var(--accent); background: var(--bg3); border-radius: 0 6px 6px 0; }
+        .markdown-body blockquote p { margin: 0; }
+        .markdown-body code { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; background: var(--inline-bg); padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+        .markdown-body pre { margin: 12px 0 16px; padding: 14px 16px; background: var(--code-bg); border-radius: 8px; border: 1px solid var(--border); overflow-x: auto; }
+        .markdown-body pre code { background: none; padding: 0; border-radius: 0; font-size: 13px; }
+        .markdown-body table { width: 100%; border-collapse: collapse; margin: 12px 0 16px; font-size: 14px; }
+        .markdown-body th, .markdown-body td { padding: 6px 12px; border: 1px solid var(--border); text-align: left; }
+        .markdown-body th { background: var(--bg2); font-weight: 600; }
+        .markdown-body tr:nth-child(even) { background: var(--bg3); }
+        .markdown-body img { max-width: 100%; border-radius: 8px; margin: 12px 0; }
+        .article-meta { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+        .article-meta .tag { display: inline-block; background: var(--bg3); color: var(--text2); font-size: 11px; font-weight: 600; padding: 2px 10px; border-radius: 12px; border: 1px solid var(--border); }
+        .article-meta .tag.blue { background: #1f6feb22; color: var(--accent); border-color: #1f6feb44; }
+        .article-meta .tag.green { background: #10b98122; color: var(--green); border-color: #10b98144; }
+        .article-meta .tag.orange { background: #d2992222; color: var(--orange); border-color: #d2992244; }
+        .article-nav { display: flex; justify-content: space-between; margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border); }
+        .article-nav a { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; }
+        .article-nav a:hover { text-decoration: underline; }
+        .article-nav .disabled { color: var(--text3); pointer-events: none; }
+    </style>
+</head>
+<body>
+    <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="layout">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>📰 News Archive</h2>
+                <small id="headerInfo">Automated news aggregation</small>
+            </div>
+            <nav class="sidebar-nav" id="sidebarNav"></nav>
+        </aside>
+
+        <main class="content" id="content">
+            <div id="pageContent"></div>
+        </main>
+    </div>
+
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js">
+    </script>
+    <script>
+        let articles = {};
+        let currentCat = null;
+        let currentFile = null;
+        let articleOrder = [];
+
+        const categories = {
+            baremetal: { emoji: '🖥️', name: 'Bare Metal', desc: 'Bare-metal server & hardware news' },
+            devops: { emoji: '⚙️', name: 'DevOps', desc: 'DevOps, SRE & Cloud Engineering news' },
+            selfhosted: { emoji: '🏠', name: 'Self Hosted', desc: 'Self-hosted tools & applications' },
+            ekonomi: { emoji: '📊', name: 'Ekonomi', desc: 'Indonesian & Global Economy updates' },
+            'k8s-security': { emoji: '🔒', name: 'K8s Security', desc: 'Kubernetes Security briefings' },
+            'tech-foundations': { emoji: '🏗️', name: 'Tech Foundations', desc: 'CNCF, Apache, Linux & OpenInfra updates' },
+            f1: { emoji: '🏎️', name: 'F1', desc: 'Formula 1 race analysis' },
+            motogp: { emoji: '🏍️', name: 'MotoGP', desc: 'MotoGP race analysis' }
+        };
+
+        const categoryOrder = ['devops', 'baremetal', 'selfhosted', 'ekonomi', 'k8s-security', 'tech-foundations', 'f1', 'motogp'];
+
+        async function init() {
+            // Fetch available articles from each category
+            const promises = categoryOrder.map(async (cat) => {
+                try {
+                    const resp = await fetch(`${cat}/?t=${Date.now()}`, { method: 'HEAD' });
+                    // We can't list files via HTTP, so we'll try known patterns
+                    // Instead, use GitHub API or try common dates
+                    articles[cat] = await discoverArticles(cat);
+                } catch (e) {
+                    articles[cat] = [];
+                }
+            });
+            await Promise.allSettled(promises);
+            
+            renderSidebar();
+            
+            // Check hash routing
+            const hash = location.hash.slice(1);
+            if (hash) {
+                const parts = hash.split('/');
+                if (parts.length >= 2 && categories[parts[0]]) {
+                    showCategory(parts[0]);
+                    if (parts[1]) {
+                        loadArticle(parts[0], parts[1]);
+                    }
+                    return;
+                }
+            }
+            showHome();
+        }
+
+        async function discoverArticles(cat) {
+            // Try fetching a manifest/index file first
+            try {
+                const resp = await fetch(`articles.json?t=${Date.now()}`);
+                if (resp.ok) {
+                    const data = await resp.json();
+                    if (data[cat]) return data[cat].sort().reverse();
+                }
+            } catch(e) {}
+
+            // Fallback: generate from known articles (will be updated on each cron run)
+            // The SPA will dynamically update as new articles are pushed
+            return [];
+        }
+
+        function renderSidebar() {
+            const nav = document.getElementById('sidebarNav');
+            nav.innerHTML = '<div class="sidebar-cat"><div class="sidebar-cat-header" onclick="showHome()" style="cursor:pointer;border-bottom:1px solid var(--border);margin-bottom:4px"><span>🏠 Home</span></div></div>';
+            
+            categoryOrder.forEach(cat => {
+                const info = categories[cat];
+                const list = articles[cat] || [];
+                const div = document.createElement('div');
+                div.className = 'sidebar-cat';
+                div.innerHTML = `
+                    <div class="sidebar-cat-header" onclick="toggleCat('${cat}')">
+                        <span>${info.emoji} ${info.name}</span>
+                        <span class="count">${list.length}</span>
+                        <span class="arrow">▶</span>
+                    </div>
+                    <div class="sidebar-cat-list" id="catlist-${cat}"></div>
+                `;
+                nav.appendChild(div);
+
+                const listDiv = div.querySelector('.sidebar-cat-list');
+                list.forEach(file => {
+                    const a = document.createElement('a');
+                    a.href = `#/${cat}/${file}`;
+                    // Format date: remove .md extension and show nicely
+                    const display = file.replace('.md', '').replace(/-/g, '/');
+                    a.textContent = display;
+                    a.dataset.cat = cat;
+                    a.dataset.file = file;
+                    a.onclick = (e) => {
+                        e.preventDefault();
+                        showCategory(cat);
+                        loadArticle(cat, file);
+                        if (window.innerWidth <= 900) closeSidebar();
+                    };
+                    listDiv.appendChild(a);
+                });
+
+                // Auto-open if has articles
+                if (list.length > 0) {
+                    setTimeout(() => {
+                        listDiv.classList.add('open');
+                        div.querySelector('.arrow').classList.add('open');
+                    }, 100);
+                }
+            });
+        }
+
+        function toggleCat(cat) {
+            const list = document.getElementById(`catlist-${cat}`);
+            const arrow = list.parentElement.querySelector('.arrow');
+            list.classList.toggle('open');
+            arrow.classList.toggle('open');
+        }
+
+        function showHome() {
+            currentCat = null;
+            currentFile = null;
+            const c = document.getElementById('pageContent');
+            
+            let total = 0;
+            let html = `
+                <div class="home-header">
+                    <h1>📰 News Archive</h1>
+                    <p>Automated news aggregation — powered by Hermes Agent 🤖</p>
+                </div>
+                <div class="categories-grid">
+            `;
+            categoryOrder.forEach(cat => {
+                const info = categories[cat];
+                const count = (articles[cat] || []).length;
+                total += count;
+                html += `
+                    <div class="cat-card" onclick="showCategory('${cat}')">
+                        <span class="emoji">${info.emoji}</span>
+                        <h3>${info.name}</h3>
+                        <div class="desc">${info.desc}</div>
+                        <div class="meta">${count} article${count !== 1 ? 's' : ''}</div>
+                    </div>
+                `;
+            });
+            html += `</div>`;
+            if (total === 0) {
+                html += `<p style="text-align:center;color:var(--text2);margin-top:32px;font-size:14px">No articles loaded yet. Make sure articles.json exists in the repo root.</p>`;
+            }
+            c.innerHTML = html;
+
+            document.querySelectorAll('.sidebar-cat-list a').forEach(a => a.classList.remove('active'));
+            history.replaceState(null, '', '#');
+        }
+
+        async function showCategory(cat) {
+            currentCat = cat;
+            const info = categories[cat];
+            const list = articles[cat] || [];
+            const c = document.getElementById('pageContent');
+
+            if (list.length === 0) {
+                // Try to discover articles on demand
+                await discoverArticlesOnDemand(cat);
+                const refreshed = articles[cat] || [];
+                if (refreshed.length === 0) {
+                    c.innerHTML = `
+                        <div class="article-list">
+                            <a class="back" onclick="showHome()">← Back to categories</a>
+                            <h2>${info.emoji} ${info.name}</h2>
+                            <div class="error-state">
+                                <div class="emoji">📭</div>
+                                <h3>No articles found</h3>
+                                <p>No articles available for this category yet.</p>
+                            </div>
+                        </div>
+                    `;
+                    return;
+                }
+            }
+
+            c.innerHTML = `
+                <div class="article-list">
+                    <a class="back" onclick="showHome()">← Back to categories</a>
+                    <h2>${info.emoji} ${info.name}</h2>
+                    <p style="color:var(--text2);font-size:13px;margin-bottom:16px;">${info.desc}</p>
+                    <div id="articleItems"></div>
+                </div>
+            `;
+
+            const itemsDiv = document.getElementById('articleItems');
+            const sorted = [...(articles[cat] || [])].sort().reverse();
+            sorted.forEach(file => {
+                const display = file.replace('.md', '').replace(/-/g, '/');
+                const a = document.createElement('a');
+                a.className = 'article-item';
+                a.href = `#/${cat}/${file}`;
+                a.innerHTML = `<div class="date">${display}</div><div class="title">${info.name} — ${display}</div>`;
+                a.onclick = (e) => {
+                    e.preventDefault();
+                    loadArticle(cat, file);
+                    if (window.innerWidth <= 900) closeSidebar();
+                };
+                itemsDiv.appendChild(a);
+            });
+        }
+
+        async function discoverArticlesOnDemand(cat) {
+            const resp = await fetch(`articles.json?t=${Date.now()}`);
+            if (resp.ok) {
+                const data = await resp.json();
+                if (data[cat]) {
+                    articles[cat] = data[cat].sort().reverse();
+                    updateSidebarCounts();
+                    return;
+                }
+            }
+            // Try direct fetch of common date patterns
+            const today = new Date();
+            const found = [];
+            for (let i = 0; i < 14; i++) {
+                const d = new Date(today);
+                d.setDate(d.getDate() - i);
+                const dateStr = d.toISOString().slice(0, 10);
+                try {
+                    const r = await fetch(`${cat}/${dateStr}.md`);
+                    if (r.ok) found.push(`${dateStr}.md`);
+                } catch(e) {}
+            }
+            if (found.length > 0) {
+                articles[cat] = found.sort().reverse();
+                updateSidebarCounts();
+            }
+        }
+
+        function updateSidebarCounts() {
+            categoryOrder.forEach(cat => {
+                const headers = document.querySelectorAll('.sidebar-cat-header');
+                // Update counts by re-rendering sidebar
+            });
+            renderSidebar();
+        }
+
+        async function loadArticle(cat, file) {
+            currentFile = file;
+            const c = document.getElementById('pageContent');
+            c.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+
+            try {
+                const resp = await fetch(`${cat}/${file}?t=${Date.now()}`);
+                if (!resp.ok) throw new Error('Not found');
+                const md = await resp.text();
+                const cleanMd = md.replace(/^---[\s\S]*?---\n*/, '');
+                const html = marked.parse(cleanMd);
+                
+                const display = file.replace('.md', '').replace(/-/g, '/');
+                const info = categories[cat];
+
+                c.innerHTML = `
+                    <div class="markdown-body">
+                        <div class="article-meta">
+                            <span class="tag blue">${info.emoji} ${info.name}</span>
+                            <span class="tag green">${display}</span>
+                        </div>
+                        ${html}
+                        <div class="article-nav">
+                            <a id="prevArticle" href="#">← Previous</a>
+                            <a href="#" onclick="showCategory('${cat}'); return false;">↑ Back to list</a>
+                            <a id="nextArticle" href="#">Next →</a>
+                        </div>
+                    </div>
+                `;
+
+                // Previous/Next navigation
+                const list = articles[cat] || [];
+                const sorted = [...list].sort();
+                const idx = sorted.indexOf(file);
+                const prev = document.getElementById('prevArticle');
+                const next = document.getElementById('nextArticle');
+                if (idx > 0) {
+                    const prevFile = sorted[idx - 1];
+                    prev.href = `#/${cat}/${prevFile}`;
+                    prev.onclick = (e) => { e.preventDefault(); loadArticle(cat, prevFile); };
+                } else {
+                    prev.classList.add('disabled');
+                    prev.onclick = (e) => e.preventDefault();
+                }
+                if (idx < sorted.length - 1) {
+                    const nextFile = sorted[idx + 1];
+                    next.href = `#/${cat}/${nextFile}`;
+                    next.onclick = (e) => { e.preventDefault(); loadArticle(cat, nextFile); };
+                } else {
+                    next.classList.add('disabled');
+                    next.onclick = (e) => e.preventDefault();
+                }
+
+                // Update active in sidebar
+                document.querySelectorAll('.sidebar-cat-list a').forEach(a => {
+                    a.classList.toggle('active', a.dataset.cat === cat && a.dataset.file === file);
+                });
+
+                history.replaceState(null, '', `#/${cat}/${file}`);
+                window.scrollTo(0, 0);
+
+            } catch (e) {
+                c.innerHTML = `
+                    <div class="error-state">
+                        <div class="emoji">🔍</div>
+                        <h3>Article not found</h3>
+                        <p>Could not load <code>${cat}/${file}</code></p>
+                        <p><a href="#" onclick="showCategory('${cat}'); return false;">← Back to ${categories[cat]?.name || cat}</a></p>
+                    </div>
+                `;
+            }
+        }
+
+        function closeSidebar() {
+            document.getElementById('sidebar').classList.remove('open');
+            document.getElementById('sidebarOverlay').classList.remove('open');
+        }
+
+        // Theme toggle
+        document.getElementById('themeToggle').addEventListener('click', () => {
+            const html = document.documentElement;
+            const isDark = html.getAttribute('data-theme') === 'dark';
+            html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            document.getElementById('themeToggle').textContent = isDark ? '☀️' : '🌙';
+        });
+
+        // Sidebar toggle
+        document.getElementById('sidebarToggle').addEventListener('click', () => {
+            document.getElementById('sidebar').classList.toggle('open');
+            document.getElementById('sidebarOverlay').classList.toggle('open');
+        });
+        document.getElementById('sidebarOverlay').addEventListener('click', closeSidebar);
+
+        // Hash routing
+        window.addEventListener('hashchange', () => {
+            const hash = location.hash.slice(1);
+            if (!hash) { showHome(); return; }
+            const parts = hash.split('/');
+            if (parts.length >= 1 && categories[parts[0]]) {
+                showCategory(parts[0]);
+                if (parts[1]) loadArticle(parts[0], parts[1]);
+            } else {
+                showHome();
+            }
+        });
+
+        // Init
+        marked.setOptions({ breaks: true, gfm: true });
+        init();
+    </script>
+</body>
+</html>

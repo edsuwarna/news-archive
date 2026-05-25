@@ -12,8 +12,27 @@ ekonomi/            → Indonesian & Global Economy updates
 k8s-security/       → Kubernetes Security briefings
 tech-foundations/   → CNCF, Apache, Linux & OpenInfra Foundation updates
 f1/                 → Formula 1 race schedule & post-session analysis
-motogp/             → MotoGP race schedule & post-session analysis
+motogp/              → MotoGP race schedule & post-session analysis
 ```
+
+### 🌐 Web Viewer
+
+Access the news archive online: **`https://news-archive.pages.dev`**
+
+A client-side SPA (`index.html`) automatically lists all articles by category. No build step needed — just open the page.
+
+### 📋 Updating Article Index
+
+After cron jobs push new articles, regenerate the index:
+
+```bash
+python3 scripts/generate-articles-json.py
+git add articles.json
+git commit -m "Update article index"
+git push
+```
+
+The SPA will reflect new articles immediately after deploy.
 
 ## 🤖 How It Works
 
