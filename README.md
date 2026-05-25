@@ -21,8 +21,6 @@ Access the news archive online: **`https://news-archive-2l6.pages.dev`**
 
 A client-side SPA (`index.html`) automatically lists all articles by category. No build step needed — just open the page.
 
-Supports **🇬🇧 English** and **🇮🇩 Indonesian** — toggle language via the sidebar.
-
 ### 📋 Updating Article Index
 
 After cron jobs push new articles, regenerate the index:
