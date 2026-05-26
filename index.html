@@ -395,6 +395,9 @@
 
                 c.innerHTML = `
                     <div class="markdown-body">
+                        <div style="margin-bottom:16px">
+                            <a href="#" onclick="showCategory('${cat}'); return false;" style="color:var(--accent);text-decoration:none;font-size:13px;font-weight:500;">← Back to list</a>
+                        </div>
                         <div class="article-meta">
                             <span class="tag blue">${info.emoji} ${info.name}</span>
                             <span class="tag green">${display}</span>
