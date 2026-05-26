@@ -17,7 +17,7 @@ motogp/              → MotoGP race schedule & post-session analysis
 
 ### 🌐 Web Viewer
 
-Access the news archive online: **`https://news-archive-2l6.pages.dev`**
+Access the news archive online: **`https://news.edsuwarna.id`**
 
 A client-side SPA (`index.html`) automatically lists all articles by category. No build step needed — just open the page.
 
