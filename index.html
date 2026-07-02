@@ -203,17 +203,6 @@
         .load-more-btn .count { color: var(--text3); font-weight: 400; }
         .load-more-btn:disabled { opacity: 0.4; pointer-events: none; }
 
-        /* ─── Table of Contents ─── */
-        .toc-wrap { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; }
-        .toc-wrap .toc-title { font-size: 12px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
-        .toc-wrap .toc-list { list-style: none; padding: 0; margin: 0; }
-        .toc-wrap .toc-list li { padding: 3px 0; }
-        .toc-wrap .toc-list a { color: var(--text2); text-decoration: none; font-size: 13px; cursor: pointer; transition: color 0.15s; display: flex; align-items: center; gap: 6px; }
-        .toc-wrap .toc-list a:hover { color: var(--accent); }
-        .toc-wrap .toc-list .toc-num { font-size: 10px; font-weight: 700; color: var(--text3); background: var(--bg3); padding: 1px 6px; border-radius: 4px; flex-shrink: 0; }
-        .toc-wrap .toc-list .toc-h3 { padding-left: 20px; }
-        .toc-wrap .toc-list .toc-h3 a { font-size: 12.5px; }
-
         /* ─── Image Lightbox ─── */
         .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.25s; cursor: zoom-out; }
         .lightbox.open { opacity: 1; pointer-events: auto; }
@@ -641,7 +630,6 @@
                             <span class="tag blue">${info.icon} ${info.name}</span>
                             <span class="tag green">📅 ${display}</span>
                         </div>
-                        <div id="articleToc"></div>
                         <div id="articleBody">${enhanced}</div>
                         <div class="article-nav">
                             <a id="prevArticle" href="#">← Previous</a>
@@ -681,9 +669,6 @@
 
                 history.replaceState(null, '', `#/${cat}/${file}`);
                 window.scrollTo(0, 0);
-
-                // Generate Table of Contents
-                generateTOC();
 
                 // Add copy buttons to code blocks
                 addCopyButtons();
@@ -854,29 +839,6 @@
         function closeSidebar() {
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('sidebarOverlay').classList.remove('open');
-        }
-
-        /* ─── Table of Contents ─── */
-        function generateTOC() {
-            const tocContainer = document.getElementById('articleToc');
-            if (!tocContainer) return;
-            const body = document.getElementById('articleBody');
-            if (!body) return;
-            const headings = body.querySelectorAll('h2, h3');
-            if (headings.length < 3) { tocContainer.style.display = 'none'; return; }
-
-            let html = '<div class="toc-wrap"><div class="toc-title">📋 Table of Contents</div><ul class="toc-list">';
-            headings.forEach(h => {
-                const text = h.textContent.trim();
-                if (!text) return;
-                const id = 'toc-' + Math.random().toString(36).slice(2, 8);
-                h.id = id;
-                const num = h.tagName === 'H2' ? '' : '<span class="toc-num">·</span>';
-                const cls = h.tagName === 'H3' ? 'toc-h3' : '';
-                html += `<li class="${cls}"><a onclick="document.getElementById('${id}').scrollIntoView({behavior:'smooth'});event.preventDefault()">${num} ${text}</a></li>`;
-            });
-            html += '</ul></div>';
-            tocContainer.innerHTML = html;
         }
 
         /* ─── Copy Code Buttons ─── */
