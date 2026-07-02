@@ -159,6 +159,8 @@
         .news-num { font-size: 11px; font-weight: 700; color: var(--text3); background: var(--bg3); padding: 2px 8px; border-radius: 6px; flex-shrink: 0; }
         .news-icon { display: flex; align-items: center; flex-shrink: 0; color: var(--accent); }
         .news-icon svg { width: 18px; height: 18px; }
+        .list-icon { display: inline-flex; align-items: center; vertical-align: -2px; margin-right: 4px; color: var(--accent); }
+        .list-icon svg { width: 14px; height: 14px; }
         .news-card-title { font-size: 16px !important; font-weight: 700 !important; margin: 0 !important; padding: 0 !important; border: none !important; flex: 1; }
         .news-card-body { font-size: 14px; color: var(--text2); line-height: 1.65; }
         .news-card-body p { margin: 0 0 8px; }
@@ -210,6 +212,14 @@
                 return { file: item, title: dateStr, excerpt: '', count: 0 };
             }
             return item;
+        }
+
+        function stripEmoji(text) {
+            return text
+                .replace(/^\d+[.)]\s*/, '')
+                .replace(/[\p{Extended_Pictographic}\uFE0F]+/gu, '')
+                .replace(/\s+/g, ' ')
+                .trim();
         }
 
         const categoryOrder = ['devops', 'baremetal', 'selfhosted', 'ekonomi', 'k8s-security', 'tech-foundations'];
@@ -312,7 +322,8 @@
                     a.href = `#/${cat}/${file}`;
                     // Format date: remove .md extension and show nicely
                     const display = item.title || file.replace('.md', '').replace(/-/g, '/');
-                    a.textContent = display;
+                    const cleanTitle = stripEmoji(display);
+                    a.innerHTML = `${info.icon} ${cleanTitle}`;
                     a.dataset.cat = cat;
                     a.dataset.file = file;
                     a.onclick = (e) => {
@@ -374,7 +385,7 @@
                 latest.forEach(({ cat, item, dateStr }) => {
                     const info = categories[cat];
                     const displayDate = dateStr.replace(/-/g, '/');
-                    const title = item.title || `${info.name} — ${displayDate}`;
+                    const title = stripEmoji(item.title) || `${info.name} — ${displayDate}`;
                     html += `
                         <div class="latest-item" onclick="showCategory('${cat}'); loadArticle('${cat}', '${item.file}');">
                             <span class="li-icon">${info.icon}</span>
@@ -453,16 +464,16 @@
             sorted.forEach(item => {
                 const file = item.file;
                 const displayDate = file.replace('.md', '').replace(/-/g, '/');
-                const title = item.title || `${info.name} — ${displayDate}`;
+                const title = stripEmoji(item.title) || `${info.name} — ${displayDate}`;
                 const excerpt = item.excerpt || '';
                 const a = document.createElement('a');
                 a.className = 'article-item';
                 a.href = `#/${cat}/${file}`;
                 a.innerHTML = `
                     <div class="date">📅 ${displayDate}</div>
-                    <div class="title">${title}</div>
+                    <div class="title"><span class="list-icon">${info.icon}</span> ${title}</div>
                     ${excerpt ? `<div class="excerpt">${excerpt}</div>` : ''}
-                    <div class="meta-info">${item.count ? `📄 ${item.count} article${item.count > 1 ? 's' : ''}` : ''} ${info.icon} ${info.name}</div>
+                    <div class="meta-info">${item.count ? `${item.count} article${item.count > 1 ? 's' : ''}` : ''}</div>
                 `;
                 a.onclick = (e) => {
                     e.preventDefault();
@@ -596,7 +607,7 @@
                     const info = categories[cat];
                     flat.push({
                         cat, file: item.file,
-                        title: item.title || item.file.replace('.md','').replace(/-/g,'/'),
+                        title: stripEmoji(item.title || item.file.replace('.md','').replace(/-/g,'/')),
                         excerpt: item.excerpt || '',
                         count: item.count || 0,
                         categoryIcon: info.icon,
@@ -677,7 +688,7 @@
                 /<h2[^>]*>(\d+)\.\s*(.*?)<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/gi,
                 (match, num, titleText, content) => {
                     // Strip any emoji from the title text
-                    const cleanTitle = titleText.replace(/^\p{Emoji}\s*/u, '').trim();
+                    const cleanTitle = titleText.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, '').trim();
                     
                     // Check if last paragraph has 🔗 link -> move to card-link
                     let bodyContent = content;
