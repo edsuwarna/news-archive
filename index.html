@@ -169,9 +169,69 @@
         .news-card-link { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
         .news-card-link a { display: inline-flex; align-items: center; gap: 6px; background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 6px 14px; font-size: 12.5px; font-weight: 500; color: var(--accent); text-decoration: none; transition: all 0.15s; }
         .news-card-link a:hover { background: #1f6feb22; border-color: var(--accent); text-decoration: none; }
+
+        /* ─── Progress Bar ─── */
+        .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--green)); z-index: 999; width: 0%; transition: width 0.1s linear; }
+
+        /* ─── Back to Top ─── */
+        .back-to-top { position: fixed; bottom: 24px; right: 24px; z-index: 300; width: 40px; height: 40px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--border); color: var(--text2); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all 0.2s; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+        .back-to-top.visible { opacity: 1; pointer-events: auto; }
+        .back-to-top:hover { background: var(--bg3); color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+
+        /* ─── Page Transitions ─── */
+        .page-fade { animation: pageFadeIn 0.2s ease-out; }
+        @keyframes pageFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* ─── Breadcrumb ─── */
+        .breadcrumb { display: flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--text3); margin-bottom: 16px; flex-wrap: wrap; }
+        .breadcrumb a { color: var(--text2); text-decoration: none; cursor: pointer; transition: color 0.15s; }
+        .breadcrumb a:hover { color: var(--accent); text-decoration: underline; }
+        .breadcrumb .sep { color: var(--text3); font-size: 10px; }
+        .breadcrumb .current { color: var(--text); font-weight: 500; }
+
+        /* ─── Copy Code Button ─── */
+        .code-wrap { position: relative; }
+        .code-wrap .copy-btn { position: absolute; top: 8px; right: 8px; background: var(--bg3); border: 1px solid var(--border); border-radius: 6px; color: var(--text3); font-size: 11px; padding: 4px 10px; cursor: pointer; font-family: inherit; opacity: 0; transition: opacity 0.2s; }
+        .code-wrap:hover .copy-btn { opacity: 1; }
+        .code-wrap .copy-btn:hover { color: var(--accent); border-color: var(--accent); background: var(--bg2); }
+        .code-wrap .copy-btn.copied { color: var(--green); border-color: var(--green); }
+
+        /* ─── Load More ─── */
+        .load-more-wrap { text-align: center; margin-top: 16px; }
+        .load-more-btn { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 28px; color: var(--text2); font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+        .load-more-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--bg3); }
+        .load-more-btn .count { color: var(--text3); font-weight: 400; }
+        .load-more-btn:disabled { opacity: 0.4; pointer-events: none; }
+
+        /* ─── Table of Contents ─── */
+        .toc-wrap { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; }
+        .toc-wrap .toc-title { font-size: 12px; font-weight: 700; color: var(--text3); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+        .toc-wrap .toc-list { list-style: none; padding: 0; margin: 0; }
+        .toc-wrap .toc-list li { padding: 3px 0; }
+        .toc-wrap .toc-list a { color: var(--text2); text-decoration: none; font-size: 13px; cursor: pointer; transition: color 0.15s; display: flex; align-items: center; gap: 6px; }
+        .toc-wrap .toc-list a:hover { color: var(--accent); }
+        .toc-wrap .toc-list .toc-num { font-size: 10px; font-weight: 700; color: var(--text3); background: var(--bg3); padding: 1px 6px; border-radius: 4px; flex-shrink: 0; }
+        .toc-wrap .toc-list .toc-h3 { padding-left: 20px; }
+        .toc-wrap .toc-list .toc-h3 a { font-size: 12.5px; }
+
+        /* ─── Image Lightbox ─── */
+        .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.25s; cursor: zoom-out; }
+        .lightbox.open { opacity: 1; pointer-events: auto; }
+        .lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; box-shadow: 0 8px 40px rgba(0,0,0,0.5); transform: scale(0.9); transition: transform 0.25s; }
+        .lightbox.open img { transform: scale(1); }
+        .lightbox .lb-close { position: absolute; top: 16px; right: 20px; font-size: 28px; color: #fff; cursor: pointer; opacity: 0.7; transition: opacity 0.15s; background: none; border: none; font-family: inherit; }
+        .lightbox .lb-close:hover { opacity: 1; }
+
+        /* Article image clickable */
+        .markdown-body img { cursor: zoom-in; }
+
+        /* ─── Category badge on home ─── */
+        .cat-card .meta .count-badge { display: inline-block; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 10px; margin-left: 4px; }
     </style>
 </head>
 <body>
+    <div class="progress-bar" id="progressBar"></div>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
     <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">☰</button>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
 
@@ -192,6 +252,11 @@
         <main class="content" id="content">
             <div id="pageContent"></div>
         </main>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lb-close" id="lightboxClose">✕</button>
+        <img id="lightboxImg" src="" alt="">
     </div>
 
     <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
@@ -421,8 +486,19 @@
             }
             c.innerHTML = html;
 
+            // Count badges on home page cards
+            categoryOrder.forEach(cat => {
+                const count = (articles[cat] || []).length;
+                const idx = categoryOrder.indexOf(cat) + 1;
+                const badge = document.querySelector(`.cat-card:nth-child(${idx}) .meta`);
+                if (badge && count > 0) {
+                    badge.innerHTML += ` <span class="count-badge">${count}</span>`;
+                }
+            });
+
             document.querySelectorAll('.sidebar-cat-list a').forEach(a => a.classList.remove('active'));
             history.replaceState(null, '', '#');
+            c.classList.add('page-fade');
         }
 
         async function showCategory(cat) {
@@ -483,6 +559,22 @@
                 };
                 itemsDiv.appendChild(a);
             });
+
+            // Load More: show first 10, hide rest
+            const LOAD_MORE_COUNT = 10;
+            const allItems = itemsDiv.querySelectorAll('.article-item');
+            if (allItems.length > LOAD_MORE_COUNT) {
+                allItems.forEach((item, i) => { if (i >= LOAD_MORE_COUNT) item.style.display = 'none'; });
+                const loadMore = document.createElement('div');
+                loadMore.className = 'load-more-wrap';
+                loadMore.innerHTML = `<button class="load-more-btn" onclick="(function(btn){var list=btn.closest('.article-list').querySelector('#articleItems');list.querySelectorAll('.article-item[style*=\"display:none\"]').forEach(function(el){el.style.display=''});btn.parentElement.innerHTML='<span style=\"color:var(--text3);font-size:13px\">Showing all ${allItems.length} articles</span>';})(this)">Show more <span class="count">(${allItems.length - LOAD_MORE_COUNT} remaining)</span></button>`;
+                itemsDiv.parentElement.appendChild(loadMore);
+            }
+
+            document.querySelectorAll('.sidebar-cat-list a').forEach(a => a.classList.remove('active'));
+            document.querySelector(`.sidebar-cat-list a[data-cat="${cat}"]`)?.classList.add('active');
+            history.replaceState(null, '', `#/${cat}`);
+            c.classList.add('page-fade');
         }
 
         async function discoverArticlesOnDemand(cat) {
@@ -537,15 +629,20 @@
                 const info = categories[cat];
 
                 c.innerHTML = `
-                    <div class="markdown-body">
-                        <div style="margin-bottom:16px">
-                            <a href="#" onclick="showCategory('${cat}'); return false;" style="color:var(--accent);text-decoration:none;font-size:13px;font-weight:500;">← Back to list</a>
+                    <div class="markdown-body page-fade">
+                        <div class="breadcrumb">
+                            <a onclick="showHome()">🏠 Home</a>
+                            <span class="sep">›</span>
+                            <a onclick="showCategory('${cat}')">${info.icon} ${info.name}</a>
+                            <span class="sep">›</span>
+                            <span class="current">${display}</span>
                         </div>
                         <div class="article-meta">
                             <span class="tag blue">${info.icon} ${info.name}</span>
-                            <span class="tag green">${display}</span>
+                            <span class="tag green">📅 ${display}</span>
                         </div>
-                        ${enhanced}
+                        <div id="articleToc"></div>
+                        <div id="articleBody">${enhanced}</div>
                         <div class="article-nav">
                             <a id="prevArticle" href="#">← Previous</a>
                             <a href="#" onclick="showCategory('${cat}'); return false;">↑ Back to list</a>
@@ -584,6 +681,23 @@
 
                 history.replaceState(null, '', `#/${cat}/${file}`);
                 window.scrollTo(0, 0);
+
+                // Generate Table of Contents
+                generateTOC();
+
+                // Add copy buttons to code blocks
+                addCopyButtons();
+
+                // Image lightbox
+                document.querySelectorAll('.markdown-body img').forEach(img => {
+                    img.addEventListener('click', function() {
+                        document.getElementById('lightboxImg').src = this.src;
+                        document.getElementById('lightbox').classList.add('open');
+                    });
+                });
+
+                // Page fade
+                c.classList.add('page-fade');
 
             } catch (e) {
                 c.innerHTML = `
@@ -741,6 +855,85 @@
             document.getElementById('sidebar').classList.remove('open');
             document.getElementById('sidebarOverlay').classList.remove('open');
         }
+
+        /* ─── Table of Contents ─── */
+        function generateTOC() {
+            const tocContainer = document.getElementById('articleToc');
+            if (!tocContainer) return;
+            const body = document.getElementById('articleBody');
+            if (!body) return;
+            const headings = body.querySelectorAll('h2, h3');
+            if (headings.length < 3) { tocContainer.style.display = 'none'; return; }
+
+            let html = '<div class="toc-wrap"><div class="toc-title">📋 Table of Contents</div><ul class="toc-list">';
+            headings.forEach(h => {
+                const text = h.textContent.trim();
+                if (!text) return;
+                const id = 'toc-' + Math.random().toString(36).slice(2, 8);
+                h.id = id;
+                const num = h.tagName === 'H2' ? '' : '<span class="toc-num">·</span>';
+                const cls = h.tagName === 'H3' ? 'toc-h3' : '';
+                html += `<li class="${cls}"><a onclick="document.getElementById('${id}').scrollIntoView({behavior:'smooth'});event.preventDefault()">${num} ${text}</a></li>`;
+            });
+            html += '</ul></div>';
+            tocContainer.innerHTML = html;
+        }
+
+        /* ─── Copy Code Buttons ─── */
+        function addCopyButtons() {
+            document.querySelectorAll('.markdown-body pre').forEach(pre => {
+                if (pre.parentElement.classList.contains('code-wrap')) return;
+                const wrap = document.createElement('div');
+                wrap.className = 'code-wrap';
+                pre.parentNode.insertBefore(wrap, pre);
+                wrap.appendChild(pre);
+                const btn = document.createElement('button');
+                btn.className = 'copy-btn';
+                btn.textContent = 'Copy';
+                btn.onclick = function() {
+                    const code = this.parentElement.querySelector('code')?.textContent || this.parentElement.textContent;
+                    navigator.clipboard.writeText(code.trim()).then(() => {
+                        this.textContent = 'Copied!';
+                        this.classList.add('copied');
+                        setTimeout(() => { this.textContent = 'Copy'; this.classList.remove('copied'); }, 2000);
+                    }).catch(() => {
+                        this.textContent = 'Failed';
+                    });
+                };
+                wrap.appendChild(btn);
+            });
+        }
+
+        /* ─── Scroll Listener ─── */
+        let scrollRAF = null;
+        window.addEventListener('scroll', () => {
+            if (scrollRAF) return;
+            scrollRAF = requestAnimationFrame(() => {
+                scrollRAF = null;
+                const scrollTop = window.scrollY;
+                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+                const bar = document.getElementById('progressBar');
+                if (bar) bar.style.width = Math.min(progress, 100) + '%';
+                const btt = document.getElementById('backToTop');
+                if (btt) btt.classList.toggle('visible', scrollTop > 400);
+            });
+        });
+
+        /* ─── Back to Top ─── */
+        document.getElementById('backToTop')?.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        /* ─── Lightbox ─── */
+        document.getElementById('lightbox')?.addEventListener('click', function(e) {
+            if (e.target === this || e.target.id === 'lightboxClose') {
+                this.classList.remove('open');
+            }
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') document.getElementById('lightbox')?.classList.remove('open');
+        });
 
         // Theme toggle
         document.getElementById('themeToggle').addEventListener('click', () => {
