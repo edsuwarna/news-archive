@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>News Archive</title>
+    <link>https://news.edsuwarna.id</link>
+    <description>Automated news aggregation archive — DevOps, Economy, Security, F1, MotoGP and more</description>
+    <language>en</language>
+    <lastBuildDate>Thu, 02 Jul 2026 01:59:53 +0000</lastBuildDate>
+    <atom:link href="https://news.edsuwarna.id/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — ️ Dell Unveils EPYC Venice PowerEdge 18th Gen Servers with Up to 256 Cores</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>At Dell Technologies World 2026, Dell showcased its upcoming 18th generation of PowerEdge servers built on AMD's 6th-gen EPYC "Venice" processors (TSMC N2 node, up to 256 cores). The lineup includes the liquid-cooled M9825 flagship for high-densit...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/dell-showcases-upcoming-epyc-venice-poweredge-systems-adds-new-5-8pb-powerstore-elite/">Top 10 Bare-Metal Server News — May 27, 2026 — ️ Dell Unveils EPYC Venice PowerEdge 18th Gen Servers with Up to 256 Cores</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — NVIDIA Vera ARM CPU Posts "Best Performance Ever Seen on ARM" in Benchmarks</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Phoronix published benchmarks of NVIDIA's Vera CPU, built on Olympus cores, calling it the best-performing ARM CPU ever tested. This is a major milestone for ARM architecture in the bare-metal and data center space, as Vera targets server-class wo...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.phoronix.com/review/nvidia-vera-benchmarks">Top 10 Bare-Metal Server News — May 27, 2026 — NVIDIA Vera ARM CPU Posts "Best Performance Ever Seen on ARM" in Benchmarks</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — AWS Launches EC2 M3 Ultra Mac Instances — Bare-Metal Mac in the Cloud</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>AWS announced general availability of EC2 M3 Ultra Mac instances, built on Apple M3 Ultra Mac Studio with a 28-core CPU, 60-core GPU, 32-core Neural Engine, and 256GB unified memory. Compared to the previous M4 Max instances, M3 Ultra delivers 2x...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-at-1-year-claude-platform-on-aws-ec2-m3-ultra-mac-instances-and-more-may-18-2026/">Top 10 Bare-Metal Server News — May 27, 2026 — AWS Launches EC2 M3 Ultra Mac Instances — Bare-Metal Mac in the Cloud</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — Supermicro Ships 36-Core Intel Xeon 6 SoC Server with Dual 100GbE</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>ServeTheHome reviewed the Supermicro SYS-112D-36C-FN3P, a short-depth 1U server packing a 36-core Intel Xeon 6 SoC (Granite Rapids-D) with two QSFP28 100GbE ports. At ~15.7 inches deep, this is purpose-built for edge racks and compact data center...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/supermicro-sys-112d-36c-fn3p-review-a-36-core-intel-xeon-6-soc-server-with-2x-100gbe/">Top 10 Bare-Metal Server News — May 27, 2026 — Supermicro Ships 36-Core Intel Xeon 6 SoC Server with Dual 100GbE</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — Equal1 Debuts Single-Rack Quantum Computer at Dell Tech World 2026</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Irish startup Equal1 demonstrated a quantum computer that fits entirely within a standard 19" rack — a first for the industry. Using silicon spin qubits fabricated with standard CMOS processes, the system integrates classical Dell PowerEdge server...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/equal1-single-rack-quantum-computer-at-dell-tech-world-2026/">Top 10 Bare-Metal Server News — May 27, 2026 — Equal1 Debuts Single-Rack Quantum Computer at Dell Tech World 2026</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — ️ Equinix Details Direct-to-Chip Liquid Cooling Anatomy</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Equinix published a deep-dive article on direct-to-chip liquid cooling systems for data centers, detailing the architecture, fluid distribution, and thermal management required. As AI and HPC workloads push rack densities ever higher (Dell's new r...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/05/07/the-anatomy-of-a-direct-to-chip-liquid-cooling-system/">Top 10 Bare-Metal Server News — May 27, 2026 — ️ Equinix Details Direct-to-Chip Liquid Cooling Anatomy</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — ️ Equinix Makes the Case: "Cloud Isn't Right for Everything"</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Equinix published a strong opinion piece arguing for a "mindful approach to infrastructure," highlighting workloads where colocation and bare-metal outperform public cloud — from predictable compute loads to data sovereignty requirements. This ref...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/04/29/cloud-isnt-right-for-everything-you-need-a-mindful-approach-to-infrastructure/">Top 10 Bare-Metal Server News — May 27, 2026 — ️ Equinix Makes the Case: "Cloud Isn't Right for Everything"</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — Dell PowerStore Elite: 5.8PB Storage Appliance with PCIe Gen5 and QLC Parity</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Dell launched the PowerStore Elite, a 3U storage appliance housing up to 40 E3 form-factor SSDs for 5.8PB of raw capacity. The system makes a two-generation I/O jump from PCIe Gen3 to Gen5 and uses QLC drives that Dell claims deliver TLC-level per...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/dell-showcases-upcoming-epyc-venice-poweredge-systems-adds-new-5-8pb-powerstore-elite/">Top 10 Bare-Metal Server News — May 27, 2026 — Dell PowerStore Elite: 5.8PB Storage Appliance with PCIe Gen5 and QLC Parity</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — Ubicloud: Open-Source Alternative to AWS Surpasses 12K GitHub Stars</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Ubicloud, an open-source alternative to AWS providing elastic compute, block storage, managed Postgres, K8s, and AI inference services, continues gaining traction (12K+ GitHub stars). The platform can run across bare-metal infrastructure, offering...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://github.com/ubicloud/ubicloud">Top 10 Bare-Metal Server News — May 27, 2026 — Ubicloud: Open-Source Alternative to AWS Surpasses 12K GitHub Stars</source>
+    </item>
+    <item>
+      <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — Equinix: Agentic AI Is Reshaping the AI Hardware Equation</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-05-27.md</guid>
+      <description>Equinix examines how agentic AI workloads — autonomous AI agents that require real-time inference, low-latency response, and sustained compute — are changing hardware requirements for data centers. Unlike batch inference, agentic AI demands contin...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/05/12/agentic-ai-is-changing-the-ai-hardware-equation/">Top 10 Bare-Metal Server News — May 27, 2026 — Equinix: Agentic AI Is Reshaping the AI Hardware Equation</source>
+    </item>
+    <item>
+      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
+      <link>https://news.edsuwarna.id/#/motogp/2026-05-27.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-05-27.md</guid>
+      <description>🏁 MOTOGP REMINDER: ITALIAN GP THIS WEEKEND! 🏁</description>
+      <category>MotoGP</category>
+      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/motogp/2026-05-27.md">📅 WEEKEND SCHEDULE:</source>
+    </item>
+    <item>
+      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
+      <link>https://news.edsuwarna.id/#/motogp/2026-06-24.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-24.md</guid>
+      <description>🏁 MOTOGP REMINDER: DUTCH GP THIS WEEKEND! 🏁</description>
+      <category>MotoGP</category>
+      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/motogp/2026-06-24.md">📅 WEEKEND SCHEDULE:</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — HPE Discover 2026: ProLiant Gen12, Full Juniper Integration, &amp; AI-Native Networking</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>HPE kicked off its 2026 keynote in Las Vegas with a barrage of hardware announcements. The HPE ProLiant Gen12 series (including the DL394 Gen12 powered by NVIDIA) leads the server lineup, alongside the ProLiant Compute EL2000 edge box on Intel Xeo...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Tensordyne Napier: 3nm AI Processor with Logarithmic Math</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Tensordyne announced Napier, a 3nm TSMC AI inference processor with 138 billion transistors and a radically different math architecture — replacing traditional multipliers with logarithmic additions. The chip delivers 2.1 petaflops per die, 256MB...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Senao SX906: Intel Xeon 6 SoC DPU — A Server on a PCIe Card</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>At Computex 2026, Senao showed the SX906 SmartNIC/DPU, packing an Intel Xeon 6 SoC (Granite Rapids-D) with 24–38 P-cores, up to 200Gbps network throughput, 24 PCIe Gen5 lanes, and an onboard ASPEED AST2600 BMC. This is not your typical low-power D...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — ️ Lambda Launches Bare Metal Instances — API-Driven BMaaS on GB300 NVL72</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Lambda introduced Bare Metal Instances, combining direct hardware access with cloud-grade API lifecycle management. No hypervisor, no third-party abstraction — just direct CPU, memory, GPU, disk, and TPM access. The architecture uses NVIDIA BlueFi...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Lambda Unboxes NVIDIA's First Co-Packaged Optics InfiniBand Switch</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Lambda took delivery of one of NVIDIA's first Quantum-X InfiniBand Photonics Q3450-LD CPO switches and published the unboxing. The switch saves 3.05 kW per unit vs. standard pluggable-optics switches — recovering enough power for +470 GPUs in a 10...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — MLPerf Training v6.0: Lambda Leads on GB300 NVL72 and HGX B200</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Lambda posted the fastest LLM training results in MLPerf Training v6.0, achieving 18.7% faster Llama 3.1 8B training on NVIDIA GB300 NVL72 and the fastest Mixture-of-Experts training on NVIDIA HGX B200. These results validate the rack-scale, bare-...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Verizon &amp; Equinix: Building the Network Foundation for Enterprise AI</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Equinix and Verizon are partnering on software-defined interconnection designed specifically for enterprise AI workloads. The collaboration targets low-latency, high-bandwidth connectivity between colocation facilities and carrier networks, enabli...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Intel Compute Runtime Gains Early Nova Lake (Xe3P) Support</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Intel's open-source Compute Runtime stack (for OpenCL and oneAPI Level Zero) now advertises early support for Nova Lake — Intel's next-generation CPU platform with Xe3P graphics architecture. The Intel Compute Runtime 26.22.38646.4 release marks N...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Lambda Partners with Hudson River Trading for Quant Research HPC</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>Quantitative trading giant Hudson River Trading turned to Lambda as on-premise infrastructure reached its capacity ceiling. HRT is deploying Lambda's NVIDIA accelerated infrastructure — including HGX B200 systems, advanced networking, storage, and...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — Linux 7.2 Slashes Container Exit/Unmount Latency for Bare-Metal K8s</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
+      <description>The Linux 7.2 kernel merged a patch series that addresses a race condition causing "VFS: Busy inodes after unmount" errors during container teardown — and delivers a major optimization that significantly lowers container unmounting latency. For ba...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
+      <link>https://news.edsuwarna.id/#/motogp/2026-06-17.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-17.md</guid>
+      <description>🏁 MOTOGP REMINDER: CZECH GP THIS WEEKEND! 🏁</description>
+      <category>MotoGP</category>
+      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/motogp/2026-06-17.md">📅 WEEKEND SCHEDULE:</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud Infrastructure News — June 10, 2026</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-10.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-10.md</guid>
+      <description>1. 🐛 Miasma Worm Forces GitHub to Takedown 73 Microsoft Repos</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/devops/2026-06-10.md">DevOps/SRE/Cloud Infrastructure News — June 10, 2026</source>
+    </item>
+    <item>
+      <title>🔒 Kubernetes Security Briefing — 2026-06-10</title>
+      <link>https://news.edsuwarna.id/#/k8s-security/2026-06-10.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/k8s-security/2026-06-10.md</guid>
+      <description>| CVE | Component | Severity | Summary | Date |</description>
+      <category>K8s Security</category>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/k8s-security/2026-06-10.md">Kubernetes Security Briefing — 2026-06-10</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 6+ Clearwater Forest is Here — 288 Cores on 18A</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Intel officially launched the Xeon 6900E+ series (Clearwater Forest) at Computex 2026. This is Intel's first 2nm-class Xeon built on the Intel 18A process, packing up to 288 efficiency cores per socket. The new lineup brings faster memory support...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/intel-xeon-6-clearwater-forest-is-out/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 6+ Clearwater Forest is Here — 288 Cores on 18A</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — NVIDIA Vera Rubin Now in Full Production — Next-Gen GPU for AI Workloads</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>At Computex 2026, NVIDIA announced that its next-generation Vera Rubin GPU platform has entered full production. The company also revealed that its high-end DGX Station systems will soon support Windows, with availability in Q4 2026. For the bare-...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/nvidia-computex-2026-news-bytes-vera-rubin-now-in-production-dgx-station-gets-windows/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — NVIDIA Vera Rubin Now in Full Production — Next-Gen GPU for AI Workloads</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 7 Diamond Rapids Slated for 2027 — 192 Cores, No Hyperthreading</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Intel's next-next-gen server platform, Xeon 7 "Diamond Rapids" , is now officially targeting a 2027 launch. The platform is expected to push core counts to 192 cores and will reportedly drop Hyperthreading — a significant architectural shift for s...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/intel-xeon-7-diamond-rapids-now-slated-for-2027/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 7 Diamond Rapids Slated for 2027 — 192 Cores, No Hyperthreading</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Launches Bare Metal Instances — Full Hardware Control via API</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Lambda Labs unveiled Lambda Bare Metal Instances, giving users complete hardware control with API-driven provisioning. This is a direct BMaaS (Bare Metal as a Service) play — you get a dedicated physical server with no hypervisor, full root access...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://lambda.ai/blog/lambda-bare-metal-instances">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Launches Bare Metal Instances — Full Hardware Control via API</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Closes $1 Billion Credit Facility for Gigawatt-Scale AI Infrastructure</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Lambda secured a $1 billion senior secured credit facility to fund its massive AI infrastructure expansion. The company is targeting gigawatt-scale data center capacity and has been assembling a leadership team to match. For the bare-metal ecosyst...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-credit-facility">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Closes $1 Billion Credit Facility for Gigawatt-Scale AI Infrastructure</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Equinix Deep-Dives Direct-to-Chip Liquid Cooling Architecture</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Equinix published a detailed technical breakdown of direct-to-chip liquid cooling systems. As AI workload density climbs, traditional air cooling can't keep up with the thermal demands of modern GPUs and high-core-count CPUs. The article covers co...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/05/07/the-anatomy-of-a-direct-to-chip-liquid-cooling-system/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Equinix Deep-Dives Direct-to-Chip Liquid Cooling Architecture</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Agentic AI Is Changing the AI Hardware Equation</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Equinix argues that the rise of agentic AI (autonomous AI agents that chain tasks) is reshaping hardware requirements. Enterprises that bought GPUs assuming capacity alone was the answer are hitting a new bottleneck: latency, interconnect bandwidt...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/05/12/agentic-ai-is-changing-the-ai-hardware-equation/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Agentic AI Is Changing the AI Hardware Equation</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Marvell Computex Keynote: AI Data Center Connectivity at 1.024 Tbps</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Marvell's Computex 2026 keynote focused on the need for massive connectivity in AI data centers. The company unveiled switch silicon capable of 1.024 Tbps per port with high radix, low latency, and low power — exactly what AI workloads demand. For...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/marvell-computex-2026-keynote-live-coverage/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Marvell Computex Keynote: AI Data Center Connectivity at 1.024 Tbps</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Diamond Rapids EDAC &amp; Linux Prep Signals Server Readiness</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Phoronix reports that Intel's engineers are actively preparing the Linux kernel for Diamond Rapids, including EDAC (Error Detection and Correction) driver changes. The fact that kernel patches are landing nearly a year before launch means the plat...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.phoronix.com/news/Intel-Diamond-Rapids-EDAC-RRL">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Diamond Rapids EDAC &amp; Linux Prep Signals Server Readiness</source>
+    </item>
+    <item>
+      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — ️ Colocation vs. Cloud for Financial Services — The Pendulum Swings Back</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
+      <description>Equinix examines how financial institutions are reassessing colocation vs. cloud a decade after the initial cloud migration wave. Low latency, data sovereignty, and regulatory compliance are driving some workloads back to dedicated bare-metal in c...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/05/06/colocation-vs-cloud-for-financial-services/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — ️ Colocation vs. Cloud for Financial Services — The Pendulum Swings Back</source>
+    </item>
+    <item>
+      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
+      <link>https://news.edsuwarna.id/#/motogp/2026-06-03.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-03.md</guid>
+      <description>🏁 MOTOGP REMINDER: HUNGARIAN GP THIS WEEKEND! 🏁</description>
+      <category>MotoGP</category>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/motogp/2026-06-03.md">📅 WEEKEND SCHEDULE:</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — ️ Lambda Launches Bare Metal Instances — Full Hardware Control, API-Driven, No Hypervisor</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>Lambda has launched Bare Metal Instances combining direct, unmediated hardware access with cloud-grade API-driven lifecycle management. Powered by NVIDIA BlueField DPUs, the instances deliver no hypervisor overhead, TPM-backed security, and full c...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://lambda.ai/blog/lambda-bare-metal-instances">🔩 Bare-Metal Server News — July 1, 2026 — ️ Lambda Launches Bare Metal Instances — Full Hardware Control, API-Driven, No Hypervisor</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — AMD EPYC 8005 "Sorano" — The Biggest Server CPU Shake-Up Since Rome</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>AMD's EPYC 8005 "Sorano" uses the same SP6 socket as the EPYC 8004 "Siena" but completely transforms the performance profile — up to 84 cores / 168 threads, 384MB L3 cache, DDR5-6400 memory support, and CXL 2.0. It's a drop-in upgrade for existing...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/amd-epyc-8005-sorano-completely-changes-amd-sp6/">🔩 Bare-Metal Server News — July 1, 2026 — AMD EPYC 8005 "Sorano" — The Biggest Server CPU Shake-Up Since Rome</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — NVIDIA Co-Packaged Optics Switches Unboxed — 44% Less Network Power, Fewer Failure Points</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>Lambda unboxed one of the first NVIDIA Quantum-X InfiniBand Photonics Q3450-LD CPO switches — a breakthrough in data center networking. CPO moves optical conversion next to the switch ASIC, eliminating pluggable transceivers (which number ~655,000...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://lambda.ai/blog/unbox-one-of-nvidias-first-co-packaged-optics-samples-with-lambda">🔩 Bare-Metal Server News — July 1, 2026 — NVIDIA Co-Packaged Optics Switches Unboxed — 44% Less Network Power, Fewer Failure Points</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — Supermicro GB300 Super AI Station — Desktop AI Supercomputer in All Its Glory</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>ServeTheHome took an up-close look at the Supermicro GB300 Super AI Station displayed at Computex 2026. Powered by the NVIDIA GB300 (208 billion transistors), this system brings DGX Station-class AI compute to a desktop form factor. With liquid co...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/taking-an-up-close-look-at-the-supermicro-gb300-super-ai-station/">🔩 Bare-Metal Server News — July 1, 2026 — Supermicro GB300 Super AI Station — Desktop AI Supercomputer in All Its Glory</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — ️ Liquid-Cooled 800V DC Busbars — Power Delivery for the Next-Gen AI Data Center</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>At Computex 2026, Wiwynn and TE Connectivity showcased next-generation 800V DC power distribution for AI accelerators — where even the busbar itself is liquid-cooled. The industry is transitioning from traditional power architectures to 800V HVDC...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/liquid-cooling-a-te-connectivity-800v-dc-busbar-and-more-from-the-wiwynn-booth/">🔩 Bare-Metal Server News — July 1, 2026 — ️ Liquid-Cooled 800V DC Busbars — Power Delivery for the Next-Gen AI Data Center</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — MLPerf Training v6.0: Lambda's GB300 NVL72 Crushes LLM Training — 18.7% Faster</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>Lambda delivered the fastest Llama 3.1 8B training on NVIDIA GB300 NVL72 (11.59 minutes) and the fastest single-node HGX B200 result for GPT-OSS-20B MoE training (96.46 minutes) in MLPerf Training v6.0. This was the first MLPerf round to include m...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://lambda.ai/blog/mlperf-training-v6.0-lambda-delivers-fastest-llm-training">🔩 Bare-Metal Server News — July 1, 2026 — MLPerf Training v6.0: Lambda's GB300 NVL72 Crushes LLM Training — 18.7% Faster</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — Equinix Opens HK6 — Hong Kong's Gateway to Cross-Border AI Infrastructure</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>Equinix launched HK6, its newest International Business Exchange (IBX) data center in Hong Kong, positioned as a strategic hub for cross-border AI infrastructure. The facility addresses growing demand for sovereign data residency, low-latency conn...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/06/30/inside-equinix-hk6-hong-kongs-gateway-to-cross-border-ai-infrastructure/">🔩 Bare-Metal Server News — July 1, 2026 — Equinix Opens HK6 — Hong Kong's Gateway to Cross-Border AI Infrastructure</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — IBM Unveils Sub-1nm Nanostack Transistor — Chips Built Vertically</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>IBM outlined its Nanostack transistor architecture for the sub-1nm era (targeting the 2030s). Rather than shrinking transistors laterally, Nanostack builds upward — stacking transistor layers vertically via wafer bonding. This extends Moore's Law...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.servethehome.com/ibm-outlines-sub-1nm-nanostack-transistor-technology/">🔩 Bare-Metal Server News — July 1, 2026 — IBM Unveils Sub-1nm Nanostack Transistor — Chips Built Vertically</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — ️ The EU Data Sovereignty Gap — Cloud Repatriation Driving Bare-Metal Demand</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>Equinix published analysis on the EU data sovereignty gap — as European regulations tighten, CIOs face growing pressure to keep data within EU borders. This is driving a wave of cloud repatriation as enterprises reconsider the sovereignty implicat...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://blog.equinix.com/blog/2026/06/24/the-eu-data-sovereignty-gap-that-cios-need-to-close/">🔩 Bare-Metal Server News — July 1, 2026 — ️ The EU Data Sovereignty Gap — Cloud Repatriation Driving Bare-Metal Demand</source>
+    </item>
+    <item>
+      <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — ️ GCC 17 Lands Support for SpacemiT X100 — RISC-V Server Core Progress</title>
+      <link>https://news.edsuwarna.id/#/baremetal/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-07-01.md</guid>
+      <description>The GCC 17 compiler has added targeting support for the SpacemiT X100 RISC-V core, marking continued progress in the RISC-V server ecosystem. While still early compared to x86 and ARM, this compiler enablement is a necessary step before RISC-V ser...</description>
+      <category>Bare Metal</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.phoronix.com/news/GCC-17-SpacemiT-X100">🔩 Bare-Metal Server News — July 1, 2026 — ️ GCC 17 Lands Support for SpacemiT X100 — RISC-V Server Core Progress</source>
+    </item>
+    <item>
+      <title>📊 📊 UPDATE EKONOMI INDONESIA &amp; GLOBAL — Rabu, 1 Juli 2026</title>
+      <link>https://news.edsuwarna.id/#/ekonomi/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/ekonomi/2026-07-01.md</guid>
+      <description>- IHSG: 5,695.116 (+0.92%) 🟢</description>
+      <category>Ekonomi</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/ekonomi/2026-07-01.md">📊 UPDATE EKONOMI INDONESIA &amp; GLOBAL — Rabu, 1 Juli 2026</source>
+    </item>
+    <item>
+      <title>🔒 Kubernetes Security News — July 01, 2026</title>
+      <link>https://news.edsuwarna.id/#/k8s-security/2026-07-01.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/k8s-security/2026-07-01.md</guid>
+      <description>- Source: The Hacker News / SentinelOne</description>
+      <category>K8s Security</category>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <source url="https://news.edsuwarna.id/#/k8s-security/2026-07-01.md">Kubernetes Security News — July 01, 2026</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — ️ **AWS Lambda Introduces MicroVMs — VM-Level Isolated Sandboxes**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>AWS launched a new serverless compute primitive: Lambda MicroVMs. These provide VM-level isolated sandboxes with no shared kernel or resources between sessions, rapid launch/resume, full lifecycle control, and state preservation up to 8 hours — no...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/">DevOps/SRE/Cloud News — June 30, 2026 — ️ **AWS Lambda Introduces MicroVMs — VM-Level Isolated Sandboxes**</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — **AWS FinOps Agent Enters Public Preview**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>Amazon released AWS FinOps Agent as a managed service for cloud cost analysis and optimization. The agent helps teams track spending, identify waste, and automate cost optimization recommendations across their AWS environment — a major step in mak...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.infoq.com/news/2026/06/aws-finops-agent/">DevOps/SRE/Cloud News — June 30, 2026 — **AWS FinOps Agent Enters Public Preview**</source>
+    </item>
+  </channel>
+</rss>
