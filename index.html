@@ -682,15 +682,12 @@
         function enhanceArticleContent(html, cat) {
             const catInfo = categories[cat];
             const catIcon = catInfo ? catInfo.icon : icons.devops;
-            // Wrap each numbered news item (h2 + following content) in a card
-            // Pattern: <h2>N. ...</h2> ...until next <h2> or end
-            return html.replace(
+
+            // Step 1: Wrap numbered h2 items in cards (DevOps, Baremetal, Selfhosted)
+            let result = html.replace(
                 /<h2[^>]*>(\d+)\.\s*(.*?)<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/gi,
                 (match, num, titleText, content) => {
-                    // Strip any emoji from the title text
                     const cleanTitle = titleText.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, '').trim();
-                    
-                    // Check if last paragraph has 🔗 link -> move to card-link
                     let bodyContent = content;
                     let linkHtml = '';
                     const linkMatch = bodyContent.match(
@@ -700,8 +697,6 @@
                         linkHtml = linkMatch[0];
                         bodyContent = bodyContent.slice(0, bodyContent.lastIndexOf(linkMatch[0]));
                     }
-
-                    // Strip trailing <hr>
                     bodyContent = bodyContent.replace(/<hr>\s*$/i, '');
 
                     return `
@@ -717,6 +712,28 @@
                     `;
                 }
             );
+
+            // Step 2: Wrap h3 items in cards (K8s Security, Ekonomi, Tech Foundations)
+            result = result.replace(
+                /<h3[^>]*>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h[23][^>]*>|$)/gi,
+                (match, titleText, content) => {
+                    const cleanTitle = titleText.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, '').trim();
+                    let bodyContent = content;
+                    bodyContent = bodyContent.replace(/<hr>\s*$/i, '');
+
+                    return `
+                        <div class="news-card">
+                            <div class="news-card-header">
+                                <span class="news-icon">${catIcon}</span>
+                                <h3 class="news-card-title">${cleanTitle}</h3>
+                            </div>
+                            <div class="news-card-body">${bodyContent}</div>
+                        </div>
+                    `;
+                }
+            );
+
+            return result;
         }
 
         function closeSidebar() {
