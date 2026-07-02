@@ -3,9 +3,9 @@
   <channel>
     <title>News Archive</title>
     <link>https://news.edsuwarna.id</link>
-    <description>Automated news aggregation archive — DevOps, Economy, Security, F1, MotoGP and more</description>
+    <description>Automated news aggregation archive — DevOps, Economy, Security and more</description>
     <language>en</language>
-    <lastBuildDate>Thu, 02 Jul 2026 01:59:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 02:15:55 +0000</lastBuildDate>
     <atom:link href="https://news.edsuwarna.id/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — ️ Dell Unveils EPYC Venice PowerEdge 18th Gen Servers with Up to 256 Cores</title>
@@ -98,24 +98,6 @@
       <source url="https://blog.equinix.com/blog/2026/05/12/agentic-ai-is-changing-the-ai-hardware-equation/">Top 10 Bare-Metal Server News — May 27, 2026 — Equinix: Agentic AI Is Reshaping the AI Hardware Equation</source>
     </item>
     <item>
-      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
-      <link>https://news.edsuwarna.id/#/motogp/2026-05-27.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-05-27.md</guid>
-      <description>🏁 MOTOGP REMINDER: ITALIAN GP THIS WEEKEND! 🏁</description>
-      <category>MotoGP</category>
-      <pubDate>Wed, 27 May 2026 00:00:00 +0000</pubDate>
-      <source url="https://news.edsuwarna.id/#/motogp/2026-05-27.md">📅 WEEKEND SCHEDULE:</source>
-    </item>
-    <item>
-      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
-      <link>https://news.edsuwarna.id/#/motogp/2026-06-24.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-24.md</guid>
-      <description>🏁 MOTOGP REMINDER: DUTCH GP THIS WEEKEND! 🏁</description>
-      <category>MotoGP</category>
-      <pubDate>Wed, 24 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://news.edsuwarna.id/#/motogp/2026-06-24.md">📅 WEEKEND SCHEDULE:</source>
-    </item>
-    <item>
       <title>🖥️ 🖥️ Top Bare-Metal Server News — June 17, 2026 — HPE Discover 2026: ProLiant Gen12, Full Juniper Integration, &amp; AI-Native Networking</title>
       <link>https://news.edsuwarna.id/#/baremetal/2026-06-17.md</link>
       <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-17.md</guid>
@@ -194,15 +176,6 @@
       <description>The Linux 7.2 kernel merged a patch series that addresses a race condition causing "VFS: Busy inodes after unmount" errors during container teardown — and delivers a major optimization that significantly lowers container unmounting latency. For ba...</description>
       <category>Bare Metal</category>
       <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-    </item>
-    <item>
-      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
-      <link>https://news.edsuwarna.id/#/motogp/2026-06-17.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-17.md</guid>
-      <description>🏁 MOTOGP REMINDER: CZECH GP THIS WEEKEND! 🏁</description>
-      <category>MotoGP</category>
-      <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://news.edsuwarna.id/#/motogp/2026-06-17.md">📅 WEEKEND SCHEDULE:</source>
     </item>
     <item>
       <title>⚙️ DevOps/SRE/Cloud Infrastructure News — June 10, 2026</title>
@@ -311,15 +284,6 @@
       <category>Bare Metal</category>
       <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
       <source url="https://blog.equinix.com/blog/2026/05/06/colocation-vs-cloud-for-financial-services/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — ️ Colocation vs. Cloud for Financial Services — The Pendulum Swings Back</source>
-    </item>
-    <item>
-      <title>🏍️ 📅 WEEKEND SCHEDULE:</title>
-      <link>https://news.edsuwarna.id/#/motogp/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/motogp/2026-06-03.md</guid>
-      <description>🏁 MOTOGP REMINDER: HUNGARIAN GP THIS WEEKEND! 🏁</description>
-      <category>MotoGP</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://news.edsuwarna.id/#/motogp/2026-06-03.md">📅 WEEKEND SCHEDULE:</source>
     </item>
     <item>
       <title>🖥️ 🔩 Bare-Metal Server News — July 1, 2026 — ️ Lambda Launches Bare Metal Instances — Full Hardware Control, API-Driven, No Hypervisor</title>
@@ -446,6 +410,42 @@
       <category>DevOps</category>
       <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
       <source url="https://www.infoq.com/news/2026/06/aws-finops-agent/">DevOps/SRE/Cloud News — June 30, 2026 — **AWS FinOps Agent Enters Public Preview**</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — **Argo CD 3.5 Tightens Supply Chain Security with Internal mTLS and Source Integrity**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>The Argo CD project released v3.5, introducing internal mTLS for all component communication and source integrity verification. This release hardens one of the most critical pieces of GitOps infrastructure, ensuring that every component in the Arg...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.infoq.com/news/2026/06/argocd-supply-chain-security/">DevOps/SRE/Cloud News — June 30, 2026 — **Argo CD 3.5 Tightens Supply Chain Security with Internal mTLS and Source Integrity**</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — **Dapr 1.18 Introduces Verifiable Execution — Cryptographic Trust for AI Agents**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>Diagrid released Dapr 1.18 featuring verifiable execution, bringing cryptographic trust to AI agents and distributed workflows. This allows developers to cryptographically attest that a given workflow step was executed by a specific version of a D...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.infoq.com/news/2026/06/dapr-1-18-cryptographic-ai/">DevOps/SRE/Cloud News — June 30, 2026 — **Dapr 1.18 Introduces Verifiable Execution — Cryptographic Trust for AI Agents**</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — **GitLab AI Accountability Report: Coding Speed Outpaces Governance**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>GitLab's 2026 AI Accountability Report reveals a widening gap: AI tools accelerate individual coding tasks, but overall software delivery velocity hasn't improved proportionally. The report highlights a critical governance deficit — organizations...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://www.infoq.com/news/2026/06/ai-coding-outpaces-governance/">DevOps/SRE/Cloud News — June 30, 2026 — **GitLab AI Accountability Report: Coding Speed Outpaces Governance**</source>
+    </item>
+    <item>
+      <title>⚙️ DevOps/SRE/Cloud News — June 30, 2026 — **Survey: 93% of Organizations Report Infrastructure Incidents from AI Coding Tools**</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-06-30.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-06-30.md</guid>
+      <description>A survey by PagerDuty and Puppet found that 93% of organizations have experienced at least one infrastructure incident caused by reliance on AI-generated code. The finding underscores a growing concern in the SRE community: AI coding assistants bo...</description>
+      <category>DevOps</category>
+      <pubDate>Tue, 30 Jun 2026 00:00:00 +0000</pubDate>
+      <source url="https://devops.com/survey-surfaces-rise-in-it-incidents-attributable-to-ai-coding-tools/">DevOps/SRE/Cloud News — June 30, 2026 — **Survey: 93% of Organizations Report Infrastructure Incidents from AI Coding Tools**</source>
     </item>
   </channel>
 </rss>

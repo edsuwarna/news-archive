@@ -18,7 +18,7 @@ from xml.sax.saxutils import escape
 REPO_DIR = Path(__file__).resolve().parent.parent
 
 SITE_URL = "https://news.edsuwarna.id"
-FEED_DESC = "Automated news aggregation archive — DevOps, Economy, Security, F1, MotoGP and more"
+FEED_DESC = "Automated news aggregation archive — DevOps, Economy, Security and more"
 
 CATEGORY_INFO = {
     "devops": {"emoji": "⚙️", "name": "DevOps"},
@@ -27,8 +27,6 @@ CATEGORY_INFO = {
     "ekonomi": {"emoji": "📊", "name": "Ekonomi"},
     "k8s-security": {"emoji": "🔒", "name": "K8s Security"},
     "tech-foundations": {"emoji": "🏗️", "name": "Tech Foundations"},
-    "f1": {"emoji": "🏎️", "name": "F1"},
-    "motogp": {"emoji": "🏍️", "name": "MotoGP"},
 }
 
 

@@ -1,11 +1,16 @@
-.env
-.env.*
-*.log
+# Hermes agent cache
+.hermes/
+
+# OS files
 .DS_Store
+Thumbs.db
+
+# Editor files
 *.swp
 *.swo
-__pycache__
+*~
+
+# Python
+__pycache__/
 *.pyc
-.idea/
-.vscode/
-node_modules/
+*.pyo

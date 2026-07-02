@@ -29,11 +29,13 @@
         .layout { display: flex; min-height: 100vh; }
         .sidebar { width: 260px; background: var(--bg2); border-right: 1px solid var(--border); position: fixed; top: 0; left: 0; height: 100vh; overflow-y: auto; z-index: 100; transition: background 0.2s; }
         .sidebar-header { padding: 16px 20px; border-bottom: 1px solid var(--border); }
-        .sidebar-header h2 { font-size: 16px; font-weight: 800; background: linear-gradient(135deg,var(--accent),var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .sidebar-header h2 { font-size: 16px; font-weight: 800; display: flex; align-items: center; gap: 6px; background: linear-gradient(135deg,var(--accent),var(--green)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+        .sidebar-header h2 svg { -webkit-text-fill-color: initial; -webkit-background-clip: unset; color: var(--accent); }
         .sidebar-header small { display: block; font-size: 11px; color: var(--text2); margin-top: 2px; }
         .sidebar-nav { padding: 8px 0; }
         .sidebar-cat { border-bottom: 1px solid var(--border); }
         .sidebar-cat-header { display: flex; align-items: center; justify-content: space-between; padding: 8px 20px; cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); transition: background 0.15s; }
+        .sidebar-cat-header svg { width: 16px; height: 16px; vertical-align: -3px; margin-right: 6px; flex-shrink: 0; }
         .sidebar-cat-header:hover { background: var(--bg3); }
         .sidebar-cat-header .count { font-size: 11px; color: var(--text3); font-weight: 400; }
         .sidebar-cat-header .arrow { font-size: 10px; color: var(--text3); transition: transform 0.2s; }
@@ -118,9 +120,13 @@
         .latest-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); transition: all 0.15s; cursor: pointer; }
         .latest-item:hover { border-color: var(--accent); background: var(--bg3); }
         .latest-item .li-date { font-size: 11px; color: var(--text3); font-weight: 500; white-space: nowrap; min-width: 70px; }
-        .latest-item .li-emoji { font-size: 16px; flex-shrink: 0; }
+        .latest-item .li-icon { display: flex; align-items: center; flex-shrink: 0; color: var(--accent); }
+        .latest-item .li-icon svg { width: 16px; height: 16px; }
+        .latest-item .li-cat { font-size: 11px; font-weight: 600; color: var(--accent); background: #1f6feb22; padding: 1px 8px; border-radius: 4px; white-space: nowrap; }
         .latest-item .li-title { font-size: 13.5px; font-weight: 500; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
         .latest-item .li-arrow { font-size: 12px; color: var(--text3); flex-shrink: 0; }
+        .cat-card .icon-wrap { display: flex; align-items: center; margin-bottom: 6px; color: var(--accent); }
+        .cat-card .icon-wrap svg { width: 22px; height: 22px; }
         /* Article item card */
         .article-item .excerpt { font-size: 12.5px; color: var(--text2); margin-top: 4px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
         .article-item .meta-info { font-size: 11px; color: var(--text3); margin-top: 6px; display: flex; gap: 12px; }
@@ -151,7 +157,8 @@
         .news-card:hover { border-color: var(--accent); }
         .news-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
         .news-num { font-size: 11px; font-weight: 700; color: var(--text3); background: var(--bg3); padding: 2px 8px; border-radius: 6px; flex-shrink: 0; }
-        .news-emoji { font-size: 20px; flex-shrink: 0; line-height: 1; }
+        .news-icon { display: flex; align-items: center; flex-shrink: 0; color: var(--accent); }
+        .news-icon svg { width: 18px; height: 18px; }
         .news-card-title { font-size: 16px !important; font-weight: 700 !important; margin: 0 !important; padding: 0 !important; border: none !important; flex: 1; }
         .news-card-body { font-size: 14px; color: var(--text2); line-height: 1.65; }
         .news-card-body p { margin: 0 0 8px; }
@@ -168,11 +175,11 @@
     <div class="layout">
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <h2>📰 News Archive</h2>
+                <h2><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:4px"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg> News Archive</h2>
                 <small id="headerInfo">Automated news aggregation</small>
             </div>
             <div class="search-wrap">
-                <span class="search-icon">🔍</span>
+                <span class="search-icon"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
                 <input type="text" id="searchInput" placeholder="Search articles..." autocomplete="off">
                 <button class="clear-btn" id="clearSearch" aria-label="Clear search">✕</button>
             </div>
@@ -205,18 +212,25 @@
             return item;
         }
 
-        const categories = {
-            baremetal: { emoji: '🖥️', name: 'Bare Metal', desc: 'Bare-metal server & hardware news' },
-            devops: { emoji: '⚙️', name: 'DevOps', desc: 'DevOps, SRE & Cloud Engineering news' },
-            selfhosted: { emoji: '🏠', name: 'Self Hosted', desc: 'Self-hosted tools & applications' },
-            ekonomi: { emoji: '📊', name: 'Ekonomi', desc: 'Indonesian & Global Economy updates' },
-            'k8s-security': { emoji: '🔒', name: 'K8s Security', desc: 'Kubernetes Security briefings' },
-            'tech-foundations': { emoji: '🏗️', name: 'Tech Foundations', desc: 'CNCF, Apache, Linux & OpenInfra updates' },
-            f1: { emoji: '🏎️', name: 'F1', desc: 'Formula 1 race analysis' },
-            motogp: { emoji: '🏍️', name: 'MotoGP', desc: 'MotoGP race analysis' }
+        const categoryOrder = ['devops', 'baremetal', 'selfhosted', 'ekonomi', 'k8s-security', 'tech-foundations'];
+
+        const icons = {
+            devops: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>',
+            baremetal: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="2" y1="20" x2="22" y2="20"/></svg>',
+            selfhosted: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="12" x2="2" y2="12"/><path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/><line x1="6" y1="16" x2="6.01" y2="16"/><line x1="10" y1="16" x2="10.01" y2="16"/></svg>',
+            ekonomi: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 16.5 10.5 13 14 8 6 2 12"/><polyline points="16 17 22 17 22 11"/></svg>',
+            'k8s-security': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+            'tech-foundations': '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
         };
 
-        const categoryOrder = ['devops', 'baremetal', 'selfhosted', 'ekonomi', 'k8s-security', 'tech-foundations', 'f1', 'motogp'];
+        const categories = {
+            baremetal: { icon: icons.baremetal, name: 'Bare Metal', desc: 'Bare-metal server & hardware news' },
+            devops: { icon: icons.devops, name: 'DevOps', desc: 'DevOps, SRE & Cloud Engineering news' },
+            selfhosted: { icon: icons.selfhosted, name: 'Self Hosted', desc: 'Self-hosted tools & applications' },
+            ekonomi: { icon: icons.ekonomi, name: 'Ekonomi', desc: 'Indonesian & Global Economy updates' },
+            'k8s-security': { icon: icons['k8s-security'], name: 'K8s Security', desc: 'Kubernetes Security briefings' },
+            'tech-foundations': { icon: icons['tech-foundations'], name: 'Tech Foundations', desc: 'CNCF, Apache, Linux & OpenInfra updates' },
+        };
 
         async function init() {
             // Fetch available articles from each category
@@ -274,7 +288,7 @@
 
         function renderSidebar() {
             const nav = document.getElementById('sidebarNav');
-            nav.innerHTML = '<div class="sidebar-cat"><div class="sidebar-cat-header" onclick="showHome()" style="cursor:pointer;border-bottom:1px solid var(--border);margin-bottom:4px"><span>🏠 Home</span></div></div>';
+            nav.innerHTML = '<div class="sidebar-cat"><div class="sidebar-cat-header" onclick="showHome()" style="cursor:pointer;border-bottom:1px solid var(--border);margin-bottom:4px"><span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Home</span></div></div>';
             
             categoryOrder.forEach(cat => {
                 const info = categories[cat];
@@ -283,7 +297,7 @@
                 div.className = 'sidebar-cat';
                 div.innerHTML = `
                     <div class="sidebar-cat-header" onclick="toggleCat('${cat}')">
-                        <span>${info.emoji} ${info.name}</span>
+                        <span>${info.icon} ${info.name}</span>
                         <span class="count">${list.length}</span>
                         <span class="arrow">▶</span>
                     </div>
@@ -327,16 +341,17 @@
             arrow.classList.toggle('open');
         }
 
-        function getLatestArticles(limit = 5) {
-            const all = [];
+        function getLatestPerCategory() {
+            const result = [];
             categoryOrder.forEach(cat => {
-                (articles[cat] || []).forEach(item => {
-                    const dateStr = item.file.replace('.md', '');
-                    all.push({ cat, item, dateStr });
-                });
+                const list = articles[cat] || [];
+                if (list.length > 0) {
+                    const sorted = [...list].sort((a, b) => b.file.localeCompare(a.file));
+                    const item = sorted[0];
+                    result.push({ cat, item, dateStr: item.file.replace('.md', '') });
+                }
             });
-            all.sort((a, b) => b.dateStr.localeCompare(a.dateStr));
-            return all.slice(0, limit);
+            return result;
         }
 
         function showHome() {
@@ -344,16 +359,16 @@
             currentFile = null;
             const c = document.getElementById('pageContent');
             
-            const latest = getLatestArticles(5);
+            const latest = getLatestPerCategory();
             
             let html = `
                 <div class="home-header">
-                    <h1>📰 News Archive</h1>
-                    <p>Automated news aggregation — powered by Hermes Agent 🤖</p>
+                    <h1><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-4px;margin-right:6px"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9a2 2 0 0 1 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg> News Archive</h1>
+                    <p>Automated news aggregation — powered by Hermes Agent</p>
                 </div>
             `;
 
-            // Latest News section
+            // Latest News section — one per category
             if (latest.length > 0) {
                 html += `<div class="latest-section"><h2>🔥 Latest News</h2><div class="latest-list">`;
                 latest.forEach(({ cat, item, dateStr }) => {
@@ -362,7 +377,8 @@
                     const title = item.title || `${info.name} — ${displayDate}`;
                     html += `
                         <div class="latest-item" onclick="showCategory('${cat}'); loadArticle('${cat}', '${item.file}');">
-                            <span class="li-emoji">${info.emoji}</span>
+                            <span class="li-icon">${info.icon}</span>
+                            <span class="li-cat">${info.name}</span>
                             <span class="li-date">${displayDate}</span>
                             <span class="li-title">${title}</span>
                             <span class="li-arrow">→</span>
@@ -380,7 +396,7 @@
                 total += count;
                 html += `
                     <div class="cat-card" onclick="showCategory('${cat}')">
-                        <span class="emoji">${info.emoji}</span>
+                        <span class="icon-wrap">${info.icon}</span>
                         <h3>${info.name}</h3>
                         <div class="desc">${info.desc}</div>
                         <div class="meta">${count} article${count !== 1 ? 's' : ''}</div>
@@ -411,7 +427,7 @@
                     c.innerHTML = `
                         <div class="article-list">
                             <a class="back" onclick="showHome()">← Back to categories</a>
-                            <h2>${info.emoji} ${info.name}</h2>
+                            <h2>${info.icon} ${info.name}</h2>
                             <div class="error-state">
                                 <div class="emoji">📭</div>
                                 <h3>No articles found</h3>
@@ -426,7 +442,7 @@
             c.innerHTML = `
                 <div class="article-list">
                     <a class="back" onclick="showHome()">← Back to categories</a>
-                    <h2 class="cat-heading">${info.emoji} ${info.name}</h2>
+                    <h2 class="cat-heading">${info.icon} ${info.name}</h2>
                     <p class="cat-desc">${info.desc}</p>
                     <div id="articleItems"></div>
                 </div>
@@ -446,7 +462,7 @@
                     <div class="date">📅 ${displayDate}</div>
                     <div class="title">${title}</div>
                     ${excerpt ? `<div class="excerpt">${excerpt}</div>` : ''}
-                    <div class="meta-info">${item.count ? `📄 ${item.count} article${item.count > 1 ? 's' : ''}` : ''} ${info.emoji} ${info.name}</div>
+                    <div class="meta-info">${item.count ? `📄 ${item.count} article${item.count > 1 ? 's' : ''}` : ''} ${info.icon} ${info.name}</div>
                 `;
                 a.onclick = (e) => {
                     e.preventDefault();
@@ -504,7 +520,7 @@
                 const md = await resp.text();
                 const cleanMd = md.replace(/^---[\s\S]*?---\n*/, '');
                 const rendered = marked.parse(cleanMd);
-                const enhanced = enhanceArticleContent(rendered);
+                const enhanced = enhanceArticleContent(rendered, cat);
                 const display = file.replace('.md', '').replace(/-/g, '/');
                 const info = categories[cat];
 
@@ -514,7 +530,7 @@
                             <a href="#" onclick="showCategory('${cat}'); return false;" style="color:var(--accent);text-decoration:none;font-size:13px;font-weight:500;">← Back to list</a>
                         </div>
                         <div class="article-meta">
-                            <span class="tag blue">${info.emoji} ${info.name}</span>
+                            <span class="tag blue">${info.icon} ${info.name}</span>
                             <span class="tag green">${display}</span>
                         </div>
                         ${enhanced}
@@ -583,7 +599,7 @@
                         title: item.title || item.file.replace('.md','').replace(/-/g,'/'),
                         excerpt: item.excerpt || '',
                         count: item.count || 0,
-                        categoryEmoji: info.emoji,
+                        categoryIcon: info.icon,
                         categoryName: info.name,
                         dateStr: item.file.replace('.md','')
                     });
@@ -622,13 +638,13 @@
 
             let html = `<div class="sr-head">🔍 ${results.length} result${results.length > 1 ? 's' : ''} for "<strong>${escapeHtml(query)}</strong>"</div>`;
             results.forEach(r => {
-                const { cat, file, title, excerpt, dateStr, categoryEmoji, categoryName } = r.item;
+                const { cat, file, title, excerpt, dateStr, categoryIcon, categoryName } = r.item;
                 const displayDate = dateStr.replace(/-/g, '/');
                 const hlTitle = highlightMatch(title, query);
                 const hlExcerpt = highlightMatch(excerpt, query);
                 html += `
                     <div class="sr-item" onclick="showCategory('${cat}'); loadArticle('${cat}', '${file}');">
-                        <div class="sr-cat">${categoryEmoji} ${categoryName}</div>
+                        <div class="sr-cat">${categoryIcon} ${categoryName}</div>
                         <div class="sr-title">${hlTitle}</div>
                         ${excerpt ? `<div class="sr-excerpt">${hlExcerpt}</div>` : ''}
                         <div class="sr-date">📅 ${displayDate}</div>
@@ -652,15 +668,15 @@
         }
 
         /* ──────────── News Cards ──────────── */
-        function enhanceArticleContent(html) {
+        function enhanceArticleContent(html, cat) {
+            const catInfo = categories[cat];
+            const catIcon = catInfo ? catInfo.icon : icons.devops;
             // Wrap each numbered news item (h2 + following content) in a card
             // Pattern: <h2>N. ...</h2> ...until next <h2> or end
             return html.replace(
                 /<h2[^>]*>(\d+)\.\s*(.*?)<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/gi,
                 (match, num, titleText, content) => {
-                    // Extract emoji from title
-                    const emojiMatch = titleText.match(/^(\p{Emoji}|\p{Emoji_Presentation}|\p{Emoji_Component})\s*/u);
-                    const emoji = emojiMatch ? emojiMatch[1] : '📄';
+                    // Strip any emoji from the title text
                     const cleanTitle = titleText.replace(/^\p{Emoji}\s*/u, '').trim();
                     
                     // Check if last paragraph has 🔗 link -> move to card-link
@@ -681,7 +697,7 @@
                         <div class="news-card">
                             <div class="news-card-header">
                                 <span class="news-num">#${num}</span>
-                                <span class="news-emoji">${emoji}</span>
+                                <span class="news-icon">${catIcon}</span>
                                 <h2 class="news-card-title">${cleanTitle}</h2>
                             </div>
                             <div class="news-card-body">${bodyContent}</div>
