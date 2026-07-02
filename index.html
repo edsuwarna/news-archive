@@ -50,7 +50,7 @@
         .sidebar::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
         .sidebar-toggle { display: none; position: fixed; top: 10px; left: 10px; z-index: 200; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; cursor: pointer; font-size: 18px; color: var(--text); line-height: 1; }
         .sidebar-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 99; }
-        .content { flex: 1; margin-left: 260px; padding: 32px 48px 48px; max-width: 860px; }
+        .content { flex: 1; margin-left: 260px; padding: 32px 48px 48px; }
         @media (max-width: 900px) {
             .sidebar { transform: translateX(-100%); }
             .sidebar.open { transform: translateX(0); }
@@ -70,7 +70,7 @@
         .cat-card h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
         .cat-card .desc { font-size: 12px; color: var(--text2); line-height: 1.4; }
         .cat-card .meta { font-size: 11px; color: var(--text3); margin-top: 8px; }
-        .article-list { max-width: 640px; margin: 0 auto; }
+        .article-list { max-width: 800px; margin: 0 auto; }
         .article-list h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
         .article-list .back { display: inline-block; color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; margin-bottom: 16px; cursor: pointer; }
         .article-list .back:hover { text-decoration: underline; }
@@ -83,6 +83,7 @@
         @keyframes spin { to { transform: rotate(360deg); } }
         .error-state { text-align: center; padding: 48px 0; color: var(--text2); }
         .error-state .emoji { font-size: 40px; margin-bottom: 12px; }
+        .markdown-body { max-width: 800px; }
         .markdown-body h1 { font-size: 28px; font-weight: 800; margin: 0 0 12px; line-height: 1.3; }
         .markdown-body h2 { font-size: 22px; font-weight: 700; margin: 32px 0 10px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
         .markdown-body h3 { font-size: 17px; font-weight: 600; margin: 24px 0 8px; }
