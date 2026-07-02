@@ -916,7 +916,6 @@
                     return `<div class="severity-card ${sevClass}">
                         <div class="sev-header">
                             <span class="sev-badge">${sevLabel}</span>
-                            <span class="sev-title">${_stripLeadingEmoji(titleRaw)}</span>
                         </div>
                         ${inner}
                     </div>`;
@@ -1073,41 +1072,63 @@
                 else scoreClass = 'low';
             }
 
-            // Extract date if present
+            // Extract key-value pairs from list items
+            let metaItems = [];
+            let descText = '';
+
+            // Try to get summary/description first
+            const summaryMatch = body.match(/<li><strong>Summary:?<\/strong>\s*([\s\S]*?)<\/li>/i);
+            if (summaryMatch) {
+                descText = summaryMatch[1];
+            }
+
+            // Extract all <li><strong>key</strong>value</li> pairs
+            const keyValRe = /<li><strong>(.*?)<\/strong>\s*(.*?)<\/li>/gi;
+            let kvMatch;
+            while ((kvMatch = keyValRe.exec(body)) !== null) {
+                const key = kvMatch[1].trim();
+                const val = kvMatch[2].trim();
+                if (!/^summary/i.test(key) && !/^cve/i.test(key)) {
+                    metaItems.push(`<span>${key}: ${val}</span>`);
+                }
+            }
+
+            // Extract date
             let dateHtml = '';
             const dateMatch = body.match(/<li><strong>Date:?<\/strong>\s*(.*?)<\/li>/i);
             if (dateMatch) {
                 dateHtml = `<span>📅 ${dateMatch[1]}</span>`;
             }
+            if (dateHtml) metaItems.push(dateHtml);
 
-            // Clean up list items — remove Date and CVSS from body, they go into meta
-            let cleanBody = body
-                .replace(/<li><strong>Date:?<\/strong>[\s\S]*?<\/li>/gi, '')
-                .replace(/<li><strong>CVSS[\s\S]*?<\/li>/gi, '')
-                .replace(/<li><strong>Fixed in:?<\/strong>[\s\S]*?<\/li>/gi, '')
-                .replace(/<li><strong>Reporter:?<\/strong>[\s\S]*?<\/li>/gi, '');
-
-            // Extract remaining key-value list items as meta
-            let metaItems = [];
-            const keyValRe = /<li><strong>(.*?)<\/strong>\s*(.*?)<\/li>/gi;
-            let kvMatch;
-            while ((kvMatch = keyValRe.exec(body)) !== null) {
-                metaItems.push(`<span>${kvMatch[1]}: ${kvMatch[2]}</span>`);
+            // If no description found from summary, use remaining text after stripping meta
+            if (!descText) {
+                let cleanBody = body.replace(/<li>[\s\S]*?<\/li>/gi, '').trim();
+                cleanBody = cleanBody.replace(/<\/?ul>/gi, '').trim();
+                descText = cleanBody;
             }
-            cleanBody = cleanBody.replace(/<li><strong>.*?<\/strong>.*?<\/li>/gi, '').trim();
-            cleanBody = cleanBody.replace(/<\/?ul>/gi, '').trim();
 
-            const metaHtml = metaItems.length ? `<div class="cve-meta">${metaItems.join('')}${dateHtml}</div>` : (dateHtml ? `<div class="cve-meta">${dateHtml}</div>` : '');
+            const metaHtml = metaItems.length ? `<div class="cve-meta">${metaItems.join('')}</div>` : '';
 
+            // Check if title matches CVE pattern
             const cveId = title.match(/(CVE-\d{4}-\d+)/i);
-            const cveDisplay = cveId ? cveId[1] : title;
+            let cveDisplay = '';
+            let descDisplay = descText;
+
+            if (cveId) {
+                cveDisplay = cveId[1];
+            } else {
+                // Title is not a CVE ID — use it as description
+                cveDisplay = '⚠️ Security';
+                descDisplay = title + (descText ? ' — ' + descText : '');
+            }
 
             return `<div class="cve-card">
                 <div class="cve-header">
                     <span class="cve-id">${cveDisplay}</span>
                     ${score ? `<span class="cve-score ${scoreClass}">CVSS ${score}</span>` : ''}
                 </div>
-                <div class="cve-desc">${cleanBody}</div>
+                <div class="cve-desc">${descDisplay}</div>
                 ${metaHtml}
             </div>`;
         }
