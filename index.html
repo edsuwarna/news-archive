@@ -111,6 +111,22 @@
         .article-nav a { color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; }
         .article-nav a:hover { text-decoration: underline; }
         .article-nav .disabled { color: var(--text3); pointer-events: none; }
+        /* Latest news section */
+        .latest-section { margin-bottom: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border); }
+        .latest-section h2 { font-size: 18px; font-weight: 700; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .latest-list { display: flex; flex-direction: column; gap: 6px; }
+        .latest-item { display: flex; align-items: center; gap: 10px; padding: 8px 12px; background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; text-decoration: none; color: var(--text); transition: all 0.15s; cursor: pointer; }
+        .latest-item:hover { border-color: var(--accent); background: var(--bg3); }
+        .latest-item .li-date { font-size: 11px; color: var(--text3); font-weight: 500; white-space: nowrap; min-width: 70px; }
+        .latest-item .li-emoji { font-size: 16px; flex-shrink: 0; }
+        .latest-item .li-title { font-size: 13.5px; font-weight: 500; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+        .latest-item .li-arrow { font-size: 12px; color: var(--text3); flex-shrink: 0; }
+        /* Article item card */
+        .article-item .excerpt { font-size: 12.5px; color: var(--text2); margin-top: 4px; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .article-item .meta-info { font-size: 11px; color: var(--text3); margin-top: 6px; display: flex; gap: 12px; }
+        /* Article list page heading */
+        .article-list .cat-heading { font-size: 24px; font-weight: 700; margin: 0 0 4px; display: flex; align-items: center; gap: 8px; }
+        .article-list .cat-desc { color: var(--text2); font-size: 13px; margin-bottom: 20px; }
     </style>
 </head>
 <body>
@@ -140,6 +156,15 @@
         let currentCat = null;
         let currentFile = null;
         let articleOrder = [];
+
+        // Normalize article format: handle backward compat with old articles.json
+        function normalizeArticle(item) {
+            if (typeof item === 'string') {
+                const dateStr = item.replace('.md', '').replace(/-/g, '/');
+                return { file: item, title: dateStr, excerpt: '', count: 0 };
+            }
+            return item;
+        }
 
         const categories = {
             baremetal: { emoji: '🖥️', name: 'Bare Metal', desc: 'Bare-metal server & hardware news' },
@@ -191,7 +216,7 @@
                 const resp = await fetch(`articles.json?t=${Date.now()}`);
                 if (resp.ok) {
                     const data = await resp.json();
-                    if (data[cat]) return data[cat].sort().reverse();
+                    if (data[cat]) return data[cat].map(normalizeArticle).sort((a,b) => b.file.localeCompare(a.file));
                 }
             } catch(e) {}
 
@@ -220,11 +245,12 @@
                 nav.appendChild(div);
 
                 const listDiv = div.querySelector('.sidebar-cat-list');
-                list.forEach(file => {
+                list.forEach(item => {
+                    const file = item.file;
                     const a = document.createElement('a');
                     a.href = `#/${cat}/${file}`;
                     // Format date: remove .md extension and show nicely
-                    const display = file.replace('.md', '').replace(/-/g, '/');
+                    const display = item.title || file.replace('.md', '').replace(/-/g, '/');
                     a.textContent = display;
                     a.dataset.cat = cat;
                     a.dataset.file = file;
@@ -254,19 +280,53 @@
             arrow.classList.toggle('open');
         }
 
+        function getLatestArticles(limit = 5) {
+            const all = [];
+            categoryOrder.forEach(cat => {
+                (articles[cat] || []).forEach(item => {
+                    const dateStr = item.file.replace('.md', '');
+                    all.push({ cat, item, dateStr });
+                });
+            });
+            all.sort((a, b) => b.dateStr.localeCompare(a.dateStr));
+            return all.slice(0, limit);
+        }
+
         function showHome() {
             currentCat = null;
             currentFile = null;
             const c = document.getElementById('pageContent');
             
-            let total = 0;
+            const latest = getLatestArticles(5);
+            
             let html = `
                 <div class="home-header">
                     <h1>📰 News Archive</h1>
                     <p>Automated news aggregation — powered by Hermes Agent 🤖</p>
                 </div>
-                <div class="categories-grid">
             `;
+
+            // Latest News section
+            if (latest.length > 0) {
+                html += `<div class="latest-section"><h2>🔥 Latest News</h2><div class="latest-list">`;
+                latest.forEach(({ cat, item, dateStr }) => {
+                    const info = categories[cat];
+                    const displayDate = dateStr.replace(/-/g, '/');
+                    const title = item.title || `${info.name} — ${displayDate}`;
+                    html += `
+                        <div class="latest-item" onclick="showCategory('${cat}'); loadArticle('${cat}', '${item.file}');">
+                            <span class="li-emoji">${info.emoji}</span>
+                            <span class="li-date">${displayDate}</span>
+                            <span class="li-title">${title}</span>
+                            <span class="li-arrow">→</span>
+                        </div>
+                    `;
+                });
+                html += `</div></div>`;
+            }
+
+            html += `<div class="categories-grid">`;
+            let total = 0;
             categoryOrder.forEach(cat => {
                 const info = categories[cat];
                 const count = (articles[cat] || []).length;
@@ -319,20 +379,28 @@
             c.innerHTML = `
                 <div class="article-list">
                     <a class="back" onclick="showHome()">← Back to categories</a>
-                    <h2>${info.emoji} ${info.name}</h2>
-                    <p style="color:var(--text2);font-size:13px;margin-bottom:16px;">${info.desc}</p>
+                    <h2 class="cat-heading">${info.emoji} ${info.name}</h2>
+                    <p class="cat-desc">${info.desc}</p>
                     <div id="articleItems"></div>
                 </div>
             `;
 
             const itemsDiv = document.getElementById('articleItems');
-            const sorted = [...(articles[cat] || [])].sort().reverse();
-            sorted.forEach(file => {
-                const display = file.replace('.md', '').replace(/-/g, '/');
+            const sorted = [...(articles[cat] || [])];
+            sorted.forEach(item => {
+                const file = item.file;
+                const displayDate = file.replace('.md', '').replace(/-/g, '/');
+                const title = item.title || `${info.name} — ${displayDate}`;
+                const excerpt = item.excerpt || '';
                 const a = document.createElement('a');
                 a.className = 'article-item';
                 a.href = `#/${cat}/${file}`;
-                a.innerHTML = `<div class="date">${display}</div><div class="title">${info.name} — ${display}</div>`;
+                a.innerHTML = `
+                    <div class="date">📅 ${displayDate}</div>
+                    <div class="title">${title}</div>
+                    ${excerpt ? `<div class="excerpt">${excerpt}</div>` : ''}
+                    <div class="meta-info">${item.count ? `📄 ${item.count} article${item.count > 1 ? 's' : ''}` : ''} ${info.emoji} ${info.name}</div>
+                `;
                 a.onclick = (e) => {
                     e.preventDefault();
                     loadArticle(cat, file);
@@ -347,7 +415,7 @@
             if (resp.ok) {
                 const data = await resp.json();
                 if (data[cat]) {
-                    articles[cat] = data[cat].sort().reverse();
+                    articles[cat] = data[cat].map(normalizeArticle);
                     updateSidebarCounts();
                     return;
                 }
@@ -365,7 +433,7 @@
                 } catch(e) {}
             }
             if (found.length > 0) {
-                articles[cat] = found.sort().reverse();
+                articles[cat] = found.sort().reverse().map(f => ({file: f, title: f.replace('.md','').replace(/-/g,'/'), excerpt: '', count: 0}));
                 updateSidebarCounts();
             }
         }
@@ -413,12 +481,12 @@
 
                 // Previous/Next navigation
                 const list = articles[cat] || [];
-                const sorted = [...list].sort();
-                const idx = sorted.indexOf(file);
+                const sorted = [...list].sort((a, b) => a.file.localeCompare(b.file));
+                const idx = sorted.findIndex(item => item.file === file);
                 const prev = document.getElementById('prevArticle');
                 const next = document.getElementById('nextArticle');
                 if (idx > 0) {
-                    const prevFile = sorted[idx - 1];
+                    const prevFile = sorted[idx - 1].file;
                     prev.href = `#/${cat}/${prevFile}`;
                     prev.onclick = (e) => { e.preventDefault(); loadArticle(cat, prevFile); };
                 } else {
@@ -426,7 +494,7 @@
                     prev.onclick = (e) => e.preventDefault();
                 }
                 if (idx < sorted.length - 1) {
-                    const nextFile = sorted[idx + 1];
+                    const nextFile = sorted[idx + 1].file;
                     next.href = `#/${cat}/${nextFile}`;
                     next.onclick = (e) => { e.preventDefault(); loadArticle(cat, nextFile); };
                 } else {
