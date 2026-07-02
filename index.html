@@ -216,6 +216,70 @@
 
         /* ─── Category badge on home ─── */
         .cat-card .meta .count-badge { display: inline-block; background: var(--accent); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 10px; margin-left: 4px; }
+
+        /* ─── Tables (Ekonomi) ─── */
+        .table-wrap { overflow-x: auto; margin: 8px 0; border-radius: 8px; border: 1px solid var(--border); background: var(--bg3); }
+        .table-wrap table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 0; min-width: 420px; }
+        .table-wrap th, .table-wrap td { padding: 7px 12px; text-align: left; border-bottom: 1px solid var(--border); }
+        .table-wrap th { background: var(--bg3); font-weight: 600; color: var(--text); font-size: 10.5px; text-transform: uppercase; letter-spacing: 0.04em; white-space: nowrap; }
+        .table-wrap td { color: var(--text2); white-space: nowrap; }
+        .table-wrap tr:last-child td { border-bottom: none; }
+        .table-wrap tr:hover td { background: rgba(255,255,255,0.03); }
+        .table-wrap td:first-child { font-weight: 600; color: var(--text); }
+        .table-wrap .red, .table-wrap [style*="color:red"] { color: #f85149 !important; }
+        .table-wrap .green, .table-wrap [style*="color:green"] { color: #3fb950 !important; }
+
+        /* ─── Section Card (h2 sections: Ekonomi, K8s, Tech Foundations) ─── */
+        .section-card-wrap { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-bottom: 14px; transition: border-color 0.15s; }
+        .section-card-wrap:hover { border-color: var(--accent); }
+        .section-card-title { font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 6px; }
+        .section-card-body { font-size: 13px; color: var(--text2); line-height: 1.65; }
+        .section-card-body ul { margin: 4px 0; padding-left: 18px; }
+        .section-card-body li { margin-bottom: 4px; }
+        .section-card-wrap .news-card { margin-bottom: 8px; }
+        .section-card-wrap .news-card:last-child { margin-bottom: 0; }
+
+        /* ─── Severity Card (K8s Security — 🔴 Critical, 🟡 High) ─── */
+        .severity-card { background: var(--bg2); border: 1px solid var(--border); border-left: 4px solid; border-radius: 10px; padding: 14px 18px; margin-bottom: 12px; }
+        .severity-card.crit { border-left-color: #f85149; }
+        .severity-card.high { border-left-color: #d29922; }
+        .severity-card.med { border-left-color: #58a6ff; }
+        .severity-card .sev-header { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+        .severity-card .sev-badge { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; padding: 2px 8px; border-radius: 5px; }
+        .severity-card.crit .sev-badge { background: #f8514922; color: #f85149; }
+        .severity-card.high .sev-badge { background: #d2992222; color: #d29922; }
+        .severity-card.med .sev-badge { background: #58a6ff22; color: #58a6ff; }
+        .severity-card .sev-title { font-size: 13px; font-weight: 600; color: var(--text); }
+
+        /* ─── CVE Card (K8s Security) ─── */
+        .cve-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; margin-bottom: 8px; transition: border-color 0.15s; }
+        .cve-card:hover { border-color: var(--accent); }
+        .cve-card:last-child { margin-bottom: 0; }
+        .cve-card .cve-header { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+        .cve-card .cve-id { font-size: 13px; font-weight: 700; color: var(--accent); font-family: 'SF Mono', 'Fira Code', monospace; }
+        .cve-card .cve-score { font-size: 10px; font-weight: 700; padding: 1px 7px; border-radius: 5px; background: var(--bg2); }
+        .cve-card .cve-score.crit { background: #f8514922; color: #f85149; }
+        .cve-card .cve-score.high { background: #d2992222; color: #d29922; }
+        .cve-card .cve-score.med { background: #58a6ff22; color: #58a6ff; }
+        .cve-card .cve-desc { font-size: 12.5px; color: var(--text2); line-height: 1.55; }
+        .cve-card .cve-meta { font-size: 11.5px; color: var(--text3); margin-top: 4px; display: flex; flex-wrap: wrap; gap: 10px; }
+
+        /* ─── Bullet Card (Tech Foundations items) ─── */
+        .bullet-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 12px 18px; margin-bottom: 8px; transition: border-color 0.15s; }
+        .bullet-card:hover { border-color: var(--accent); }
+        .bullet-card ul { margin: 2px 0; padding-left: 18px; font-size: 13px; color: var(--text2); line-height: 1.65; }
+        .bullet-card li { margin-bottom: 4px; }
+        .bullet-card li:last-child { margin-bottom: 0; }
+
+        /* ─── Data Card (standalone tables) ─── */
+        .data-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 12px; }
+        .data-card .table-wrap { margin: 0; }
+
+        /* ─── News Card body fixes ─── */
+        .news-card-body ul { margin: 4px 0; padding-left: 16px; font-size: 13px; color: var(--text2); }
+        .news-card-body li { margin-bottom: 3px; }
+        .news-card-body li:last-child { margin-bottom: 0; }
+        .news-card-body strong { color: var(--text); }
     </style>
 </head>
 <body>
@@ -781,59 +845,298 @@
         /* ──────────── News Cards ──────────── */
         function enhanceArticleContent(html, cat) {
             const catInfo = categories[cat];
-            const catIcon = catInfo ? catInfo.icon : icons.devops;
+            const catIcon = catInfo ? catInfo.icon : '📰';
 
-            // Step 1: Wrap numbered h2 items in cards (DevOps, Baremetal, Selfhosted)
-            let result = html.replace(
-                /<h2[^>]*>(\d+)\.\s*(.*?)<\/h2>([\s\S]*?)(?=<h2[^>]*>|$)/gi,
-                (match, num, titleText, content) => {
-                    const cleanTitle = titleText.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, '').trim();
-                    let bodyContent = content;
-                    let linkHtml = '';
-                    const linkMatch = bodyContent.match(
-                        /<p>(?:🔗\s*)?<a\s[^>]*>.*?<\/a>\s*<\/p>\s*$/i
-                    );
-                    if (linkMatch) {
-                        linkHtml = linkMatch[0];
-                        bodyContent = bodyContent.slice(0, bodyContent.lastIndexOf(linkMatch[0]));
-                    }
-                    bodyContent = bodyContent.replace(/<hr>\s*$/i, '');
+            // Split by <hr> — all categories use --- between items/sections
+            const parts = html.split(/<hr\s*\/?>/gi);
+            let result = '';
 
-                    return `
-                        <div class="news-card">
-                            <div class="news-card-header">
-                                <span class="news-num">#${num}</span>
-                                <span class="news-icon">${catIcon}</span>
-                                <h2 class="news-card-title">${cleanTitle}</h2>
-                            </div>
-                            <div class="news-card-body">${bodyContent}</div>
-                            ${linkHtml ? `<div class="news-card-link">${linkHtml.replace(/^<p>|<\/p>$/g, '')}</div>` : ''}
-                        </div>
-                    `;
+            // First chunk = header (h1, intro paragraph)
+            result += parts[0];
+
+            // Process remaining chunks
+            for (let i = 1; i < parts.length; i++) {
+                let chunk = parts[i].trim();
+                if (!chunk) continue;
+                chunk = chunk.replace(/^(?:<br\s*\/?>\s*)+|(?:\s*<br\s*\/?>)+$/gi, '').trim();
+                if (!chunk) continue;
+
+                const card = _buildCard(chunk, cat, catIcon);
+                if (card) {
+                    result += '\n' + card;
+                } else {
+                    // Fallback: plain card wrapper
+                    result += `\n<div class="news-card"><div class="news-card-body">${chunk}</div></div>`;
                 }
-            );
-
-            // Step 2: Wrap h3 items in cards (K8s Security, Ekonomi, Tech Foundations)
-            result = result.replace(
-                /<h3[^>]*>([\s\S]*?)<\/h3>([\s\S]*?)(?=<h[23][^>]*>|$)/gi,
-                (match, titleText, content) => {
-                    const cleanTitle = titleText.replace(/^[\p{Extended_Pictographic}\uFE0F\s]+/u, '').trim();
-                    let bodyContent = content;
-                    bodyContent = bodyContent.replace(/<hr>\s*$/i, '');
-
-                    return `
-                        <div class="news-card">
-                            <div class="news-card-header">
-                                <span class="news-icon">${catIcon}</span>
-                                <h3 class="news-card-title">${cleanTitle}</h3>
-                            </div>
-                            <div class="news-card-body">${bodyContent}</div>
-                        </div>
-                    `;
-                }
-            );
+            }
 
             return result;
+        }
+
+        function _stripLeadingEmoji(text) {
+            // Strip leading emoji/unicode symbols for cleaner card titles
+            return text.replace(/^[▶▸➤●○◆◇☆★♻⚡☁️☀️🌐🌍🌎🌏💻📊📡📰🔬🔭🚀🛡️💸💰💳🏆🔥⭐💎🔧🔨🔩⚙️🖥️💾💿📀⌨️🖱️🔗🔒🔑🔐🛠️⚖️🔍🔄📦🎯🎮🧩🧰🛡️⚔️👁️🧠❤️💙💚💛💜🧡🤍🖤💝💞💟🔴🟠🟡🟢🔵🟣🟤⚫⚪🔶🔷🔸🔹▫️▪️◾◽◼️◻️⬛⬜🟥🟧🟨🟩🟦🟪🟫⏫⏬⏩⏪🔃🔁🔂◀️⏸️⏯️⏹️⏺️🎦🔅🔆📶📳📴➕➖➗✖️‼️⁉️❓❔❕❗🎉🎊✨🌟💫⭐️🌟✨⚡️🔥💯💢💥💨💦💪👏🙌👍👎👊✊🤝🙏💅💄👑🎒🎓🏅🥇🥈🥉🏆🏅🎖️🏵️🎗️🎫🎟️🎭🎨🎬🎤🎧🎼🎹🥁🎷🎺🎸🪕🎻🎲♟️🎯🎳🎮🕹️🎰🎲🧩🔮🌋🗻🏔️⛰️🏠🏡🏘️🏙️🌆🌇🌉🌁🌃🌄🌅🌌🌈☔☀️🌤️⛅🌥️🌦️🌧️🌨️🌩️🌪️🌫️🌬️☄️🔥💧🌊🌲🌳🌴🌵🌾🌿☘️🍀🍁🍂🍃🍄🌺🌻🌹🌷🌼🌸💐🍏🍎🍐🍊🍋🍌🍉🍇🍓🫐🍈🍒🍑🥭🍍🥥🥝🍅🍆🥑🥦🥬🥒🌶️🫑🌽🥕🧄🧅🥔🍠🫘🥜🌰🍞🥐🥖🥨🧀🥚🍳🧈🥞🧇🥓🥩🍗🍖🦴🌭🍔🍟🍕🫓🥪🥙🧆🌮🌯🫔🥗🥘🫕🥫🍝🍜🍲🍛🍣🍱🥟🦪🍤🍙🍚🍘🍥🥠🥮🍢🍡🍧🍨🍦🥧🧁🍰🎂🍮🍭🍬🍫🍿🍩🍪🌰🥜💎🪙💶💷💴💵💰💳💲🧾📉📈📊📋📁📂🗂️🗄️🗑️📅📆📇📐📏📌📍✂️🖇️📎🖊️🖋️✒️🖌️🖍️📝📃📄📑📊📈📉📋📌📍📎🖇️✂️📐📏🔍🔎🔏🔐🔒🔓🔑🗝️🛡️⚔️🪖🎖️🏅🏆🕵️💂👮👷‍♂️👷‍♀️⚕️👨‍⚕️👩‍⚕️👨‍🎓👩‍🎓👨‍🏫👩‍🏫👨‍⚖️👩‍⚖️👨‍🌾👩‍🌾👨‍🍳👩‍🍳👨‍🔧👩‍🔧👨‍🏭👩‍🏭👨‍💼👩‍💼👨‍🔬👩‍🔬👨‍💻👩‍💻👨‍🎤👩‍🎤👨‍🎨👩‍🎨👨‍✈️👩‍✈️👨‍🚀👩‍🚀👨‍🚒👩‍🚒👮‍♂️👮‍♀️🕵️‍♂️🕵️‍♀️💂‍♂️💂‍♀️👻👽🤖🎃😀😃😄😁😆😅🤣😂🙂🙃😉😊😇🥰😍🤩😘😗😚😙😋😛😜🤪😝🤑🤗🤭🫢🫣🤫🤔🫡🤐🤨😐😑😶🫥😏😒🙄😬😮‍💨🤥😌😔😪🤤😴😷🤒🤕🤢🤮🤧🥵🥶🥴😵😵‍💫🤯🤠🥳🥸😎🤓🧐😕😟🙁☹️😮😯😲😳🥺😦😧😨😰😥😢😭😱😖😣😞😓😩😫🥱😤😡😠🤬😈👿💀☠️💩🤡👹👺👻👽👾🤖🎃😺😸😹😻😼😽🙀😿😾🫶🤲👐🙌👏🤝👍👎👊✊🤛🤜🫷🫸👋🤚🖐️✋🖖👌🤌🤏✌️🤞🫰🫵🤟🤘🤙👈👉👆🖕👇☝️🫱🫲🫳🫴👍👍👎👊✊🤛🤜👋🤚🖐️✋🖖👌🤌🤏✌️🤞🫰🫵🤟🤘🤙👈👉👆🖕👇☝️🫱🫲🫳🫴✍️👐🙌👏🤝💪🦵🦶👂🦻👃🧠🫀🫁🦷🦴👀👁️👅👄💋🫦👶🧒👦👧🧑👱👨👩🧔‍♂️🧔‍♀️👨‍🦰👨‍🦱👨‍🦳👨‍🦲👩‍🦰👩‍🦱👩‍🦳👩‍🦲🧑‍🦰🧑‍🦱🧑‍🦳🧑‍🦲👱‍♂️👱‍♀️👳‍♂️👳‍♀️👲🧕🧔‍♂️🧔‍♀️👨‍⚕️👩‍⚕️👨‍🎓👩‍🎓👨‍🏫👩‍🏫👨‍⚖️👩‍⚖️👨‍🌾👩‍🌾👨‍🍳👩‍🍳👨‍🔧👩‍🔧👨‍🏭👩‍🏭👨‍💼👩‍💼👨‍🔬👩‍🔬👨‍💻👩‍💻👨‍🎤👩‍🎤👨‍🎨👩‍🎨👨‍✈️👩‍✈️👨‍🚀👩‍🚀👨‍🚒👩‍🚒👮‍♂️👮‍♀️🕵️‍♂️🕵️‍♀️💂‍♂️💂‍♀️🥷👸🤴👰‍♂️👰‍♀️🤵‍♂️🤵‍♀️👰🤵🤰🫄🫃🤱👩‍🍼👨‍🍼🧑‍🍼👼🎅🤶🧑‍🎄🦸‍♂️🦸‍♀️🦹‍♂️🦹‍♀️🧙‍♂️🧙‍♀️🧚‍♂️🧚‍♀️🧛‍♂️🧛‍♀️🧜‍♂️🧜‍♀️🧝‍♂️🧝‍♀️🧞‍♂️🧞‍♀️🧟‍♂️🧟‍♀️🧌💃🕺🕴️👯‍♂️👯‍♀️🧖‍♂️🧖‍♀️🧗‍♂️🧗‍♀️🤸‍♂️🤸‍♀️⛹️‍♂️⛹️‍♀️🏋️‍♂️🏋️‍♀️🚴‍♂️🚴‍♀️🚵‍♂️🚵‍♀️🤺🤾‍♂️🤾‍♀️🏌️‍♂️🏌️‍♀️🏇🧘‍♂️🧘‍♀️🏄‍♂️🏄‍♀️🏊‍♂️🏊‍♀️🤽‍♂️🤽‍♀️🚣‍♂️🚣‍♀️🧗‍♂️🧗‍♀️🚶‍♂️🚶‍♀️🏃‍♂️🏃‍♀️💃🕺🕴️👯‍♂️👯‍♀️🧖‍♂️🧖‍♀️🦮🐕‍🦺🐕🐩🐈🐈‍⬛🦄🐎🐖🐏🐑🐐🦌🐄🐂🐃🦬🐫🐪🦒🦏🦣🐘🐁🐀🦔🐇🐿️🦫🦔🦇🐻🐻‍❄️🐨🐼🦥🦦🦨🦘🦡🐾🦃🐔🐓🐣🐤🐥🐦🐧🕊️🦅🦆🦢🦉🦩🦚🦜🐸🐊🐢🦎🐍🐲🐉🦕🦖🐳🐋🐬🦭🐟🐠🐡🦈🐙🐚🪸🪼🦀🦞🦐🦑🦋🐛🐜🐝🪲🐞🦗🪳🕷️🕸️🦂🦟🪰🪱🦠🐌🐍🐢🐊🐉🐲🪸🪼🦑🦀🦞🦐🐡🐠🐟🐬🐳🐋🦈🐊🐅🐆🦓🦍🦧🦣🐘🦛🦏🐪🐫🦒🦘🦬🐃🐂🐄🐎🐖🐏🐑🐐🦌🐕🐩🐈🐈‍⬛🦮🐕‍🦺🐇🦝🦊🐺🐗🐽🐷🐸🐵🐒🦍🦧🐶🐱🐭🐹🐰🦊🐻🐼🐻‍❄️🐨🐯🦁🐮🐷🐸🐵🐔🐧🐦🐤🐣🐥🦆🦅🦉🦇🐺🐗🐴🦄🐝🐛🦋🐌🐞🐜🦟🪰🪲🪳🦗🕷️🕸️🦂🦠🦀🦞🦐🦑🦖🦕🐙🦞🦀🦑🐡🐠🐟🐬🐳🐋🦈🐊🐢🐍🐲🐉🦎🦖🦕🐟🐠🐡🐳🐋🦈🐬🦭🐊🐅🐆🦓🐘🦛🦏🐪🐫🦒🐃🐂🐄🐎🐖🐏🐑🐐🦌🐕🐩🐈🐓🦃🕊️🐇🐁🐀🐿️🦔🐾🐉🐲🌵🎄🌲🌳🌴🌱🌿☘️🍀🎍🎋🍃🍂🍁🍄🐚🪨🌾💐🌷🌹🥀🌺🌸🌼🌻🌞🌝🌛🌜🌚🌕🌖🌗🌘🌑🌒🌓🌔🌙🌎🌍🌏🪐💫⭐️🌟✨⚡️☄️💥🔥🌪️🌈☀️🌤️⛅🌥️☁️🌦️🌧️⛈️🌩️🌨️☃️⛄️❄️🌬️💨💧💦☔️☂️🌊🌫️🎄✨🎅🤶🧑‍🎄🦌🛷🎁🔔🕯️🎀🪄🧨🎉🎊🎈🎂🎁🎀🕯️🔮🪄🎃🕸️🕷️👻💀☠️🧟‍♂️🧟‍♀️🦇🦉🐺🐗🏴‍☠️🧛‍♂️🧛‍♀️🧙‍♂️🧙‍♀️⚰️🪦🔮🪄🧨🧿🪬🔮🎭🖼️🎨🧵🧶🪡🪢🪣🪤🪥🪦🪧🇦🇨🇦🇩🇦🇪🇦🇫🇦🇬🇦🇮🇦🇱🇦🇲🇦🇴🇦🇶🇦🇷🇦🇸🇦🇹🇦🇺🇦🇼🇦🇽🇦🇿🇧🇦🇧🇧🇧🇩🇧🇪🇧🇫🇧🇬🇧🇭🇧🇮🇧🇯🇧🇱🇧🇲🇧🇳🇧🇴🇧🇶🇧🇷🇧🇸🇧🇹🇧🇻🇧🇼🇧🇾🇧🇿🇨🇦🇨🇨🇨🇩🇨🇫🇨🇬🇨🇭🇨🇮🇨🇰🇨🇱🇨🇲🇨🇳🇨🇴🇨🇵🇨🇷🇨🇺🇨🇻🇨🇼🇨🇽🇨🇾🇨🇿🇩🇪🇩🇬🇩🇯🇩🇰🇩🇲🇩🇴🇩🇿🇪🇦🇪🇨🇪🇪🇪🇬🇪🇭🇪🇷🇪🇸🇪🇹🇪🇺🇫🇮🇫🇯🇫🇰🇫🇲🇫🇴🇫🇷🇬🇦🇬🇧🇬🇩🇬🇪🇬🇫🇬🇬🇬🇭🇬🇮🇬🇱🇬🇲🇬🇳🇬🇵🇬🇶🇬🇷🇬🇸🇬🇹🇬🇺🇬🇼🇬🇾🇭🇰🇭🇲🇭🇳🇭🇷🇭🇹🇭🇺🇮🇨🇮🇩🇮🇪🇮🇱🇮🇲🇮🇳🇮🇴🇮🇶🇮🇷🇮🇸🇮🇹🇯🇪🇯🇲🇯🇴🇯🇵🇰🇪🇰🇬🇰🇭🇰🇮🇰🇲🇰🇳🇰🇵🇰🇷🇰🇼🇰🇾🇰🇿🇱🇦🇱🇧🇱🇨🇱🇮🇱🇰🇱🇷🇱🇸🇱🇹🇱🇺🇱🇻🇱🇾🇲🇦🇲🇨🇲🇩🇲🇪🇲🇫🇲🇬🇲🇭🇲🇰🇲🇱🇲🇲🇲🇳🇲🇴🇲🇵🇲🇶🇲🇷🇲🇸🇲🇹🇲🇺🇲🇻🇲🇼🇲🇽🇲🇾🇲🇿🇳🇦🇳🇨🇳🇪🇳🇫🇳🇬🇳🇮🇳🇱🇳🇴🇳🇵🇳🇷🇳🇺🇳🇿🇴🇲🇵🇦🇵🇪🇵🇫🇵🇬🇵🇭🇵🇰🇵🇱🇵🇲🇵🇳🇵🇷🇵🇸🇵🇹🇵🇼🇵🇾🇶🇦🇷🇪🇷🇴🇷🇸🇷🇺🇷🇼🇸🇦🇸🇧🇸🇨🇸🇩🇸🇪🇸🇬🇸🇭🇸🇮🇸🇯🇸🇰🇸🇱🇸🇲🇸🇳🇸🇴🇸🇷🇸🇸🇸🇹🇸🇻🇸🇽🇸🇾🇸🇿🇹🇦🇹🇨🇹🇩🇹🇫🇹🇬🇹🇭🇹🇯🇹🇰🇹🇱🇹🇲🇹🇳🇹🇴🇹🇷🇹🇹🇹🇻🇹🇼🇹🇿🇺🇦🇺🇬🇺🇲🇺🇳🇺🇸🇺🇾🇺🇿🇻🇦🇻🇨🇻🇪🇻🇬🇻🇮🇻🇳🇻🇺🇼🇫🇼🇸🇽🇰🇾🇪🇾🇹🇿🇦🇿🇲🇿🇼🏴󐁧󐁢󐁥󐁮󐁿🏴󐁧󐁢󐁳󐁣󐁴󐁿🏴󐁧󐁢󐁷󐁬󐁳󐁿🏳️🏳️‍🌈🏳️‍⚧️🏴🏴‍☠️🇺🇳🎌🏁🚩🎌🇮🇩🇬🇧🇺🇸🇯🇵🇨🇳🇩🇪🇫🇷🇷🇺🇰🇷🇸🇬🇲🇾🇦🇺\s]*/, '').trim();
+        }
+
+        function _buildCard(chunk, cat, catIcon) {
+            // Pattern 1: h2 numbered — <h2 id="...">N. 🖥️ Title</h2>
+            let m = chunk.match(/^\s*<h2[^>]*>\s*(\d+)\.\s*(.*?)<\/h2>/i);
+            if (m) {
+                return _numberedCard(m[1], _stripLeadingEmoji(m[2]), chunk, catIcon);
+            }
+
+            // Pattern 2: p > strong numbered — <p><strong>N. 🚀 Title</strong></p> (Bare Metal)
+            m = chunk.match(/^\s*<p>\s*<strong>\s*(\d+)\.?\s*(.*?)<\/strong>/i);
+            if (m && !/<h[23]/i.test(chunk)) {
+                return _numberedCard(m[1], _stripLeadingEmoji(m[2]), chunk, catIcon);
+            }
+
+            // Pattern 3: strong numbered without p wrapper
+            m = chunk.match(/^\s*<strong>\s*(\d+)\.?\s*(.*?)<\/strong>/i);
+            if (m && !/<h[23]/i.test(chunk)) {
+                return _numberedCard(m[1], _stripLeadingEmoji(m[2]), chunk, catIcon);
+            }
+
+            // Pattern 4: h2 severity header (K8s Security: 🔴 Critical, 🟡 High/Medium)
+            m = chunk.match(/^\s*<h2[^>]*>(.*?)<\/h2>/i);
+            if (m) {
+                const titleRaw = m[1];
+                const body = chunk.replace(/^\s*<h2[^>]*>[\s\S]*?<\/h2>/i, '').trim();
+
+                // Detect severity level
+                let sevClass = '';
+                let sevLabel = '';
+                if (/🔴|critical/i.test(titleRaw)) { sevClass = 'crit'; sevLabel = 'Critical'; }
+                else if (/🟡|high/i.test(titleRaw)) { sevClass = 'high'; sevLabel = 'High'; }
+                else if (/🟢|medium/i.test(titleRaw)) { sevClass = 'med'; sevLabel = 'Medium'; }
+
+                if (sevClass) {
+                    // Process sub-items (CVE h3s or bullet lists inside)
+                    const inner = _processInner(body, cat, catIcon);
+                    return `<div class="severity-card ${sevClass}">
+                        <div class="sev-header">
+                            <span class="sev-badge">${sevLabel}</span>
+                            <span class="sev-title">${_stripLeadingEmoji(titleRaw)}</span>
+                        </div>
+                        ${inner}
+                    </div>`;
+                }
+
+                // If body has h3s (Ekonomi subsections, Tech Foundations subsections)
+                if (/<h3/i.test(body)) {
+                    return _sectionCard(titleRaw, body, catIcon);
+                }
+
+                // Tables inside h2 section (Ekonomi)
+                if (/<table/i.test(body)) {
+                    const wrappedBody = body.replace(/<table[\s\S]*?<\/table>/gi, t => `<div class="table-wrap">${t}</div>`);
+                    return `<div class="data-card"><div class="section-card-title">${titleRaw}</div>${wrappedBody}</div>`;
+                }
+
+                // Bullet list section (Tech Foundations)
+                if (/^\s*<ul/i.test(body)) {
+                    return `<div class="bullet-card">${body}</div>`;
+                }
+
+                // Generic h2 section
+                return `<div class="section-card-wrap">
+                    <div class="section-card-title">${titleRaw}</div>
+                    <div class="section-card-body">${body}</div>
+                </div>`;
+            }
+
+            // Pattern 5: h3 items — CVE (K8s) or subsection (Ekonomi/Tech)
+            if (/^\s*<h3/i.test(chunk)) {
+                if (/CVE-\d{4}/i.test(chunk)) {
+                    return _cveCard(chunk, catIcon);
+                }
+                return _h3Card(chunk, catIcon);
+            }
+
+            // Pattern 6: standalone table(s)
+            if (/<table/i.test(chunk)) {
+                const wrapped = chunk.replace(/<table[\s\S]*?<\/table>/gi, t => `<div class="table-wrap">${t}</div>`);
+                return `<div class="data-card">${wrapped}</div>`;
+            }
+
+            // Pattern 7: bullet list section
+            if (/^\s*<ul/i.test(chunk)) {
+                return `<div class="bullet-card">${chunk}</div>`;
+            }
+
+            // Pattern 8: plain paragraph(s) — could be source links or residual content
+            if (/^\s*<p>/i.test(chunk) && !/<h[23]/i.test(chunk)) {
+                // Check if it's just a source link
+                if (/<a[^>]*href/i.test(chunk) && chunk.split('</a>').length === 2) {
+                    return `<div class="news-card"><div class="news-card-link">${chunk.replace(/<\/?p>/gi, '')}</div></div>`;
+                }
+                return `<div class="news-card"><div class="news-card-body">${chunk}</div></div>`;
+            }
+
+            return null;
+        }
+
+        function _numberedCard(num, title, chunk, icon) {
+            // Remove source link from body to show separately
+            let body = chunk.replace(/^\s*(?:<h2[^>]*>[\s\S]*?<\/h2>|<p>\s*<strong>[\s\S]*?<\/strong>\s*<\/p>|<strong>[\s\S]*?<\/strong>)/i, '').trim();
+            let linkHtml = '';
+
+            // Extract trailing link paragraph
+            const linkMatch = body.match(/<p>(?:🔗\s*)?<a[^>]*>.*?<\/a>\s*<\/p>\s*$/i);
+            if (linkMatch) {
+                linkHtml = linkMatch[0].replace(/<\/?p>/gi, '').trim();
+                body = body.slice(0, body.lastIndexOf(linkMatch[0]));
+            }
+
+            // Extract trailing **Source:** pattern (DevOps format)
+            const sourceMatch = body.match(/<p><strong>Source:?<\/strong>.*?<\/p>\s*$/i);
+            if (sourceMatch && !linkHtml) {
+                linkHtml = sourceMatch[0].replace(/<\/?p>/gi, '').trim();
+                body = body.slice(0, body.lastIndexOf(sourceMatch[0]));
+            }
+
+            body = body.replace(/<hr>\s*$/i, '');
+
+            let linkSection = '';
+            if (linkHtml) {
+                // Extract URL from link
+                const urlMatch = linkHtml.match(/href="([^"]*)"/);
+                const url = urlMatch ? urlMatch[1] : '#';
+                linkSection = `<div class="news-card-link"><a href="${url}" target="_blank" rel="noopener">🔗 Source</a></div>`;
+            }
+
+            return `<div class="news-card">
+                <div class="news-card-header">
+                    <span class="news-num">#${num}</span>
+                    <span class="news-icon">${icon}</span>
+                    <h2 class="news-card-title">${title}</h2>
+                </div>
+                <div class="news-card-body">${body}</div>
+                ${linkSection}
+            </div>`;
+        }
+
+        function _sectionCard(titleRaw, body, icon) {
+            // Process h3 items inside the section
+            const h3s = body.split(/(?=<h3[^>]*>)/);
+            let innerHtml = '';
+            for (let h3chunk of h3s) {
+                h3chunk = h3chunk.trim();
+                if (!h3chunk) continue;
+                if (/^<h3/i.test(h3chunk)) {
+                    innerHtml += _h3Card(h3chunk, icon);
+                } else {
+                    // Remaining content (tables, paragraphs)
+                    let processed = h3chunk.replace(/<table[\s\S]*?<\/table>/gi, t => `<div class="table-wrap">${t}</div>`);
+                    if (/^\s*<ul/i.test(processed)) {
+                        innerHtml += `<div class="bullet-card">${processed}</div>`;
+                    } else if (processed.trim()) {
+                        innerHtml += `<div class="section-card-body">${processed}</div>`;
+                    }
+                }
+            }
+            return `<div class="section-card-wrap">
+                <div class="section-card-title">${titleRaw}</div>
+                ${innerHtml}
+            </div>`;
+        }
+
+        function _h3Card(chunk, icon) {
+            const m = chunk.match(/^\s*<h3[^>]*>(.*?)<\/h3>/i);
+            const title = m ? _stripLeadingEmoji(m[1]) : '';
+            let body = chunk.replace(/^\s*<h3[^>]*>[\s\S]*?<\/h3>/i, '').trim();
+            body = body.replace(/<hr>\s*$/i, '');
+            return `<div class="news-card">
+                <div class="news-card-header">
+                    <span class="news-icon">${icon}</span>
+                    <h3 class="news-card-title">${title}</h3>
+                </div>
+                <div class="news-card-body">${body}</div>
+            </div>`;
+        }
+
+        function _cveCard(chunk, icon) {
+            const m = chunk.match(/^\s*<h3[^>]*>(.*?)<\/h3>/i);
+            const title = m ? m[1].trim() : '';
+            let body = chunk.replace(/^\s*<h3[^>]*>[\s\S]*?<\/h3>/i, '').trim();
+
+            // Extract CVSS score
+            let score = '';
+            let scoreClass = '';
+            const scoreMatch = body.match(/(?:CVSS|CVSSv[234]):?\s*([\d.]+)/i);
+            if (scoreMatch) {
+                score = scoreMatch[1];
+                const s = parseFloat(score);
+                if (s >= 9) scoreClass = 'crit';
+                else if (s >= 7) scoreClass = 'high';
+                else if (s >= 4) scoreClass = 'med';
+                else scoreClass = 'low';
+            }
+
+            // Extract date if present
+            let dateHtml = '';
+            const dateMatch = body.match(/<li><strong>Date:?<\/strong>\s*(.*?)<\/li>/i);
+            if (dateMatch) {
+                dateHtml = `<span>📅 ${dateMatch[1]}</span>`;
+            }
+
+            // Clean up list items — remove Date and CVSS from body, they go into meta
+            let cleanBody = body
+                .replace(/<li><strong>Date:?<\/strong>[\s\S]*?<\/li>/gi, '')
+                .replace(/<li><strong>CVSS[\s\S]*?<\/li>/gi, '')
+                .replace(/<li><strong>Fixed in:?<\/strong>[\s\S]*?<\/li>/gi, '')
+                .replace(/<li><strong>Reporter:?<\/strong>[\s\S]*?<\/li>/gi, '');
+
+            // Extract remaining key-value list items as meta
+            let metaItems = [];
+            const keyValRe = /<li><strong>(.*?)<\/strong>\s*(.*?)<\/li>/gi;
+            let kvMatch;
+            while ((kvMatch = keyValRe.exec(body)) !== null) {
+                metaItems.push(`<span>${kvMatch[1]}: ${kvMatch[2]}</span>`);
+            }
+            cleanBody = cleanBody.replace(/<li><strong>.*?<\/strong>.*?<\/li>/gi, '').trim();
+            cleanBody = cleanBody.replace(/<\/?ul>/gi, '').trim();
+
+            const metaHtml = metaItems.length ? `<div class="cve-meta">${metaItems.join('')}${dateHtml}</div>` : (dateHtml ? `<div class="cve-meta">${dateHtml}</div>` : '');
+
+            const cveId = title.match(/(CVE-\d{4}-\d+)/i);
+            const cveDisplay = cveId ? cveId[1] : title;
+
+            return `<div class="cve-card">
+                <div class="cve-header">
+                    <span class="cve-id">${cveDisplay}</span>
+                    ${score ? `<span class="cve-score ${scoreClass}">CVSS ${score}</span>` : ''}
+                </div>
+                <div class="cve-desc">${cleanBody}</div>
+                ${metaHtml}
+            </div>`;
+        }
+
+        function _processInner(body, cat, icon) {
+            // Process a body that may contain h3 items or bullet lists
+            if (/<h3/i.test(body)) {
+                const items = body.split(/(?=<h3[^>]*>)/);
+                let html = '';
+                for (let item of items) {
+                    item = item.trim();
+                    if (!item) continue;
+                    if (/^<h3/i.test(item) && /CVE-\d{4}/i.test(item)) {
+                        html += _cveCard(item, icon);
+                    } else if (/^<h3/i.test(item)) {
+                        html += _h3Card(item, icon);
+                    } else if (/^\s*<ul/i.test(item)) {
+                        html += `<div class="bullet-card">${item}</div>`;
+                    } else if (item.trim()) {
+                        html += `<div class="section-card-body">${item}</div>`;
+                    }
+                }
+                return html;
+            }
+            // Just bullet lists
+            if (/^\s*<ul/i.test(body)) {
+                return `<div class="bullet-card">${body}</div>`;
+            }
+            return body;
         }
 
         function closeSidebar() {
