@@ -425,6 +425,12 @@
   ],
   "tech-foundations": [
     {
+      "file": "2026-07-04.md",
+      "title": "\ud83d\udce1 Tech Foundations Weekly Update",
+      "excerpt": "- Kubernetes v1.36.2 released (12 Jun) \u2014 the latest stable patch for the 1.36 release train. Alpha work on v1.37 is already underway (v1.37.0-alpha...",
+      "count": 1
+    },
+    {
       "file": "2026-06-27.md",
       "title": "\ud83d\udce1 Tech Foundations Weekly Update",
       "excerpt": "- CNCF Welcomes New Silver Members as global demand for cloud-native infrastructure grows (18 Jun 2026)",
