@@ -111,6 +111,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-03.md",
+      "title": "Top 10 Bare-Metal Server News \u2014 July 3, 2026",
+      "excerpt": "AMD's EPYC 8005 \"Sorano\" represents one of the most dramatic generational shifts in server CPU design since the original EPYC launch. The new platf...",
+      "count": 10
+    },
+    {
       "file": "2026-07-01.md",
       "title": "\ud83d\udd29 Bare-Metal Server News \u2014 July 1, 2026",
       "excerpt": "Lambda has launched Bare Metal Instances combining direct, unmediated hardware access with cloud-grade API-driven lifecycle management. Powered by...",
@@ -442,5 +448,7 @@
       "excerpt": "The biggest CNCF project just dropped v1.36 with some seriously exciting features:",
       "count": 5
     }
-  ]
+  ],
+  "f1": [],
+  "motogp": []
 }
