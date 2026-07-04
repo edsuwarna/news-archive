@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-04.md",
+      "title": "DevOps/SRE/Cloud Infrastructure Weekly \u2014 July 4, 2026",
+      "excerpt": "OpenTelemetry has officially graduated within the CNCF, reaching the foundation's highest maturity level. This marks a milestone for the observabil...",
+      "count": 20
+    },
+    {
       "file": "2026-07-02.md",
       "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 2, 2026",
       "excerpt": "T-Mobile is migrating tens of thousands of virtual machines off VMware amid an ongoing legal dispute with Broadcom over perpetual license support....",
