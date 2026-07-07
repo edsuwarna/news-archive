@@ -117,6 +117,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-07.md",
+      "title": "\ud83d\udce1 Top Bare-Metal Server News \u2014 July 7, 2026",
+      "excerpt": "Summary: Lambda unveiled Bare Metal Instances on NVIDIA GB300 NVL72 Superclusters, combining direct hardware access (CPU, memory, GPU, disk, TPM) w...",
+      "count": 10
+    },
+    {
       "file": "2026-07-05.md",
       "title": "Top Bare-Metal Server News \u2014 July 5, 2026",
       "excerpt": "AMD's new EPYC 8005 \"Sorano\" represents one of the biggest generational upheavals in server CPUs since 2019. The new architecture fundamentally cha...",
