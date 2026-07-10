@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-10.md",
+      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 Week of 2026-07-10",
+      "excerpt": "1. \ud83d\ude80 etcd v3.7.0 Released \u2014 Major Upgrade for Kubernetes' Backbone Database",
+      "count": 1
+    },
+    {
       "file": "2026-07-04.md",
       "title": "DevOps/SRE/Cloud Infrastructure Weekly \u2014 July 4, 2026",
       "excerpt": "OpenTelemetry has officially graduated within the CNCF, reaching the foundation's highest maturity level. This marks a milestone for the observabil...",
