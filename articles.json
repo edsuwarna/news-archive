@@ -117,6 +117,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-10.md",
+      "title": "\ud83d\udce1 Top Bare-Metal Server News \u2014 July 10, 2026",
+      "excerpt": "AWS's next-gen ARM server CPU has landed in Phoronix's test lab, and the results are impressive \u2014 a 30% geomean performance uplift over Graviton4 a...",
+      "count": 11
+    },
+    {
       "file": "2026-07-07.md",
       "title": "\ud83d\udce1 Top Bare-Metal Server News \u2014 July 7, 2026",
       "excerpt": "Summary: Lambda unveiled Bare Metal Instances on NVIDIA GB300 NVL72 Superclusters, combining direct hardware access (CPU, memory, GPU, disk, TPM) w...",
