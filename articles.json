@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-12.md",
+      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 July 12, 2026",
+      "excerpt": "The Kubernetes SIG Etcd leads announced etcd v3.7.0, the latest minor release of the distributed key-value store that underpins Kubernetes. The mar...",
+      "count": 20
+    },
+    {
       "file": "2026-07-10.md",
       "title": "DevOps/SRE/Cloud Infrastructure News \u2014 Week of 2026-07-10",
       "excerpt": "1. \ud83d\ude80 etcd v3.7.0 Released \u2014 Major Upgrade for Kubernetes' Backbone Database",
