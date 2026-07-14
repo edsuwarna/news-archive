@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-14.md",
+      "title": "DevOps / SRE / Cloud Infrastructure News \u2014 July 14, 2026",
+      "excerpt": "1. \ud83d\udcb0 AWS WAF Adds AI Traffic Monetization \u2014 Charge AI Bots for Content Access",
+      "count": 1
+    },
+    {
       "file": "2026-07-12.md",
       "title": "DevOps/SRE/Cloud Infrastructure News \u2014 July 12, 2026",
       "excerpt": "The Kubernetes SIG Etcd leads announced etcd v3.7.0, the latest minor release of the distributed key-value store that underpins Kubernetes. The mar...",
