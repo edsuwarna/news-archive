@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-16.md",
+      "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 16, 2026",
+      "excerpt": "Sheetz convenience store chain is migrating all 11,000 VMs off VMware after Broadcom's acquisition created too much uncertainty around licensing an...",
+      "count": 20
+    },
+    {
       "file": "2026-07-14.md",
       "title": "DevOps / SRE / Cloud Infrastructure News \u2014 July 14, 2026",
       "excerpt": "1. \ud83d\udcb0 AWS WAF Adds AI Traffic Monetization \u2014 Charge AI Bots for Content Access",
