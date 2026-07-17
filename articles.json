@@ -141,6 +141,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-17.md",
+      "title": "Bare-Metal Server News \u2014 July 17, 2026",
+      "excerpt": "NVIDIA has announced two new mid-range additions to their Jetson Thor lineup \u2014 the T3000 and T2000 modules, arriving in Q1'27. These boards target...",
+      "count": 10
+    },
+    {
       "file": "2026-07-10.md",
       "title": "\ud83d\udce1 Top Bare-Metal Server News \u2014 July 10, 2026",
       "excerpt": "AWS's next-gen ARM server CPU has landed in Phoronix's test lab, and the results are impressive \u2014 a 30% geomean performance uplift over Graviton4 a...",
