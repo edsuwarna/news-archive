@@ -147,6 +147,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-19.md",
+      "title": "\ud83d\udda5\ufe0f Top Bare-Metal Server News \u2014 2026-07-19",
+      "excerpt": "Micron demonstrated DDR5-8000 RDIMMs while Samsung showcased their second-gen MRDIMMs hitting a blistering 12,800 MT/s at Computex 2026. MRDIMM Gen...",
+      "count": 10
+    },
+    {
       "file": "2026-07-17.md",
       "title": "Bare-Metal Server News \u2014 July 17, 2026",
       "excerpt": "NVIDIA has announced two new mid-range additions to their Jetson Thor lineup \u2014 the T3000 and T2000 modules, arriving in Q1'27. These boards target...",
