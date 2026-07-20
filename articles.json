@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-20.md",
+      "title": "DevOps / SRE / Cloud & Infrastructure Engineering \u2014 Weekly Top 20",
+      "excerpt": "AWS introduced the ability to roll back Amazon EKS cluster upgrades within a 7-day window \u2014 no cluster rebuilds required. This provides a critical...",
+      "count": 20
+    },
+    {
       "file": "2026-07-18.md",
       "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 18, 2026",
       "excerpt": "Amazon EKS now supports Kubernetes version rollbacks, letting ops teams reverse cluster upgrades within a 7-day window \u2014 no cluster rebuilds requir...",
