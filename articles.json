@@ -153,6 +153,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-21.md",
+      "title": "Bare-Metal Server News \u2014 July 21, 2026",
+      "excerpt": "Intel announced a mid-generation memory upgrade for its Xeon 6 platform, adding support for DDR5-8000 RDIMMs and Gen2 MRDIMMs. With AMD EPYC Venice...",
+      "count": 10
+    },
+    {
       "file": "2026-07-19.md",
       "title": "\ud83d\udda5\ufe0f Top Bare-Metal Server News \u2014 2026-07-19",
       "excerpt": "Micron demonstrated DDR5-8000 RDIMMs while Samsung showcased their second-gen MRDIMMs hitting a blistering 12,800 MT/s at Computex 2026. MRDIMM Gen...",
