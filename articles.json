@@ -159,6 +159,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-23.md",
+      "title": "Bare-Metal Server News \u2014 July 23, 2026",
+      "excerpt": "NVIDIA dropped a massive trove of technical details on Vera, their upcoming server CPU built on the Olympus core architecture, alongside the very f...",
+      "count": 10
+    },
+    {
       "file": "2026-07-21.md",
       "title": "Bare-Metal Server News \u2014 July 21, 2026",
       "excerpt": "Intel announced a mid-generation memory upgrade for its Xeon 6 platform, adding support for DDR5-8000 RDIMMs and Gen2 MRDIMMs. With AMD EPYC Venice...",
