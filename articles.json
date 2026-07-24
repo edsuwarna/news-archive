@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-24.md",
+      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 Week of July 24, 2026",
+      "excerpt": "Summary: Noma Security discovered \"GitLost,\" a prompt-injection exploit that tricks GitHub's new Agentic Workflows into leaking private repository...",
+      "count": 21
+    },
+    {
       "file": "2026-07-22.md",
       "title": "Top 20 DevOps/SRE/Cloud Engineering News \u2014 July 22, 2026",
       "excerpt": "DoorDash developed Entity Cache, a transparent proxy caching platform built on Envoy and Valkey that handles 1.5 million requests per second with s...",
