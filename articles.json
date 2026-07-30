@@ -513,6 +513,12 @@
   ],
   "k8s-security": [
     {
+      "file": "2026-07-30.md",
+      "title": "Kubernetes Security Briefing \u2014 July 30, 2026",
+      "excerpt": "Source: Microsoft Security Response",
+      "count": 20
+    },
+    {
       "file": "2026-07-22.md",
       "title": "Kubernetes Security Briefing \u2014 2026-07-22",
       "excerpt": "Source: The Hacker News (Jul 01, 2026)",
