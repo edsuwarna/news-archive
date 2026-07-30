@@ -635,6 +635,12 @@
   ],
   "tech-foundations": [
     {
+      "file": "2026-07-30.md",
+      "title": "\ud83d\uddde\ufe0f Tech Foundations Weekly \u2014 July 30, 2026",
+      "excerpt": "CNCF unveiled the full schedule for its first-ever Observability Summit Europe, taking place alongside KubeCon + CloudNativeCon Europe 2026. The ev...",
+      "count": 29
+    },
+    {
       "file": "2026-07-18.md",
       "title": "\ud83d\uddde\ufe0f Tech Foundations Update \u2014 18 July 2026",
       "excerpt": "This was the biggest news of the period \u2014 OpenTelemetry officially graduated from CNCF incubation to become a full graduated project. Multiple outl...",
