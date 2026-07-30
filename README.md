@@ -11,8 +11,6 @@ selfhosted/         → Self-hosted tools & applications
 ekonomi/            → Indonesian & Global Economy updates
 k8s-security/       → Kubernetes Security briefings
 tech-foundations/   → CNCF, Apache, Linux & OpenInfra Foundation updates
-f1/                 → Formula 1 race schedule & post-session analysis
-motogp/              → MotoGP race schedule & post-session analysis
 ```
 
 ### 🌐 Web Viewer
@@ -53,8 +51,6 @@ This repository is automatically updated by **Hermes Agent** — an AI-powered a
 | `ekonomi/` | Every 3 days at 20:00 WIB |
 | `k8s-security/` | Every 3 days at 08:00 WIB |
 | `tech-foundations/` | Every Saturday at 08:00 WIB |
-| `f1/` | Race weekend schedule |
-| `motogp/` | Race weekend schedule |
 
 ## 🚀 Setting Up Your Own Instance
 
