@@ -637,8 +637,8 @@
     {
       "file": "2026-07-30.md",
       "title": "\ud83d\uddde\ufe0f Tech Foundations Weekly \u2014 July 30, 2026",
-      "excerpt": "CNCF unveiled the full schedule for its first-ever Observability Summit Europe, taking place alongside KubeCon + CloudNativeCon Europe 2026. The ev...",
-      "count": 29
+      "excerpt": "Diagrid released Catalyst 2.0, adding durable recovery and signed execution histories to LangGraph and other AI agent frameworks through Dapr workf...",
+      "count": 21
     },
     {
       "file": "2026-07-18.md",
