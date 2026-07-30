@@ -171,6 +171,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-07-30.md",
+      "title": "Bare-Metal Server News \u2014 July 30, 2026",
+      "excerpt": "Summary: ServeTheHome reviews the ASRock Rack 4U16X-GNR2, an 8\u00d7 NVIDIA HGX B300 GPU server with dual liquid-cooling options and enormous network ba...",
+      "count": 21
+    },
+    {
       "file": "2026-07-23.md",
       "title": "Bare-Metal Server News \u2014 July 23, 2026",
       "excerpt": "NVIDIA dropped a massive trove of technical details on Vera, their upcoming server CPU built on the Olympus core architecture, alongside the very f...",
