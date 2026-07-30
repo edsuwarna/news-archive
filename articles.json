@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-07-30.md",
+      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 July 30, 2026",
+      "excerpt": "Summary: The Mythos fuzzing framework uncovers devastating cryptographic weaknesses in a post-quantum cryptography algorithm that had survived thre...",
+      "count": 21
+    },
+    {
       "file": "2026-07-24.md",
       "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 Week of July 24, 2026",
       "excerpt": "Summary: Noma Security discovered \"GitLost,\" a prompt-injection exploit that tricks GitHub's new Agentic Workflows into leaking private repository...",
