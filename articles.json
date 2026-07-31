@@ -353,6 +353,12 @@
   ],
   "selfhosted": [
     {
+      "file": "2026-07-31.md",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri July 31, 2026",
+      "excerpt": "Use case: Sistem CCTV ringan yang jalan di Raspberry Pi & SBC Linux \u2014 tanpa cloud, tanpa langganan",
+      "count": 20
+    },
+    {
       "file": "2026-07-30.md",
       "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Thu July 30, 2026",
       "excerpt": "Use case: All-in-one AI workspace yang lo host sendiri \u2014 alternatif ChatGPT/Claude untuk tim",
