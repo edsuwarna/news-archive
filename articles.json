@@ -533,7 +533,7 @@
     {
       "file": "2026-07-31.md",
       "title": "Kubernetes Security Briefing \u2014 July 31, 2026",
-      "excerpt": "UDS Identity Config builds the Keycloak configuration image (realm, plugins, theme, truststore, JARs) consumed by UDS Core's Identity deployment. I...",
+      "excerpt": "Source: NVD / GitHub Advisory",
       "count": 20
     },
     {
