@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-02.md",
+      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 2, 2026",
+      "excerpt": "Summary: AWS Builder Center now offers free, time-limited sandbox environments for workshops, so developers no longer need to use their own AWS acc...",
+      "count": 20
+    },
+    {
       "file": "2026-08-01.md",
       "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 1, 2026",
       "excerpt": "Summary: HashiCorp introduced tfpolicy, a new HCL-based policy-as-code framework for Terraform, now available in public beta within HCP Terraform....",
