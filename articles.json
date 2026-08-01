@@ -3,7 +3,7 @@
     {
       "file": "2026-08-01.md",
       "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 1, 2026",
-      "excerpt": "Summary: HashiCorp launched tfpolicy, a new HCL-based policy-as-code framework for Terraform now in public beta within HCP Terraform, integrating p...",
+      "excerpt": "Summary: HashiCorp introduced tfpolicy, a new HCL-based policy-as-code framework for Terraform, now available in public beta within HCP Terraform....",
       "count": 20
     },
     {
