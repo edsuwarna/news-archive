@@ -189,6 +189,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-02.md",
+      "title": "Bare-Metal Server News \u2014 August 02, 2026",
+      "excerpt": "Summary: We review the ASRock Rack 4U16X-GNR2, an 8x NVIDIA HGX B300 server with enormous network bandwidth and two liquid-cooling options.",
+      "count": 20
+    },
+    {
       "file": "2026-07-30.md",
       "title": "Bare-Metal Server News \u2014 July 30, 2026",
       "excerpt": "Summary: ServeTheHome reviews the ASRock Rack 4U16X-GNR2, an 8\u00d7 NVIDIA HGX B300 GPU server with dual liquid-cooling options and enormous network ba...",
