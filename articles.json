@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-03.md",
+      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 03, 2026",
+      "excerpt": "Summary: AWS unveiled Amazon Quick \u2014 an AI assistant for work with a desktop app and expanded integrations \u2014 at its What's Next 2026 event. Additio...",
+      "count": 20
+    },
+    {
       "file": "2026-08-02.md",
       "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 2, 2026",
       "excerpt": "Summary: AWS Builder Center now offers free, time-limited sandbox environments for workshops, so developers no longer need to use their own AWS acc...",
