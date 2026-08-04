@@ -573,6 +573,12 @@
   ],
   "k8s-security": [
     {
+      "file": "2026-08-04.md",
+      "title": "Kubernetes Security Briefing \u2014 2026-08-04",
+      "excerpt": "Source: Sysdig Threat Research< /br>Cloudsmith Digest",
+      "count": 20
+    },
+    {
       "file": "2026-07-31.md",
       "title": "Kubernetes Security Briefing \u2014 July 31, 2026",
       "excerpt": "Source: NVD / GitHub Advisory",
