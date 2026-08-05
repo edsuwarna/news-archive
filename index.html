@@ -69,7 +69,8 @@
         .cat-card .emoji { font-size: 24px; margin-bottom: 6px; display: block; }
         .cat-card h3 { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
         .cat-card .desc { font-size: 12px; color: var(--text2); line-height: 1.4; }
-        .cat-card .meta { font-size: 11px; color: var(--text3); margin-top: 8px; }
+        .cat-card .meta { font-size: 11px; color: var(--text3); margin-top: 8px; display: flex; align-items: center; gap: 4px; }
+        .cat-card .meta .recent-tag { font-size: 10px; background: var(--green); color: #fff; padding: 1px 6px; border-radius: 10px; font-weight: 600; margin-left: 2px; }
         .article-list { max-width: 800px; margin: 0 auto; }
         .article-list h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
         .article-list .back { display: inline-block; color: var(--accent); text-decoration: none; font-size: 13px; font-weight: 500; margin-bottom: 16px; cursor: pointer; }
@@ -174,9 +175,10 @@
         .progress-bar { position: fixed; top: 0; left: 0; height: 3px; background: linear-gradient(90deg, var(--accent), var(--green)); z-index: 999; width: 0%; transition: width 0.1s linear; }
 
         /* ─── Back to Top ─── */
-        .back-to-top { position: fixed; bottom: 24px; right: 24px; z-index: 300; width: 40px; height: 40px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--border); color: var(--text2); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all 0.2s; box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
+        .back-to-top { position: fixed; bottom: 24px; right: 24px; z-index: 300; width: 40px; height: 40px; border-radius: 50%; background: var(--bg2); border: 1px solid var(--border); color: var(--text2); font-size: 18px; cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 2px 12px rgba(0,0,0,0.3); }
         .back-to-top.visible { opacity: 1; pointer-events: auto; }
-        .back-to-top:hover { background: var(--bg3); color: var(--accent); border-color: var(--accent); transform: translateY(-2px); }
+        .back-to-top:hover { background: var(--bg3); color: var(--accent); border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 4px 16px rgba(0,0,0,0.4); }
+        .back-to-top:active { transform: translateY(0); }
 
         /* ─── Page Transitions ─── */
         .page-fade { animation: pageFadeIn 0.2s ease-out; }
@@ -199,7 +201,8 @@
         /* ─── Load More ─── */
         .load-more-wrap { text-align: center; margin-top: 16px; }
         .load-more-btn { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; padding: 10px 28px; color: var(--text2); font-size: 13px; font-weight: 500; cursor: pointer; font-family: inherit; transition: all 0.15s; }
-        .load-more-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--bg3); }
+        .load-more-btn:hover { border-color: var(--accent); color: var(--accent); background: var(--bg3); transform: translateY(-1px); }
+        .load-more-btn:active { transform: translateY(0); }
         .load-more-btn .count { color: var(--text3); font-weight: 400; }
         .load-more-btn:disabled { opacity: 0.4; pointer-events: none; }
 
@@ -363,7 +366,25 @@
             ai: { icon: icons.ai, name: 'AI', desc: 'Artificial Intelligence & LLM news' },
         };
 
+        // ── Theme Persistence ──
+        function loadTheme() {
+            const saved = localStorage.getItem('news-theme');
+            if (saved) {
+                document.documentElement.setAttribute('data-theme', saved);
+                updateThemeIcon(saved);
+            }
+        }
+        function saveTheme(theme) {
+            localStorage.setItem('news-theme', theme);
+        }
+        function updateThemeIcon(theme) {
+            const btn = document.getElementById('themeToggle');
+            if (btn) btn.textContent = theme === 'light' ? '\u{1F319}' : '\u2600\ufe0f';
+        }
+
+
         async function init() {
+            loadTheme();
             // Fetch available articles from each category
             const promises = categoryOrder.map(async (cat) => {
                 try {
@@ -443,7 +464,11 @@
                     a.href = `#/${cat}/${file}`;
                     // Format date: remove .md extension and show nicely
                     const display = item.title || file.replace('.md', '').replace(/-/g, '/');
-                    const cleanTitle = stripEmoji(display);
+                    let cleanTitle = stripEmoji(display);
+                    // Trim long titles for sidebar readability
+                    if (cleanTitle.length > 80) {
+                        cleanTitle = cleanTitle.substring(0, 77) + '\u{2026}';
+                    }
                     a.innerHTML = `${info.icon} ${cleanTitle}`;
                     a.dataset.cat = cat;
                     a.dataset.file = file;
@@ -1228,6 +1253,8 @@
             const html = document.documentElement;
             const isDark = html.getAttribute('data-theme') === 'dark';
             html.setAttribute('data-theme', isDark ? 'light' : 'dark');
+            saveTheme(isDark ? 'dark' : 'light');
+            updateThemeIcon(isDark ? 'dark' : 'light');
             document.getElementById('themeToggle').textContent = isDark ? '☀️' : '🌙';
         });
 
@@ -1280,6 +1307,24 @@
             }
         });
 
+
+        // Show all hidden articles with smooth animation
+        function showAllArticles(btn, total) {
+            const container = btn.closest('.article-list').querySelector('#articleItems');
+            const hidden = container.querySelectorAll('.hidden-item');
+            hidden.forEach((item, i) => {
+                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+                setTimeout(() => {
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                    item.style.display = '';
+                    item.classList.remove('hidden-item');
+                }, i * 50);
+            });
+            setTimeout(() => {
+                btn.parentElement.innerHTML = '<span style="color:var(--text3);font-size:13px">Showing all ' + total + ' articles</span>';
+            }, hidden.length * 50 + 300);
+        }
         // Init
         marked.setOptions({ breaks: true, gfm: true });
         init();
