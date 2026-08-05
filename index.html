@@ -662,7 +662,11 @@
                 const loadMore = document.createElement('div');
                 loadMore.className = 'load-more-wrap';
                 const remaining = Math.max(0, allItems.length - LOAD_MORE_COUNT);
-                loadMore.innerHTML = `<button class="load-more-btn" onclick="showAllArticles(this, ${allItems.length})">Show more <span class="count">(${remaining} remaining)</span></button>`;
+                const btnEl = document.createElement('button');
+                btnEl.className = 'load-more-btn';
+                btnEl.innerHTML = `Show more <span class="count">(${remaining} remaining)</span>`;
+                btnEl.addEventListener('click', () => showAllArticles(btnEl, allItems.length));
+                loadMore.appendChild(btnEl);
                 itemsDiv.parentElement.appendChild(loadMore);
             }
 
