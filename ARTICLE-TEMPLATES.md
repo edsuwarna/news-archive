@@ -4,11 +4,19 @@ Standar format untuk semua artikel. Setiap kategori wajib mengikuti salah satu d
 
 ---
 
+## Global Rules
+
+- **Format tanggal baku:** `DD Month YYYY` — contoh: `05 August 2026`. Jangan pakai nama hari (Senin/Selasa), jangan pakai angka nol di depan kalau tidak perlu (pake `5 August`, bukan `05 August`). Format ini yang paling rapi di sidebar dan kartu homepage.
+- **Bahasa:** Satu artikel = satu bahasa penuh. English untuk DevOps/AI/K8s/Tech Foundations. Indonesian untuk Self-Hosted/Ekonomi. JANGAN campur dalam satu paragraf/artikel. JANGAN nyelip karakter non-Latin (Cyrillic, CJK, dll).
+- **Judul maksimal 65 karakter.** Jika lebih panjang, tulis ringkasan judul di H2, detail lengkapnya di paragraf pertama. Sidebar akan memotong judul jika melebihi batas.
+
+---
+
 ## Tipe A: News Roundup (DevOps, AI, Bare Metal)
 *Gunakan untuk: daftar berita harian/mingguan.*
 
 ```markdown
-# Top [Category] News — [Day] [Month DD], YYYY
+# Top [Category] News — [Month DD], YYYY
 
 ## 1. 🚀 Emoji Title [Link](url)
 Paragraf deskripsi singkat berisi inti berita. Tambahkan detail teknis atau angka penting jika relevan. Gunakan bullet points untuk poin-poin spesifik.
@@ -34,7 +42,7 @@ Deskripsi artikel kedua...
 *Gunakan untuk: roundup tools/aplikasi self-hosted.*
 
 ```markdown
-# Self-Hosted Tools Report — [Day of week] [Month DD], YYYY
+# Self-Hosted Tools Report — [Month DD], YYYY
 
 ## 1. Tool Name — Short Tagline (one-liner)
 Deskripsi dalam Bahasa Indonesia. Jelaskan apa tool ini, use-case utama, teknologi yang dipakai, dan siapa target audienya. Gunakan bullet points untuk fitur-fitur kunci.
@@ -106,7 +114,7 @@ Deskripsi berita kedua.
 *Gunakan untuk: CVE, advisories, vulnerability reports.*
 
 ```markdown
-# Kubernetes Security Briefing — [Date Format YYYY-MM-DD]
+# Kubernetes Security Briefing — [Month DD], YYYY
 
 ## 🔴 Critical
 
@@ -178,7 +186,8 @@ Description...
 **Rules:**
 - Pilih satu model saja per artikel. Jangan mix Model E1 dan E2 dalam satu file.
 - Foundation emoji opsional tapi disarankan untuk quick scanning.
-- Bahasa Inggris untuk technical announcements, boleh Indonesian untuk summaries.
+- Bahasa Inggris penuh untuk technical announcements.
+- JANGAN nyelipkan karakter non-Latin (contoh: Cyrillic `Проекты` harus diganti jadi `Projects`).
 
 ---
 
@@ -195,9 +204,16 @@ Description...
 | K8s Security | D | Standard |
 | Tech Foundations | E1 | Grouped by Foundation |
 
+---
+
 ## Checklist Before Publishing
+
 1. ✅ Format heading sesuai tipe (bukan manual override)
-2. ✅ Bahasa konsisten (EN untuk DevOps/AI/K8s/TF, ID untuk Self-Hosted/Ekonomi)
-3. ✅ Minimal 1 sumber/link per artikel
-4. ✅ No mixed formatting (e.g., don't use tables AND numbered list in same Ekonomi article)
-5. ✅ Max 21 items per article (default scraper cap)
+2. ✅ Tanggal pakai format `DD Month YYYY` (contoh: `5 August 2026`)
+3. ✅ Bahasa konsisten — satu bahasa penuh per artikel (EN untuk DevOps/AI/K8s/Tech Foundations; ID untuk Self-Hosted/Ekonomi)
+4. ✅ Judul maksimal 65 karakter (jika lebih panjang, ringkas di heading, detail di body)
+5. ✅ No Cyrillic, CJK, atau karakter non-Latin dalam artikel
+6. ✅ Minimal 1 sumber/link per artikel
+7. ✅ No mixed formatting (e.g., don't use tables AND numbered list in same Ekonomi article)
+8. ✅ Max 21 items per article (default scraper cap)
+9. ✅ Validasi otomatis di script generator (`finalize-top20.py`): pastikan script menerapkan template dan reject output yang melanggar rules global
