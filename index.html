@@ -205,6 +205,7 @@
         .load-more-btn:active { transform: translateY(0); }
         .load-more-btn .count { color: var(--text3); font-weight: 400; }
         .load-more-btn:disabled { opacity: 0.4; pointer-events: none; }
+        .hidden-item { display: none; }
 
         /* ─── Image Lightbox ─── */
         .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 0; pointer-events: none; transition: opacity 0.25s; cursor: zoom-out; }
@@ -650,13 +651,8 @@
                 allItems.forEach((item, i) => { 
                     if (i >= LOAD_MORE_COUNT) {
                         item.classList.add('hidden-item');
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(8px)';
-                        item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
                     } else {
                         item.classList.remove('hidden-item');
-                        item.style.opacity = '';
-                        item.style.transform = '';
                     }
                 });
                 const loadMore = document.createElement('div');
@@ -1346,22 +1342,12 @@
         });
 
 
-        // Show all hidden articles with smooth animation
+        // Show all hidden articles
         function showAllArticles(btn, total) {
             const container = btn.closest('.article-list').querySelector('#articleItems');
             const hidden = container.querySelectorAll('.hidden-item');
-            hidden.forEach((item, i) => {
-                item.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-                setTimeout(() => {
-                    item.style.opacity = '1';
-                    item.style.transform = 'translateY(0)';
-                    item.style.display = '';
-                    item.classList.remove('hidden-item');
-                }, i * 50);
-            });
-            setTimeout(() => {
-                btn.parentElement.innerHTML = '<span style="color:var(--text3);font-size:13px">Showing all ' + total + ' articles</span>';
-            }, hidden.length * 50 + 300);
+            hidden.forEach(item => item.classList.remove('hidden-item'));
+            btn.parentElement.innerHTML = '<span style="color:var(--text3);font-size:13px">Showing all ' + total + ' articles</span>';
         }
 
         // Init
