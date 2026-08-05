@@ -16,7 +16,7 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 
 CATEGORIES = [
     "devops", "baremetal", "selfhosted", "ekonomi",
-    "k8s-security", "tech-foundations", "f1", "motogp"
+    "k8s-security", "tech-foundations", "f1", "motogp", "ai"
 ]
 
 CATEGORY_INFO = {
@@ -28,6 +28,7 @@ CATEGORY_INFO = {
     "tech-foundations": {"emoji": "🏗️", "name": "Tech Foundations"},
     "f1": {"emoji": "🏎️", "name": "F1"},
     "motogp": {"emoji": "🏍️", "name": "MotoGP"},
+    "ai": {"emoji": "🧠", "name": "AI"},
 }
 
 

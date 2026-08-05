@@ -774,5 +774,13 @@
     }
   ],
   "f1": [],
-  "motogp": []
+  "motogp": [],
+  "ai": [
+    {
+      "file": "2026-08-05.md",
+      "title": "AI News Digest \u2014 August 05, 2026",
+      "excerpt": "Theme 1: Agentic AI Systems Maturing Into Production Ready \u2014 Multiple papers and products converge on a single realization: the critical bottleneck...",
+      "count": 21
+    }
+  ]
 }
