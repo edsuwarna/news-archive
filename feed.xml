@@ -5,7 +5,7 @@
     <link>https://news.edsuwarna.id</link>
     <description>Automated news aggregation archive — DevOps, Economy, Security and more</description>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Aug 2026 13:03:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 00:03:33 +0000</lastBuildDate>
     <atom:link href="https://news.edsuwarna.id/feed.xml" rel="self" type="application/rss+xml"/>
     <item>
       <title>🖥️ Top 10 Bare-Metal Server News — May 27, 2026 — ️ Dell Unveils EPYC Venice PowerEdge 18th Gen Servers with Up to 256 Cores</title>
@@ -394,58 +394,55 @@
       <source url="https://news.edsuwarna.id/#/k8s-security/2026-06-10.md">Kubernetes Security Briefing — 2026-06-10</source>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 6+ Clearwater Forest is Here — 288 Cores on 18A</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>Intel officially launched the Xeon 6900E+ series (Clearwater Forest) at Computex 2026. This is Intel's first 2nm-class Xeon built on the Intel 18A process, packing up to 288 efficiency cores per socket. The new lineup brings faster memory support...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://www.servethehome.com/intel-xeon-6-clearwater-forest-is-out/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 6+ Clearwater Forest is Here — 288 Cores on 18A</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — Airlock Digital Unveils Agentic AI Control &amp; Governance at Black Hat USA</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>Airlock Digital announced Agentic AI Control &amp; Governance, extending preventative endpoint security into agentic AI workloads. The platform enables organizations to govern and monitor autonomous AI agents operating across production environments b...</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — NVIDIA Vera Rubin Now in Full Production — Next-Gen GPU for AI Workloads</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>At Computex 2026, NVIDIA announced that its next-generation Vera Rubin GPU platform has entered full production. The company also revealed that its high-end DGX Station systems will soon support Windows, with availability in Q4 2026. For the bare-...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://www.servethehome.com/nvidia-computex-2026-news-bytes-vera-rubin-now-in-production-dgx-station-gets-windows/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — NVIDIA Vera Rubin Now in Full Production — Next-Gen GPU for AI Workloads</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — RapidFort Extends Open Source Software Security to Runtime Environments</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>At Black Hat USA 2026, RapidFort showcased its expanded runtime security capabilities for open-source software, closing gaps in supply-chain protection from build-time through live deployment environments.
+Source: DevOps.com</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 7 Diamond Rapids Slated for 2027 — 192 Cores, No Hyperthreading</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>Intel's next-next-gen server platform, Xeon 7 "Diamond Rapids" , is now officially targeting a 2027 launch. The platform is expected to push core counts to 192 cores and will reportedly drop Hyperthreading — a significant architectural shift for s...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://www.servethehome.com/intel-xeon-7-diamond-rapids-now-slated-for-2027/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Intel Xeon 7 Diamond Rapids Slated for 2027 — 192 Cores, No Hyperthreading</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — From API Integration to Agent Governance: Understanding MCP for Backend Teams</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>A deep dive into Model Context Protocol (MCP) evolution — how backend teams are transitioning from simple API integrations to governing AI agent tool use in production, covering governance patterns and operational readiness challenges.
+Source: Dev...</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Launches Bare Metal Instances — Full Hardware Control via API</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>Lambda Labs unveiled Lambda Bare Metal Instances, giving users complete hardware control with API-driven provisioning. This is a direct BMaaS (Bare Metal as a Service) play — you get a dedicated physical server with no hypervisor, full root access...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://lambda.ai/blog/lambda-bare-metal-instances">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Launches Bare Metal Instances — Full Hardware Control via API</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — ️ Cloud Giants Pour Nearly $600B Into Capex as AI Demand Surges</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>The four major cloud providers collectively spent nearly $600 billion in capital expenditures, driven by insatiable demand for AI infrastructure. AWS alone raised its 2026 capex forecast to over $200 billion, signaling continued massive investment...</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Closes $1 Billion Credit Facility for Gigawatt-Scale AI Infrastructure</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>Lambda secured a $1 billion senior secured credit facility to fund its massive AI infrastructure expansion. The company is targeting gigawatt-scale data center capacity and has been assembling a leadership team to match. For the bare-metal ecosyst...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://lambda.ai/blog/lambda-closes-1-billion-senior-secured-credit-facility">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Lambda Closes $1 Billion Credit Facility for Gigawatt-Scale AI Infrastructure</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — Is the Future of Data Centers Portable? Runware Builds a Pod to Find Out</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>AI infrastructure startup Runware unveiled a portable data center pod designed to deploy compute resources rapidly and close to where inference workloads demand them — a bold experiment in decentralized edge-AI infrastructure.
+Source: TechCrunch</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
     <item>
-      <title>🖥️ 🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Equinix Deep-Dives Direct-to-Chip Liquid Cooling Architecture</title>
-      <link>https://news.edsuwarna.id/#/baremetal/2026-06-03.md</link>
-      <guid isPermaLink="true">https://news.edsuwarna.id/#/baremetal/2026-06-03.md</guid>
-      <description>Equinix published a detailed technical breakdown of direct-to-chip liquid cooling systems. As AI workload density climbs, traditional air cooling can't keep up with the thermal demands of modern GPUs and high-core-count CPUs. The article covers co...</description>
-      <category>Bare Metal</category>
-      <pubDate>Wed, 03 Jun 2026 00:00:00 +0000</pubDate>
-      <source url="https://blog.equinix.com/blog/2026/05/07/the-anatomy-of-a-direct-to-chip-liquid-cooling-system/">🖥️ Top 10 Bare-Metal Server News — June 3, 2026 — Equinix Deep-Dives Direct-to-Chip Liquid Cooling Architecture</source>
+      <title>⚙️ Top DevOps/SRE/CLOUD/Infrastructure News — Month 05, 2026 — ️ Sweet Security Brings Autonomous Protection to the AI Enterprise</title>
+      <link>https://news.edsuwarna.id/#/devops/2026-08-05.md</link>
+      <guid isPermaLink="true">https://news.edsuwarna.id/#/devops/2026-08-05.md</guid>
+      <description>Sweet Security announced new autonomous runtime-blocking capabilities for enterprise AI deployments, including rogue AI agent detection that intercepts unauthorized actions in live production before they cause damage. Announced at the intersection...</description>
+      <category>DevOps</category>
+      <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
     </item>
   </channel>
 </rss>
