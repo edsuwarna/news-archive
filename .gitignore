@@ -14,3 +14,6 @@ Thumbs.db
 __pycache__/
 *.pyc
 *.pyo
+
+# Node dependencies (large, tracked elsewhere)
+node_modules/
