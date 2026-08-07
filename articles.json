@@ -1,244 +1,256 @@
 {
   "devops": [
     {
+      "file": "2026-08-07.md",
+      "title": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 07, 2026",
+      "excerpt": "Meta unveiled its own AI coding agent, entering the fiercely contested agentic coding space alongside OpenAI's Codex and Anthropic's Claude Code. T...",
+      "count": 20
+    },
+    {
       "file": "2026-08-05.md",
-      "title": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 05, 2026",
-      "excerpt": "Airlock Digital announced Agentic AI Control & Governance, extending preventative endpoint security into agentic AI workloads. The platform enables...",
+      "title": "1. \ud83e\udd16 Airlock Digital Unveils Agentic AI Control & Governance at Black Hat USA",
+      "excerpt": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 5, 2026",
       "count": 20
     },
     {
       "file": "2026-08-03.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 03, 2026",
-      "excerpt": "Summary: AWS unveiled Amazon Quick \u2014 an AI assistant for work with a desktop app and expanded integrations \u2014 at its What's Next 2026 event. Additio...",
+      "title": "1. \ud83d\ude80 AWS Summit New York 2026: Amazon Quick AI Assistant & Agentic AI Solutions Unveiled",
+      "excerpt": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 3, 2026",
       "count": 20
     },
     {
       "file": "2026-08-02.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 2, 2026",
-      "excerpt": "Summary: AWS Builder Center now offers free, time-limited sandbox environments for workshops, so developers no longer need to use their own AWS acc...",
+      "title": "1. \ud83c\udfd7\ufe0f [AWS Introduces Free Sandbox Environments for Workshops](https://www.infoq.com/news/2026/08/aws-builder-sandbox/)",
+      "excerpt": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 2, 2026",
       "count": 20
     },
     {
       "file": "2026-08-01.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 1, 2026",
-      "excerpt": "Summary: HashiCorp introduced tfpolicy, a new HCL-based policy-as-code framework for Terraform, now available in public beta within HCP Terraform....",
+      "title": "1. \ud83c\udfd7\ufe0f [Terraform Introduces tfpolicy, an HCL-based Policy-as-Code Framework](https://www.infoq.com/news/2026/07/terraform-policy-as-code/)",
+      "excerpt": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 August 1, 2026",
       "count": 20
     },
     {
       "file": "2026-07-31.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 July 31, 2026",
-      "excerpt": "Summary: AWS Lambda now supports MicroVMs, giving developers full lifecycle control over isolated sandboxes \u2014 a significant leap for secure, multi-...",
+      "title": "1. \ud83d\ude80 [AWS Lambda Introduces MicroVMs for Isolated Sandboxes](https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/)",
+      "excerpt": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 July 31, 2026",
       "count": 20
     },
     {
       "file": "2026-07-30.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 July 30, 2026",
+      "title": "1. \ud83c\udfd7\ufe0f Cloudflare Internal DNS is Now Generally Available",
       "excerpt": "Summary: Cloudflare launched Internal DNS as a GA service, providing authoritative and recursive DNS for private networks unified with the same glo...",
       "count": 21
     },
     {
       "file": "2026-07-24.md",
-      "title": "Top DevOps/SRE/Cloud/Infrastructure News \u2014 Week of July 24, 2026",
+      "title": "1. \ud83d\udea8 GitLost: Prompt Injection Exploits GitHub's AI Agent to Leak Private Repository Data",
       "excerpt": "Summary: Noma Security discovered \"GitLost,\" a prompt-injection exploit that tricks GitHub's new Agentic Workflows into leaking private repository...",
       "count": 21
     },
     {
       "file": "2026-07-22.md",
-      "title": "Top 20 DevOps/SRE/Cloud Engineering News \u2014 July 22, 2026",
+      "title": "1. \ud83d\ude80 DoorDash Builds 1.5M RPS Proxy Cache with Envoy and Valkey, Achieving 99.99999% Availability",
       "excerpt": "DoorDash developed Entity Cache, a transparent proxy caching platform built on Envoy and Valkey that handles 1.5 million requests per second with s...",
       "count": 20
     },
     {
       "file": "2026-07-20.md",
-      "title": "DevOps / SRE / Cloud & Infrastructure Engineering \u2014 Weekly Top 20",
+      "title": "\ud83d\udccb Summary Themes",
       "excerpt": "AWS introduced the ability to roll back Amazon EKS cluster upgrades within a 7-day window \u2014 no cluster rebuilds required. This provides a critical...",
       "count": 20
     },
     {
       "file": "2026-07-18.md",
-      "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 18, 2026",
+      "title": "\ud83d\udcca Summary Themes \u2014 Week of July 18, 2026",
       "excerpt": "Amazon EKS now supports Kubernetes version rollbacks, letting ops teams reverse cluster upgrades within a 7-day window \u2014 no cluster rebuilds requir...",
       "count": 20
     },
     {
       "file": "2026-07-16.md",
-      "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 16, 2026",
+      "title": "\ud83d\udccb Summary of the Week's Major Themes",
       "excerpt": "Sheetz convenience store chain is migrating all 11,000 VMs off VMware after Broadcom's acquisition created too much uncertainty around licensing an...",
       "count": 20
     },
     {
       "file": "2026-07-14.md",
-      "title": "DevOps / SRE / Cloud Infrastructure News \u2014 July 14, 2026",
+      "title": "\ud83d\udccc Summary Themes \u2014 Week of July 14, 2026",
       "excerpt": "1. \ud83d\udcb0 AWS WAF Adds AI Traffic Monetization \u2014 Charge AI Bots for Content Access",
       "count": 1
     },
     {
       "file": "2026-07-12.md",
-      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 July 12, 2026",
+      "title": "1. \u2638\ufe0f etcd v3.7.0 Released with Long-Requested RangeStream Feature",
       "excerpt": "The Kubernetes SIG Etcd leads announced etcd v3.7.0, the latest minor release of the distributed key-value store that underpins Kubernetes. The mar...",
       "count": 20
     },
     {
       "file": "2026-07-10.md",
-      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 Week of 2026-07-10",
+      "title": "\ud83d\udccb Summary of the Week's Themes",
       "excerpt": "1. \ud83d\ude80 etcd v3.7.0 Released \u2014 Major Upgrade for Kubernetes' Backbone Database",
       "count": 1
     },
     {
       "file": "2026-07-04.md",
-      "title": "DevOps/SRE/Cloud Infrastructure Weekly \u2014 July 4, 2026",
+      "title": "Top 20 News Items",
       "excerpt": "OpenTelemetry has officially graduated within the CNCF, reaching the foundation's highest maturity level. This marks a milestone for the observabil...",
       "count": 20
     },
     {
       "file": "2026-07-02.md",
-      "title": "Top 20 DevOps / SRE / Cloud Engineering News \u2014 July 2, 2026",
+      "title": "1. \ud83d\udce1 T-Mobile Moving Tens of Thousands of VMs Off VMware Amid Broadcom Lawsuit",
       "excerpt": "T-Mobile is migrating tens of thousands of virtual machines off VMware amid an ongoing legal dispute with Broadcom over perpetual license support....",
       "count": 20
     },
     {
       "file": "2026-06-30.md",
-      "title": "DevOps/SRE/Cloud News \u2014 June 30, 2026",
+      "title": "1. \ud83d\udda5\ufe0f **AWS Lambda Introduces MicroVMs \u2014 VM-Level Isolated Sandboxes**",
       "excerpt": "AWS launched a new serverless compute primitive: Lambda MicroVMs. These provide VM-level isolated sandboxes with no shared kernel or resources betw...",
       "count": 20
     },
     {
       "file": "2026-06-28.md",
-      "title": "DevOps / SRE / Cloud Infrastructure News \u2014 June 28, 2026",
+      "title": "1. \ud83d\udda5\ufe0f **AWS Lambda Introduces MicroVMs \u2014 Fully Isolated Serverless Sandboxes**",
       "excerpt": "AWS launched a new serverless compute primitive, Lambda MicroVMs, providing VM-level isolated sandboxes with no shared kernel or resources between...",
       "count": 20
     },
     {
       "file": "2026-06-26.md",
-      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 June 26, 2026",
+      "title": "1. \ud83d\udda5\ufe0f AWS Lambda Introduces MicroVMs \u2014 Isolated Sandboxes with Full Lifecycle Control",
       "excerpt": "AWS launched a new serverless compute primitive: Lambda MicroVMs. These are VM-level isolated sandboxes with no shared kernel or resources between...",
       "count": 20
     },
     {
       "file": "2026-06-22.md",
-      "title": "DevOps / SRE / Cloud Engineering News \u2014 June 22, 2026",
+      "title": "\ud83d\udccb Summary Themes",
       "excerpt": "AWS kicked off its New York Summit with a flood of announcements ranging from AI-powered DevOps agents to next-gen infrastructure. Highlights inclu...",
       "count": 20
     },
     {
       "file": "2026-06-20.md",
-      "title": "DevOps / SRE / Cloud Engineering News \u2014 June 20, 2026",
+      "title": "\ud83d\udccb Summary of the Week's Major Themes",
       "excerpt": "British retailer Tesco is migrating 40,000 server workloads away from VMware, citing Broadcom's licensing and pricing practices as \"abusive conduct...",
       "count": 20
     },
     {
       "file": "2026-06-18.md",
-      "title": "\ud83d\ude80 Top 20 DevOps, SRE & Cloud Infrastructure News \u2014 Week of June 18, 2026",
+      "title": "1. \ud83d\ude80 AWS DevOps Agent Gains Release Management Capabilities",
       "excerpt": "AWS DevOps Agent now offers release management (preview), autonomously reviewing code changes for release readiness and running release tests befor...",
       "count": 20
     },
     {
       "file": "2026-06-16.md",
-      "title": "Top 20 DevOps/SRE/Cloud Infrastructure News \u2014 2026-06-16",
+      "title": "1. \ud83e\udd16 Anthropic Fable 5 Launches and Gets Shut Down \u2014 The Wildest 72 Hours in AI",
       "excerpt": "Anthropic released Claude Fable 5 on June 9, a model designed for long-horizon tasks, but it was taken offline shortly after launch. The saga escal...",
       "count": 20
     },
     {
       "file": "2026-06-14.md",
-      "title": "Top 20 DevOps/SRE/Cloud Infrastructure News \u2014 2026-06-14",
+      "title": "1. \ud83d\ude80 AWS Launches EC2 M9g/M9gd Instances Powered by Graviton5",
       "excerpt": "AWS released its new general-purpose M9g and M9gd instances powered by the 5th-generation AWS Graviton5 processor. Graviton5 delivers up to 25% bet...",
       "count": 20
     },
     {
       "file": "2026-06-12.md",
-      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 June 12, 2026",
+      "title": "Top 20 Stories This Week",
       "excerpt": "1. \ud83c\udfd7\ufe0f GitLab Previews Revamped DevOps Platform for the Agentic AI Era",
       "count": 2
     },
     {
       "file": "2026-06-10.md",
-      "title": "DevOps/SRE/Cloud Infrastructure News \u2014 June 10, 2026",
+      "title": "Top 20 Stories This Week",
       "excerpt": "1. \ud83d\udc1b Miasma Worm Forces GitHub to Takedown 73 Microsoft Repos",
       "count": 2
     },
     {
       "file": "2026-06-08.md",
-      "title": "DevOps / SRE / Cloud Engineering News \u2014 June 8, 2026",
+      "title": "1. \ud83d\udd2c AWS Replaces Fat-Tree Data Center Networks with Random Graph Theory, Cutting Routers by 69%",
       "excerpt": "AWS disclosed that Resilient Network Graphs (RNG), a flat network architecture based on quasi-random graph theory, is now the default for most new...",
       "count": 20
     },
     {
       "file": "2026-06-06.md",
-      "title": "Top 20 DevOps / SRE / Cloud Infrastructure News \u2014 June 6, 2026",
+      "title": "Summary Themes",
       "excerpt": "1\ufe0f\u20e3 AWS Replaces Fat-Tree Data Center Networks with Random Graph Theory, Cutting Routers by 69%",
       "count": 1
     },
     {
       "file": "2026-06-04.md",
-      "title": "DevOps / SRE / Cloud Infrastructure News \u2014 June 4, 2026",
+      "title": "Top 20 News Items",
       "excerpt": "1. \ud83d\udda5\ufe0f NVIDIA Vera Rubin Now in Production, DGX Station Gets Windows at Computex 2026",
       "count": 3
     },
     {
       "file": "2026-06-02.md",
-      "title": "DevOps / SRE / Cloud Infrastructure News \u2014 June 2, 2026",
+      "title": "Top 20 News Items",
       "excerpt": "1. \ud83d\udcb0 GitHub Copilot Switches to Usage-Based Pricing \u2014 Users Hit with Sticker Shock",
       "count": 2
     },
     {
       "file": "2026-05-30.md",
-      "title": "DevOps / SRE / Cloud Engineering News \u2014 May 30, 2026",
+      "title": "\ud83d\udccb Summary Themes",
       "excerpt": "1. \ud83d\udc27 Microsoft Announces Azure Linux 4.0 \u2014 First General-Purpose Server Linux Distribution",
       "count": 1
     },
     {
       "file": "2026-05-28.md",
-      "title": "DevOps / SRE / Cloud Engineering News \u2014 May 28, 2026",
+      "title": "\ud83d\udccb Summary Themes",
       "excerpt": "1. \ud83d\ude80 Azure Kubernetes Fleet Manager Adds Cross-Cluster Networking",
       "count": 1
     },
     {
       "file": "2026-05-26.md",
-      "title": "DevOps/SRE/Cloud Infrastructure Weekly News \u2014 May 26, 2026",
+      "title": "\ud83d\udccb Summary of the Week's Major Themes",
       "excerpt": "OpenTelemetry officially graduated from the CNCF, cementing its position as the de facto standard for collecting telemetry data. The project, donat...",
       "count": 20
     }
   ],
   "baremetal": [
     {
+      "file": "2026-08-06.md",
+      "title": "Bare-Metal Server News \u2014 August 06, 2026",
+      "excerpt": "Summary: OVHcloud has unveiled its new Bare Metal 2026 generation of dedicated servers, featuring AMD Ryzen and EPYC processors built on the Zen 5...",
+      "count": 20
+    },
+    {
       "file": "2026-08-04.md",
-      "title": "Bare-Metal Server News \u2014 August 04, 2026",
-      "excerpt": "Summary: NVIDIA used its own Vera CPU to accelerate next-generation chip design verification, achieving up to 1.5\u00d7 faster performance on keyEDA wor...",
+      "title": "1. \ud83d\udda5\ufe0f NVIDIA Verifies All Its Future Chip Designs Using Its Own Vera CPU",
+      "excerpt": "Bare-Metal Server News \u2014 August 4, 2026",
       "count": 20
     },
     {
       "file": "2026-08-02.md",
-      "title": "Bare-Metal Server News \u2014 August 02, 2026",
-      "excerpt": "Summary: We review the ASRock Rack 4U16X-GNR2, an 8x NVIDIA HGX B300 server with enormous network bandwidth and two liquid-cooling options.",
+      "title": "1. \ud83d\udda5\ufe0f ASRock Rack 4U16X-GNR2 NVIDIA HGX B300 8-GPU Server Review",
+      "excerpt": "Bare-Metal Server News \u2014 August 2, 2026",
       "count": 20
     },
     {
       "file": "2026-07-30.md",
-      "title": "Bare-Metal Server News \u2014 July 30, 2026",
+      "title": "1. \ud83d\udda5\ufe0f ASRock Rack 4U16X-GNR2 NVIDIA HGX B300 8-GPU Server Review",
       "excerpt": "Summary: ServeTheHome reviews the ASRock Rack 4U16X-GNR2, an 8\u00d7 NVIDIA HGX B300 GPU server with dual liquid-cooling options and enormous network ba...",
       "count": 21
     },
     {
       "file": "2026-07-23.md",
-      "title": "Bare-Metal Server News \u2014 July 23, 2026",
+      "title": "1. \ud83d\udda5\ufe0f NVIDIA Vera CPU: Deep-Dive Architecture & First SPEC CPU 2026 Benchmarks",
       "excerpt": "NVIDIA dropped a massive trove of technical details on Vera, their upcoming server CPU built on the Olympus core architecture, alongside the very f...",
       "count": 10
     },
     {
       "file": "2026-07-21.md",
-      "title": "Bare-Metal Server News \u2014 July 21, 2026",
+      "title": "1. \ud83c\udfd7\ufe0f Intel Xeon 6 Gets DDR5-8000 RDIMMs & Gen2 MRDIMMs",
       "excerpt": "Intel announced a mid-generation memory upgrade for its Xeon 6 platform, adding support for DDR5-8000 RDIMMs and Gen2 MRDIMMs. With AMD EPYC Venice...",
       "count": 10
     },
     {
       "file": "2026-07-19.md",
-      "title": "\ud83d\udda5\ufe0f Top Bare-Metal Server News \u2014 2026-07-19",
+      "title": "1. \ud83d\ude80 Next-Gen Server Memory Hits New Heights: DDR5-8000 & MRDIMM Gen2 at DDR5-12800",
       "excerpt": "Micron demonstrated DDR5-8000 RDIMMs while Samsung showcased their second-gen MRDIMMs hitting a blistering 12,800 MT/s at Computex 2026. MRDIMM Gen...",
       "count": 10
     },
     {
       "file": "2026-07-17.md",
-      "title": "Bare-Metal Server News \u2014 July 17, 2026",
+      "title": "1. \ud83d\ude80 NVIDIA Expands Jetson Thor Lineup with Mid-Range T3000 & T2000 Modules",
       "excerpt": "NVIDIA has announced two new mid-range additions to their Jetson Thor lineup \u2014 the T3000 and T2000 modules, arriving in Q1'27. These boards target...",
       "count": 10
     },
@@ -250,97 +262,97 @@
     },
     {
       "file": "2026-07-07.md",
-      "title": "\ud83d\udce1 Top Bare-Metal Server News \u2014 July 7, 2026",
+      "title": "1. \ud83d\udda5\ufe0f Lambda Launches Bare Metal Instances \u2014 API-Driven, Hypervisor-Free, DPU-Powered",
       "excerpt": "Summary: Lambda unveiled Bare Metal Instances on NVIDIA GB300 NVL72 Superclusters, combining direct hardware access (CPU, memory, GPU, disk, TPM) w...",
       "count": 10
     },
     {
       "file": "2026-07-05.md",
-      "title": "Top Bare-Metal Server News \u2014 July 5, 2026",
+      "title": "\ud83d\udd25 1. AMD EPYC 8005 \"Sorano\" Completely Overhauls the SP6 Platform",
       "excerpt": "AMD's new EPYC 8005 \"Sorano\" represents one of the biggest generational upheavals in server CPUs since 2019. The new architecture fundamentally cha...",
       "count": 11
     },
     {
       "file": "2026-07-03.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 July 3, 2026",
+      "title": "1. \ud83d\udd25 AMD EPYC 8005 \"Sorano\" \u2014 The Biggest Server CPU Upheaval Since 2019",
       "excerpt": "AMD's EPYC 8005 \"Sorano\" represents one of the most dramatic generational shifts in server CPU design since the original EPYC launch. The new platf...",
       "count": 10
     },
     {
       "file": "2026-07-01.md",
-      "title": "\ud83d\udd29 Bare-Metal Server News \u2014 July 1, 2026",
+      "title": "1. \ud83d\udda5\ufe0f Lambda Launches Bare Metal Instances \u2014 Full Hardware Control, API-Driven, No Hypervisor",
       "excerpt": "Lambda has launched Bare Metal Instances combining direct, unmediated hardware access with cloud-grade API-driven lifecycle management. Powered by...",
       "count": 10
     },
     {
       "file": "2026-06-29.md",
-      "title": "Bare-Metal Server News \u2014 June 29, 2026",
+      "title": "\ud83d\udd37 Bare Metal Trend Summary",
       "excerpt": "1. \ud83d\ude80 Qualcomm Unveils Dragonfly C1000 Data Center CPU + HBM Alternative at Investor Day 2026",
       "count": 1
     },
     {
       "file": "2026-06-27.md",
-      "title": "\ud83d\udda5\ufe0f Bare-Metal Server News \u2014 June 27, 2026",
+      "title": "Top 10 Bare-Metal & Dedicated Hardware Headlines",
       "excerpt": "The June 2026 Top500 list is out and an Arm-based system has retaken the #1 spot. China's LineShine supercomputer, a CPU-only machine, delivers a s...",
       "count": 10
     },
     {
       "file": "2026-06-25.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 June 25, 2026",
+      "title": "1. \ud83d\udd25 Qualcomm Enters Data Center CPU + AI Accelerator Arena with HBM Alternative",
       "excerpt": "Qualcomm used its Investor Day 2026 to unveil a major data center roadmap \u2014 a new High Bandwidth Compute (HBC) interconnect that serves as an HBM a...",
       "count": 10
     },
     {
       "file": "2026-06-23.md",
-      "title": "\ud83d\udda5\ufe0f Top Bare-Metal Server News \u2014 2026-06-23",
+      "title": "1. \ud83d\udd25 AMD EPYC Venice Packs 81,920 Cores Per Liquid-Cooled Rack",
       "excerpt": "At HPE Discover 2026, HPE unveiled the Cray GX250a blade powered by AMD EPYC Venice CPUs, delivering a staggering 81,920 cores per liquid-cooled ra...",
       "count": 10
     },
     {
       "file": "2026-06-21.md",
-      "title": "\ud83d\udd29 Bare-Metal Server News \u2014 June 21, 2026",
+      "title": "Top 10 Bare-Metal & Dedicated Infrastructure Headlines",
       "excerpt": "ServeTheHome at HPE Discover 2026 \u2014 HPE showed a working Cray GX250a blade powered by AMD EPYC Venice CPUs, packing an astonishing 81,920 cores per...",
       "count": 10
     },
     {
       "file": "2026-06-19.md",
-      "title": "Top Bare-Metal Server News \u2014 June 19, 2026",
+      "title": "1. \ud83d\ude80 81,920 Cores Per Rack: AMD EPYC \"Venice\" Debuts at HPE Discover 2026",
       "excerpt": "At HPE Discover 2026, HPE unveiled the Cray GX250a compute blade packing 8x AMD EPYC Venice CPUs per sled, totaling an eye-watering 81,920 cores pe...",
       "count": 10
     },
     {
       "file": "2026-06-17.md",
-      "title": "\ud83d\udda5\ufe0f Top Bare-Metal Server News \u2014 June 17, 2026",
+      "title": "1. \ud83c\udfe2 HPE Discover 2026: ProLiant Gen12, Full Juniper Integration, & AI-Native Networking",
       "excerpt": "HPE kicked off its 2026 keynote in Las Vegas with a barrage of hardware announcements. The HPE ProLiant Gen12 series (including the DL394 Gen12 pow...",
       "count": 10
     },
     {
       "file": "2026-06-15.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 June 15, 2026",
+      "title": "\ud83d\udcca Bare Metal Trend Summary",
       "excerpt": "Lambda launched a new bare-metal instance type that combines direct hardware access (CPU, memory, GPU, disk, TPM \u2014 no hypervisor) with a fully API-...",
       "count": 10
     },
     {
       "file": "2026-06-13.md",
-      "title": "Top Bare-Metal Server News \u2014 June 13, 2026",
+      "title": "\ud83d\udcc8 Bare Metal Trend Summary",
       "excerpt": "Lambda unveiled Bare Metal Instances running on NVIDIA GB300 NVL72 Superclusters, giving customers direct, unmediated access to CPU, memory, GPU, d...",
       "count": 10
     },
     {
       "file": "2026-06-11.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 June 11, 2026",
+      "title": "1. \ud83d\udd25 Lambda Launches Bare Metal Instances with NVIDIA GB300 NVL72 \u2014 No Hypervisor, Full API Control",
       "excerpt": "Lambda unveiled its Bare Metal Instances product, debuting on the NVIDIA GB300 NVL72 Supercluster. Unlike traditional dedicated servers that rely o...",
       "count": 10
     },
     {
       "file": "2026-06-09.md",
-      "title": "Top Bare-Metal Server News \u2014 June 9, 2026",
+      "title": "1. \ud83d\udd25 Lambda Launches Bare Metal Instances \u2014 Full Hardware Control with API-Driven Operations",
       "excerpt": "Lambda announced a new Bare Metal Instances product line, starting with the NVIDIA GB300 NVL72. The service combines direct, unmediated hardware ac...",
       "count": 10
     },
     {
       "file": "2026-06-07.md",
-      "title": "Bare-Metal Server News \u2014 June 7, 2026",
+      "title": "1. \ud83d\ude80 Lambda Launches Bare Metal Instances with NVIDIA GB300 NVL72",
       "excerpt": "Lambda has officially launched Bare Metal Instances \u2014 a new product category that gives customers direct hardware access (CPU, GPU, memory, disk, T...",
       "count": 10
     },
@@ -352,37 +364,37 @@
     },
     {
       "file": "2026-06-03.md",
-      "title": "\ud83d\udda5\ufe0f Top 10 Bare-Metal Server News \u2014 June 3, 2026",
+      "title": "1. \ud83d\ude80 Intel Xeon 6+ Clearwater Forest is Here \u2014 288 Cores on 18A",
       "excerpt": "Intel officially launched the Xeon 6900E+ series (Clearwater Forest) at Computex 2026. This is Intel's first 2nm-class Xeon built on the Intel 18A...",
       "count": 10
     },
     {
       "file": "2026-06-01.md",
-      "title": "\ud83c\udfd7\ufe0f Top Bare-Metal Server News \u2014 2026-06-01",
+      "title": "1. \ud83d\udd25 ASUS XA NB3I-E12: A 9U Monster Packing 8\u00d7 NVIDIA B300 GPUs",
       "excerpt": "ServeTheHome published a full teardown of ASUS's massive 9U GPU server built around the NVIDIA HGX B300 platform. The system packs 8 NVIDIA Blackwe...",
       "count": 10
     },
     {
       "file": "2026-05-31.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 May 31, 2026",
+      "title": "1. \ud83d\udda5\ufe0f ASUS XA NB3I-E12: 8\u00d7 NVIDIA B300 GPU Server Reviewed",
       "excerpt": "ServeTheHome puts the massive ASUS XA NB3I-E12 through its paces \u2014 an 8-way NVIDIA Blackwell Ultra (B300) GPU server packing over 6.4 Tbps of netwo...",
       "count": 10
     },
     {
       "file": "2026-05-29.md",
-      "title": "Top Bare-Metal Server News \u2014 May 29, 2026",
+      "title": "1. \ud83c\udfc6 NVIDIA Vera CPU Breaks ARM Server Performance Records \u2014 Olympus Cores Benchmark Against Xeon & EPYC",
       "excerpt": "NVIDIA's first in-house data center CPU, Vera, was benchmarked by Phoronix with stunning results. The Olympus CPU cores deliver the best performanc...",
       "count": 10
     },
     {
       "file": "2026-05-27.md",
-      "title": "Top 10 Bare-Metal Server News \u2014 May 27, 2026",
+      "title": "1. \ud83d\udda5\ufe0f Dell Unveils EPYC Venice PowerEdge 18th Gen Servers with Up to 256 Cores",
       "excerpt": "Summary: At Dell Technologies World 2026, Dell showcased its upcoming 18th generation of PowerEdge servers built on AMD's 6th-gen EPYC \"Venice\" pro...",
       "count": 10
     },
     {
       "file": "2026-05-25.md",
-      "title": "\ud83d\udd25 Top 10 Bare-Metal Server News \u2014 25 May 2026",
+      "title": "1. \ud83d\udd25 Dell Showcases EPYC Venice PowerEdge Systems + 5.8PB PowerStore Elite",
       "excerpt": "Dell ngumumin 18th generation PowerEdge servers \u2014 supporting both AMD EPYC \"Venice\" dan Intel Xeon. Ini major generational refresh buat dedicated s...",
       "count": 10
     }
@@ -390,61 +402,61 @@
   "selfhosted": [
     {
       "file": "2026-08-01.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Sat August 1, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 August 1, 2026",
       "excerpt": "Use case: Jalanin Gemma 4 26B-A4B secara lokal di M-series MacBook tanpa GPU monster",
       "count": 20
     },
     {
       "file": "2026-07-31.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri July 31, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 July 31, 2026",
       "excerpt": "Use case: Sistem CCTV ringan yang jalan di Raspberry Pi & SBC Linux \u2014 tanpa cloud, tanpa langganan",
       "count": 20
     },
     {
       "file": "2026-07-30.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Thu July 30, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 July 30, 2026",
       "excerpt": "Use case: All-in-one AI workspace yang lo host sendiri \u2014 alternatif ChatGPT/Claude untuk tim",
       "count": 21
     },
     {
       "file": "2026-07-17.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri July 17, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 July 17, 2026",
       "excerpt": "\u2b50 1,506 | Created: May 2, 2026 (11 weeks old)",
       "count": 10
     },
     {
       "file": "2026-07-10.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri July 10, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 July 10, 2026",
       "excerpt": "\u2b50 126 | Created: Jul 6, 2026 (4 days old!)",
       "count": 10
     },
     {
       "file": "2026-07-03.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri July 3, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 July 3, 2026",
       "excerpt": "\u2b50 973 | Created: Jun 2, 2026 (1 month old!)",
       "count": 8
     },
     {
       "file": "2026-06-26.md",
-      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 Fri June 26, 2026",
+      "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 June 26, 2026",
       "excerpt": "\u2b50 415 | Created: Jun 13, 2026 (13 days old!)",
       "count": 10
     },
     {
       "file": "2026-06-19.md",
-      "title": "\ud83c\udfe0 Self-Hosted Tools Roundup \u2014 Fri June 19, 2026",
+      "title": "\ud83c\udfe0 Self-Hosted Tools Roundup \u2014 June 19, 2026",
       "excerpt": "An ops AI agent that understands your infrastructure, finds root cause, and fixes it \u2014 right from Slack, Telegram, Lark, or DingTalk.",
       "count": 10
     },
     {
       "file": "2026-06-05.md",
-      "title": "\ud83c\udfe0 Self-Hosted Tools Digest \u2014 Fri Jun 5, 2026",
+      "title": "\ud83c\udfe0 Self-Hosted Tools Digest \u2014 June 5, 2026",
       "excerpt": "Self-hosted homelab infrastructure visualizer",
       "count": 10
     },
     {
       "file": "2026-05-29.md",
-      "title": "\ud83d\udee0\ufe0f Latest Self-Hosted Tools \u2014 Friday May 29, 2026",
+      "title": "\ud83d\udee0\ufe0f Latest Self-Hosted Tools \u2014 May 29, 2026",
       "excerpt": "AI SRE Agent \u2014 Incident Investigation & Response",
       "count": 10
     }
@@ -452,267 +464,273 @@
   "ekonomi": [
     {
       "file": "2026-08-04.md",
-      "title": "Laporan Ekonomi \u2014 August 04, 2026",
+      "title": "1. \ud83d\udcc9 Stimulus Rp26,3 Triliun untuk Atasi Krisis Energi & Pelemahan Rupiah",
       "excerpt": "Summary: Pemerintah Indonesia mengumumkan paket stimulus senilai $1,48 miliar (Rp26,34 triliun) untuk paruh kedua 2026, bertujuan memperkuat daya b...",
       "count": 20
     },
     {
       "file": "2026-08-01.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 August 1, 2026 (Sabtu)",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "Weekend edition \u2014 seluruh data pasar per penutupan perdagangan Jumat (31/7/2026), hari perdagangan terakhir.",
       "count": 8
     },
     {
       "file": "2026-07-31.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 July 31, 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "IHSG ditutup menguat 0,80% ke 6.236,13 \u2014 level penutupan tertinggi sejak awal tahun \u2014 ditopang reli saham komoditas dan properti, meski investor as...",
       "count": 8
     },
     {
       "file": "2026-07-30.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 July 30, 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "IHSG berhasil bangkit dan ditutup menguat 1,56% ke 6.186,36 setelah sempat tertekan enam hari beruntun, ditopang oleh aksi beli di sektor perbankan...",
       "count": 1
     },
     {
       "file": "2026-07-22.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 22 Juli 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Juli 22, 2026",
       "excerpt": "\ud83c\uddfa\ud83c\uddf8 AS \u2014 Inflasi, The Fed & Ketenagakerjaan",
       "count": 2
     },
     {
       "file": "2026-07-19.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Minggu, 19 Juli 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Minggu, Juli 19, 2026",
       "excerpt": "| Indeks | Nilai | Perubahan |",
       "count": 1
     },
     {
       "file": "2026-07-16.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 16 Juli 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "- IHSG ditutup naik 1,1% ke 6.108,21 \u2014 tembus level psikologis 6.100!",
       "count": 1
     },
     {
       "file": "2026-07-13.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 13 Juli 2026 (Senin)",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Juli 13, 2026 (Senin)",
       "excerpt": "\ud83c\uddfa\ud83c\uddf8 AS \u2014 Inflasi & The Fed",
       "count": 1
     },
     {
       "file": "2026-07-10.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Jumat, 10 Juli 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Jumat, Juli 10, 2026",
       "excerpt": "\ud83c\udfe6 Kebijakan Moneter & Fiskal",
       "count": 1
     },
     {
       "file": "2026-07-07.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Selasa, 7 Juli 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Selasa, Juli 7, 2026",
       "excerpt": "\ud83c\uddfa\ud83c\uddf8 AS \u2014 The Fed & Ketenagakerjaan",
       "count": 1
     },
     {
       "file": "2026-07-04.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Sabtu, 4 Juli 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "Indeks Mayor \u2014\u5168\u90e8 Hijau Besar! \ud83d\udfe2",
       "count": 2
     },
     {
       "file": "2026-07-01.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Rabu, 1 Juli 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Rabu, Juli 1, 2026",
       "excerpt": "- IHSG: 5,695.116 (+0.92%) \ud83d\udfe2",
       "count": 1
     },
     {
       "file": "2026-06-28.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Minggu, 28 Juni 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "Semua indeks kompak merah hari ini \ud83d\udd34 \u2014 IHSG jatuh ke level 5.896",
       "count": 3
     },
     {
       "file": "2026-06-19.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Jumat, 19 Juni 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "| Indeks | Nilai | Change |",
       "count": 2
     },
     {
       "file": "2026-06-16.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 16 Juni 2026 (Selasa)",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Juni 16, 2026 (Selasa)",
       "excerpt": "| Indeks | Nilai | Change |",
       "count": 1
     },
     {
       "file": "2026-06-13.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Sabtu, 13 Juni 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Sabtu, Juni 13, 2026",
       "excerpt": "\ud83d\udcc8 Pasar Modal \u2014 Semua Indeks Hijau Pekan Ini!",
       "count": 1
     },
     {
       "file": "2026-06-07.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 7 Juni 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Juni 7, 2026",
       "excerpt": "\ud83c\uddfa\ud83c\uddf8 AS \u2014 Inflasi, The Fed & Ketenagakerjaan",
       "count": 1
     },
     {
       "file": "2026-06-04.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 4 Juni 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "IHSG: 5.839,78 (-1,70%) \ud83d\udd34",
       "count": 1
     },
     {
       "file": "2026-06-01.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Senin, 1 Juni 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Senin, Juni 1, 2026",
       "excerpt": "| Indeks | Nilai | Perubahan |",
       "count": 1
     },
     {
       "file": "2026-05-31.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Minggu, 31 Mei 2026",
+      "title": "\ud83c\uddee\ud83c\udde9 EKONOMI INDONESIA",
       "excerpt": "| Indeks | Nilai | Change | Status |",
       "count": 2
     },
     {
       "file": "2026-05-28.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 28 Mei 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Mei 28, 2026",
       "excerpt": "- IHSG mixed \u2014 dilaporkan sempat melemah di sesi I karena risk-off global, namun ditutup menguat ke level 7.200 \ud83d\udfe2 dengan kapitalisasi pasar tembus...",
       "count": 1
     },
     {
       "file": "2026-05-25.md",
-      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 25 Mei 2026",
+      "title": "\ud83d\udcca UPDATE EKONOMI INDONESIA & GLOBAL \u2014 Mei 25, 2026",
       "excerpt": "| Indeks | Nilai | Perubahan |",
       "count": 1
     }
   ],
   "k8s-security": [
     {
+      "file": "2026-08-07.md",
+      "title": "Kubernetes & Cloud Security Digest \u2014 August 07, 2026",
+      "excerpt": "Summary: CISA added the critical TeamCity remote code execution vulnerability (CVE-2026-63077) to its Known Exploited Vulnerabilities catalog after...",
+      "count": 20
+    },
+    {
       "file": "2026-08-04.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-08-04",
+      "title": "\ud83d\udd34 CRITICAL",
       "excerpt": "Source: Sysdig Threat Research< /br>Cloudsmith Digest",
       "count": 20
     },
     {
       "file": "2026-07-31.md",
-      "title": "Kubernetes Security Briefing \u2014 July 31, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: NVD / GitHub Advisory",
       "count": 20
     },
     {
       "file": "2026-07-30.md",
-      "title": "Kubernetes Security Briefing \u2014 July 30, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: GitHub Advisory",
       "count": 20
     },
     {
       "file": "2026-07-22.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-07-22",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: The Hacker News (Jul 01, 2026)",
       "count": 14
     },
     {
       "file": "2026-07-19.md",
-      "title": "Kubernetes Security Briefing \u2014 July 19, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: K8s Security Announce (Apr 10, 2026)",
       "count": 8
     },
     {
       "file": "2026-07-16.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-07-16",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: The Hacker News | Date: Jul 01, 2026",
       "count": 14
     },
     {
       "file": "2026-07-10.md",
-      "title": "Kubernetes Security Briefing \u2014 July 10, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "Source: The Hacker News (Jul 01, 2026)",
       "count": 8
     },
     {
       "file": "2026-07-04.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-07-04",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "- Source: The Hacker News",
       "count": 4
     },
     {
       "file": "2026-07-01.md",
-      "title": "Kubernetes Security News \u2014 July 01, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "- Source: The Hacker News / SentinelOne",
       "count": 1
     },
     {
       "file": "2026-06-28.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-06-28",
+      "title": "Latest CVEs",
       "excerpt": "- Date: May 7, 2026 | Source: The Hacker News",
       "count": 5
     },
     {
       "file": "2026-06-25.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-06-25",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "TeamPCP threat actor compromised Aqua Security's Trivy vulnerability scanner CI/CD pipeline, pushing trojanized versions (0.69.4\u20130.69.6) to Docker...",
       "count": 15
     },
     {
       "file": "2026-06-22.md",
-      "title": "Kubernetes Security News \u2014 June 22, 2026",
+      "title": "Latest CVEs",
       "excerpt": "GitHub disclosed unauthorized access to its internal repositories after TeamPCP listed the platform's source code for sale ($50,000+). The breach s...",
       "count": 4
     },
     {
       "file": "2026-06-19.md",
-      "title": "Kubernetes Security News \u2014 2026-06-19",
+      "title": "\ud83d\udd34 Critical / High Severity CVEs (2026)",
       "excerpt": "- Component: CSI Driver for SMB",
       "count": 19
     },
     {
       "file": "2026-06-16.md",
-      "title": "Kubernetes Security News \u2014 June 16, 2026",
+      "title": "\ud83d\udd34 Critical/High Severity",
       "excerpt": "- Docker Engine authorization plugins (AuthZ) can be bypassed under specific circumstances",
       "count": 13
     },
     {
       "file": "2026-06-13.md",
-      "title": "Kubernetes Security News \u2014 2026-06-13",
+      "title": "\ud83d\udd34 Latest CVEs",
       "excerpt": "- Published: Apr 11, 2026",
       "count": 10
     },
     {
       "file": "2026-06-10.md",
-      "title": "Kubernetes Security Briefing \u2014 2026-06-10",
+      "title": "1\ufe0f\u20e3 Latest CVEs",
       "excerpt": "| CVE | Component | Severity | Summary | Date |",
       "count": 17
     },
     {
       "file": "2026-06-07.md",
-      "title": "Kubernetes Security Briefing \u2014 June 7, 2026",
+      "title": "1. \ud83d\udd34\ud83d\udd34 Latest CVEs",
       "excerpt": "Severity: HIGH (CVSS 8.8) \u2014 RCE + Secret Disclosure",
       "count": 3
     },
     {
       "file": "2026-06-04.md",
-      "title": "\ud83d\udee1\ufe0f Kubernetes Security Brief \u2014 2026-06-04",
+      "title": "1. \ud83d\udd34 Critical & High Severity CVEs",
       "excerpt": "CVE-2026-4342 \u00b7 \ud83d\udd34 HIGH (8.8) \u00b7 Published: 2026-03-20",
       "count": 5
     },
     {
       "file": "2026-06-01.md",
-      "title": "Kubernetes Security Briefing \u2014 June 1, 2026",
+      "title": "\ud83d\udd34 Latest CVEs",
       "excerpt": "- Severity: \ud83d\udfe1 HIGH (CVSS 8.8)",
       "count": 18
     },
     {
       "file": "2026-05-31.md",
-      "title": "Kubernetes Security News \u2014 2026-05-31",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "- Description: Ingress annotations can be used to inject nginx configuration, leading to RCE in the ingress-nginx controller context and disclosure...",
       "count": 8
     },
     {
       "file": "2026-05-28.md",
-      "title": "Kubernetes Security News \u2014 May 28, 2026",
+      "title": "\ud83d\udd34 Critical",
       "excerpt": "- Date: March 2025 (still actively exploited in 2026)",
       "count": 31
     },
     {
       "file": "2026-05-25.md",
-      "title": "Kubernetes Security Briefing \u2014 May 25, 2026",
+      "title": "\ud83d\udd34 CRITICAL / HIGH SEVERITY ADVISORIES",
       "excerpt": "Severity: Medium (CVSS 6.5)",
       "count": 5
     }
@@ -720,21 +738,21 @@
   "tech-foundations": [
     {
       "file": "2026-07-30.md",
-      "title": "\ud83d\uddde\ufe0f Tech Foundations Weekly \u2014 July 30, 2026",
+      "title": "\ud83c\udf10 CNCF (Cloud Native Computing Foundation)",
       "excerpt": "Diagrid released Catalyst 2.0, adding durable recovery and signed execution histories to LangGraph and other AI agent frameworks through Dapr workf...",
       "count": 21
     },
     {
       "file": "2026-07-18.md",
-      "title": "\ud83d\uddde\ufe0f Tech Foundations Update \u2014 18 July 2026",
+      "title": "\ud83c\udf10 **CNCF (Cloud Native Computing Foundation)**",
       "excerpt": "This was the biggest news of the period \u2014 OpenTelemetry officially graduated from CNCF incubation to become a full graduated project. Multiple outl...",
       "count": 6
     },
     {
       "file": "2026-07-11.md",
-      "title": "Tech Foundations Update \u2014 11 July 2026",
-      "excerpt": "- KubeCon + CloudNativeCon China 2026 \u043e\u0431\u044a\u0435\u0434\u0438\u043d\u044f\u0435\u0442\u0441\u044f \u0441 OpenInfra Summit \u0438 PyTorch Conference \u2014 \u0422\u0440\u0438 \u043a\u0440\u0443\u043f\u043d\u0435\u0439\u0448\u0438\u0435 \u043a\u043e\u043d\u0444\u0435\u0440\u0435\u043d\u0446\u0438\u0438 \u043f\u043e \u043e\u0442\u043a\u0440\u044b\u0442\u044b\u043c \u0442\u0435\u0445\u043d\u043e\u043b\u043e\u0433\u0438\u044f\u043c \u043e\u0431\u044a...",
-      "count": 22
+      "title": "\ud83c\udf10 **CNCF (Cloud Native Computing Foundation)**",
+      "excerpt": "- KubeCon + CloudNativeCon China 2026   OpenInfra Summit  PyTorch Conference \u2014            AI-.       cloud-native, open infrastructure  AI-. (18  2...",
+      "count": 18
     },
     {
       "file": "2026-07-04.md",
@@ -776,7 +794,7 @@
   "ai": [
     {
       "file": "2026-08-05.md",
-      "title": "AI News Digest \u2014 August 05, 2026",
+      "title": "\ud83e\udde0 1. OpenAI Advances Price-Performance with GPT-5.6 Terra/Luna",
       "excerpt": "Theme 1: Agentic AI Systems Maturing Into Production Ready \u2014 Multiple papers and products converge on a single realization: the critical bottleneck...",
       "count": 21
     }
