@@ -172,11 +172,11 @@ def main():
         idx = sys.argv.index("--repo-dir")
         repo = Path(sys.argv[idx + 1])
 
-    manifest = {"categories": {}}
+    manifest = {}
     for cat in CATEGORIES:
         cat_dir = repo / cat
         if not cat_dir.exists():
-            manifest["categories"][cat] = []
+            manifest[cat] = []
             continue
 
         articles = []
@@ -194,15 +194,14 @@ def main():
 
         # Sort by filename date descending — newest first
         articles.sort(key=lambda a: a["file"], reverse=True)
-        manifest["categories"][cat] = articles
+        manifest[cat] = articles
 
     output = repo / "articles.json"
     output.write_text(json.dumps(manifest, indent=2) + "\n")
-    cats = manifest["categories"]
-    total = sum(len(v) for v in cats.values())
+    total = sum(len(v) for v in manifest.values())
     print(f"✅ articles.json generated — {total} articles across {len(CATEGORIES)} categories")
     for cat in CATEGORIES:
-        count = len(cats.get(cat, []))
+        count = len(manifest.get(cat, []))
         if count > 0:
             print(f"   {CATEGORY_INFO[cat]['emoji']} {cat}: {count} articles")
 
