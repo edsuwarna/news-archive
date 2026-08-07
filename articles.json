@@ -401,6 +401,12 @@
   ],
   "selfhosted": [
     {
+      "file": "2026-08-07.md",
+      "title": "Top Self-Hosted Tools \u2014 August 07, 2026",
+      "excerpt": "Summary: An open-source reimplementation of Tailscale's coordination server under BSD-3 license. Use official Tailscale clients while running your...",
+      "count": 20
+    },
+    {
       "file": "2026-08-01.md",
       "title": "\ud83d\udee0\ufe0f Self-Hosted Tools Report \u2014 August 1, 2026",
       "excerpt": "Use case: Jalanin Gemma 4 26B-A4B secara lokal di M-series MacBook tanpa GPU monster",
