@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-09.md",
+      "title": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 09, 2026",
+      "excerpt": "_Git commit: 77bd4e4 pushed to main_",
+      "count": 20
+    },
+    {
       "file": "2026-08-07.md",
       "title": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 07, 2026",
       "excerpt": "Meta unveiled its own AI coding agent, entering the fiercely contested agentic coding space alongside OpenAI's Codex and Anthropic's Claude Code. T...",
@@ -206,6 +212,12 @@
     }
   ],
   "baremetal": [
+    {
+      "file": "2026-08-08.md",
+      "title": "Bare-Metal Server News \u2014 August 08, 2026",
+      "excerpt": "Summary: OpenMetal now supports Intel Trust Domain Extensions (TDX) for confidential computing on its dedicated bare metal XL v5 servers, integrati...",
+      "count": 20
+    },
     {
       "file": "2026-08-06.md",
       "title": "Bare-Metal Server News \u2014 August 06, 2026",
