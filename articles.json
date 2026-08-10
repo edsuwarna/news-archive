@@ -213,6 +213,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-10.md",
+      "title": "Bare-Metal & Hardware News \u2014 10 Aug 2026",
+      "excerpt": "_Git commit: {{GIT_SHA}} pushed to main_",
+      "count": 1
+    },
+    {
       "file": "2026-08-08.md",
       "title": "Bare-Metal Server News \u2014 August 08, 2026",
       "excerpt": "Summary: OpenMetal now supports Intel Trust Domain Extensions (TDX) for confidential computing on its dedicated bare metal XL v5 servers, integrati...",
