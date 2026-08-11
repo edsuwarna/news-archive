@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-11.md",
+      "title": "Top DevOps News \u2014 August 11, 2026",
+      "excerpt": "The Cloud Native Computing Foundation has unveiled the full schedule for KubeCon + CloudNativeCon North America 2026 in San Francisco. Notably, the...",
+      "count": 20
+    },
+    {
       "file": "2026-08-09.md",
       "title": "Top DevOps/SRE/CLOUD/Infrastructure News \u2014 August 09, 2026",
       "excerpt": "_Git commit: 77bd4e4 pushed to main_",
@@ -828,6 +834,12 @@
     }
   ],
   "ai": [
+    {
+      "file": "2026-08-11.md",
+      "title": "Top AI News \u2014 August 11, 2026",
+      "excerpt": "Meta Superintelligence Labs released Muse Glimmer on August 10, 2026, a 30-billion-parameter open-weights model designed to run locally on consumer...",
+      "count": 20
+    },
     {
       "file": "2026-08-07.md",
       "title": "AI News Digest \u2014 August 07, 2026",
