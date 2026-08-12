@@ -219,6 +219,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-12.md",
+      "title": "Top Bare-Metal News \u2014 August 12, 2026",
+      "excerpt": "European hyperscaler OVHcloud has announced sweeping price increases across its public cloud, bare metal, and VPS offerings, with some server tiers...",
+      "count": 20
+    },
+    {
       "file": "2026-08-10.md",
       "title": "Bare-Metal & Hardware News \u2014 10 Aug 2026",
       "excerpt": "_Git commit: {{GIT_SHA}} pushed to main_",
