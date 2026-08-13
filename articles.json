@@ -651,6 +651,12 @@
   ],
   "k8s-security": [
     {
+      "file": "2026-08-13.md",
+      "title": "Kubernetes Security Briefing \u2014 13 August 2026",
+      "excerpt": "CVSS 8.3. The Container Runtime Interface (CRI) plugin in containerd (affects versions prior to 1.7.33, 2.0.10, 2.1.9, and 2.3.2) propagates Docker...",
+      "count": 22
+    },
+    {
       "file": "2026-08-07.md",
       "title": "Kubernetes & Cloud Security Digest \u2014 August 07, 2026",
       "excerpt": "Summary: CISA added the critical TeamCity remote code execution vulnerability (CVE-2026-63077) to its Known Exploited Vulnerabilities catalog after...",
