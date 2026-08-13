@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-13.md",
+      "title": "Top DevOps News \u2014 August 13, 2026",
+      "excerpt": "The Cloud Native Computing Foundation announced the full schedule for KubeCon + CloudNativeCon North America 2026 in San Francisco, introducing a d...",
+      "count": 20
+    },
+    {
       "file": "2026-08-11.md",
       "title": "Top DevOps News \u2014 August 11, 2026",
       "excerpt": "The Cloud Native Computing Foundation has unveiled the full schedule for KubeCon + CloudNativeCon North America 2026 in San Francisco. Notably, the...",
