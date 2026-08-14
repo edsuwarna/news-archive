@@ -443,6 +443,12 @@
   ],
   "selfhosted": [
     {
+      "file": "2026-08-14.md",
+      "title": "Self-Hosted Tools Report \u2014 August 14, 2026",
+      "excerpt": "20 tools, semua tervalidasi self-hostable dan open source. Minggu depan: pembahasan mendalam tentang network security dan homelab orchestration. Te...",
+      "count": 20
+    },
+    {
       "file": "2026-08-07.md",
       "title": "Top Self-Hosted Tools \u2014 August 07, 2026",
       "excerpt": "Summary: An open-source reimplementation of Tailscale's coordination server under BSD-3 license. Use official Tailscale clients while running your...",
