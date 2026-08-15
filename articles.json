@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-15.md",
+      "title": "Top DevOps News \u2014 August 15, 2026",
+      "excerpt": "GitHub published its July 2026 enterprise roundup highlighting major productivity improvements across Copilot CLI, enhanced code review capabilitie...",
+      "count": 20
+    },
+    {
       "file": "2026-08-13.md",
       "title": "Top DevOps News \u2014 August 13, 2026",
       "excerpt": "The Cloud Native Computing Foundation announced the full schedule for KubeCon + CloudNativeCon North America 2026 in San Francisco, introducing a d...",
