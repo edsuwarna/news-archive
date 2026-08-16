@@ -231,6 +231,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-16.md",
+      "title": "Top Bare-Metal News \u2014 August 16, 2026",
+      "excerpt": "OVHCloud unveiled its \"Bare Metal 2026\" generation of dedicated servers, introducing refreshed compute platforms across its entire product lineup....",
+      "count": 20
+    },
+    {
       "file": "2026-08-14.md",
       "title": "Top Bare-Metal News \u2014 August 14, 2026",
       "excerpt": "Neocloud provider CoreWeave announced its expansion into Indonesia on August 4, 2026, marking the company's first foothold in the Asia-Pacific regi...",
