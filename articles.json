@@ -681,6 +681,12 @@
   ],
   "k8s-security": [
     {
+      "file": "2026-08-16.md",
+      "title": "Kubernetes Security Briefing \u2014 16 August 2026",
+      "excerpt": "CVSS 8.8. The Red Hat OpenShift AI (RHOAI) overlay for the training operator incorrectly aggregates trainjobs across namespaces due to flawed label...",
+      "count": 23
+    },
+    {
       "file": "2026-08-13.md",
       "title": "Kubernetes Security Briefing \u2014 13 August 2026",
       "excerpt": "CVSS 8.3. The Container Runtime Interface (CRI) plugin in containerd (affects versions prior to 1.7.33, 2.0.10, 2.1.9, and 2.3.2) propagates Docker...",
