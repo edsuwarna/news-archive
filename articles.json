@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-17.md",
+      "title": "Top DevOps News \u2014 August 17, 2026",
+      "excerpt": "On August 11, the CNCF announced the graduation of Cloud Native Buildpacks, advancing it to the highest maturity level in the CNCF landscape. Build...",
+      "count": 20
+    },
+    {
       "file": "2026-08-15.md",
       "title": "Top DevOps News \u2014 August 15, 2026",
       "excerpt": "GitHub published its July 2026 enterprise roundup highlighting major productivity improvements across Copilot CLI, enhanced code review capabilitie...",
