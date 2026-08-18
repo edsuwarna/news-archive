@@ -237,6 +237,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-18.md",
+      "title": "Top Bare-Metal News \u2014 August 18, 2026",
+      "excerpt": "Axe Compute, a company specializing in dedicated bare-metal GPU compute and large-scale AI cluster build-outs, entered into agreements with Duos Te...",
+      "count": 20
+    },
+    {
       "file": "2026-08-16.md",
       "title": "Top Bare-Metal News \u2014 August 16, 2026",
       "excerpt": "OVHCloud unveiled its \"Bare Metal 2026\" generation of dedicated servers, introducing refreshed compute platforms across its entire product lineup....",
