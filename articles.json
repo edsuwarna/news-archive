@@ -705,6 +705,12 @@
   ],
   "k8s-security": [
     {
+      "file": "2026-08-19.md",
+      "title": "Kubernetes Security Briefing \u2014 August 19, 2026",
+      "excerpt": "Kubernetes ingress-nginx controller contains a high-severity code injection vulnerability (CVSS 8.8) that allows maliciously crafted HTTP comments...",
+      "count": 17
+    },
+    {
       "file": "2026-08-16.md",
       "title": "Kubernetes Security Briefing \u2014 16 August 2026",
       "excerpt": "CVSS 8.8. The Red Hat OpenShift AI (RHOAI) overlay for the training operator incorrectly aggregates trainjobs across namespaces due to flawed label...",
@@ -918,6 +924,12 @@
     }
   ],
   "ai": [
+    {
+      "file": "2026-08-19.md",
+      "title": "Top AI News \u2014 August 19, 2026",
+      "excerpt": "OpenAI has temporarily halted certain training runs following a major security report from the UK's AI Security Institute (AISI). The AISI revealed...",
+      "count": 20
+    },
     {
       "file": "2026-08-17.md",
       "title": "Top AI News \u2014 August 17, 2026",
