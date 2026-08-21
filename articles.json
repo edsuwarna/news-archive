@@ -485,6 +485,12 @@
   ],
   "selfhosted": [
     {
+      "file": "2026-08-21.md",
+      "title": "Self-Hosted Tools Report \u2014 August 21, 2026",
+      "excerpt": "20 tools, semua tervalidasi self-hostable dan open source. Selamat membangun infrastruktur impian Anda! \ud83c\udfe0",
+      "count": 20
+    },
+    {
       "file": "2026-08-14.md",
       "title": "Self-Hosted Tools Report \u2014 August 14, 2026",
       "excerpt": "20 tools, semua tervalidasi self-hostable dan open source. Minggu depan: pembahasan mendalam tentang network security dan homelab orchestration. Te...",
