@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-21.md",
+      "title": "Top DevOps News \u2014 August 21, 2026",
+      "excerpt": "A critical authorization bypass vulnerability was discovered in Docker Engine affecting its size-check mechanism, allowing attackers to potentially...",
+      "count": 20
+    },
+    {
       "file": "2026-08-19.md",
       "title": "Top DevOps News \u2014 August 19, 2026",
       "excerpt": "Microsoft's GitHub experienced a significant outage on August 18, 2026, driven by surging AI-related workload demands that strained underlying infr...",
