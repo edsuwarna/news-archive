@@ -893,6 +893,12 @@
   ],
   "tech-foundations": [
     {
+      "file": "2026-08-22.md",
+      "title": "\ud83c\udf10 CNCF (Cloud Native Computing Foundation)",
+      "excerpt": "The CNCF announced the graduation of Kubeflow, giving its machine learning platform on Kubernetes the Foundation's highest maturity level. Since de...",
+      "count": 9
+    },
+    {
       "file": "2026-08-15.md",
       "title": "\ud83c\udf10 CNCF (Cloud Native Computing Foundation)",
       "excerpt": "The CNCF announced the graduation of Cloud Native Buildpacks, an open source toolkit that turns application source code into OCI-compliant containe...",
