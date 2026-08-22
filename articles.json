@@ -249,6 +249,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-22.md",
+      "title": "Top Bare-Metal News \u2014 August 22, 2026",
+      "excerpt": "On August 5, Proxmox Server Solutions announced the first officially supported Arm64 edition of Proxmox Virtual Environment \u2014 a long-demanded miles...",
+      "count": 20
+    },
+    {
       "file": "2026-08-20.md",
       "title": "Top Bare-Metal News \u2014 August 20, 2026",
       "excerpt": "OpenMetal announced the immediate availability of its XL v5 bare-metal server tier featuring integrated Intel Trust Domain Extensions (TDX) confide...",
