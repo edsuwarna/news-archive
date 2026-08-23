@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-23.md",
+      "title": "Top DevOps News \u2014 August 23, 2026",
+      "excerpt": "The Cloud Native Computing Foundation officially announced Kubeflow's graduation on August 17, 2026, cementing it as the standard for cloud-native...",
+      "count": 20
+    },
+    {
       "file": "2026-08-21.md",
       "title": "Top DevOps News \u2014 August 21, 2026",
       "excerpt": "A critical authorization bypass vulnerability was discovered in Docker Engine affecting its size-check mechanism, allowing attackers to potentially...",
