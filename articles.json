@@ -255,6 +255,12 @@
   ],
   "baremetal": [
     {
+      "file": "2026-08-24.md",
+      "title": "Top Bare-Metal News \u2014 August 24, 2026",
+      "excerpt": "On August 11, Super Micro Computer released its full fiscal year 2026 results, posting record net sales of $39.1 billion \u2014 nearly double the prior...",
+      "count": 20
+    },
+    {
       "file": "2026-08-22.md",
       "title": "Top Bare-Metal News \u2014 August 22, 2026",
       "excerpt": "On August 5, Proxmox Server Solutions announced the first officially supported Arm64 edition of Proxmox Virtual Environment \u2014 a long-demanded miles...",
