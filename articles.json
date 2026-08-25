@@ -1,6 +1,12 @@
 {
   "devops": [
     {
+      "file": "2026-08-25.md",
+      "title": "Top DevOps News \u2014 August 25, 2026",
+      "excerpt": "The Cloud Native Computing Foundation announced Kubeflow has reached Graduated maturity level, marking its transition from an experimental ML toolk...",
+      "count": 20
+    },
+    {
       "file": "2026-08-23.md",
       "title": "Top DevOps News \u2014 August 23, 2026",
       "excerpt": "The Cloud Native Computing Foundation officially announced Kubeflow's graduation on August 17, 2026, cementing it as the standard for cloud-native...",
